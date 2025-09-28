@@ -1,0 +1,4 @@
+defender_count_bin,n,goals,xg_sum,xg_ps,goal_rate,xg_minus_goals,low_data
+def1,133,57,63.54347925158919,0.478,0.429,6.543,False
+def0,46,29,28.010415097898527,0.609,0.63,-0.99,False
+def2p,24,14,13.112967044129796,0.546,0.583,-0.887,False

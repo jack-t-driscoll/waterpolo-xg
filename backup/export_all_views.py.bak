@@ -1,0 +1,243 @@
+# tools/export_all_views.py
+import argparse
+import math
+from pathlib import Path
+import pandas as pd
+
+POOL_WIDTH_M = 20.0
+FRONTCOURT_LENGTH_M = 15.0
+MAN_UP_STATES_OUR = {"6v5", "6v4"}  # numerical advantage (exclusions)
+
+EXPECTED_COLS = [
+    "possession_id","game_id","our_team_name","opponent_team_name",
+    "our_team_level","opponent_team_level","period","time_remaining",
+    "man_state","event_type","turnover_type","turnover_player_number",
+    "drawn_by_player_number","shooter_x","shooter_y","defender_count",
+    "goalie_present","goalie_distance_m","goalie_lateral","possession_passes",
+    "attack_type","shot_type","shot_result","shooter_handedness","player_number",
+    "video_file","video_timestamp_mmss",
+]
+
+def load_csv(path: Path) -> pd.DataFrame:
+    df = pd.read_csv(path, dtype=str)
+    for c in EXPECTED_COLS:
+        if c not in df.columns:
+            df[c] = pd.NA
+    # stable order + keep extras
+    extras = [c for c in df.columns if c not in EXPECTED_COLS]
+    df = df[EXPECTED_COLS + extras]
+    # tidy strings
+    for c in ["event_type","attack_type","man_state","goalie_present","shot_type","shot_result"]:
+        df[c] = df[c].astype(str).str.strip()
+    return df
+
+def to_float(x):
+    try:
+        return float(x)
+    except Exception:
+        return float("nan")
+
+def compute_distance_angle(x_norm, y_norm):
+    if not (0.0 <= x_norm <= 1.0 and 0.0 <= y_norm <= 1.0):
+        return (float("nan"), float("nan"))
+    dx = (x_norm - 0.5) * POOL_WIDTH_M
+    dy = y_norm * FRONTCOURT_LENGTH_M
+    distance = math.hypot(dx, dy)
+    base_angle_rad = math.atan2(abs(dx), dy) if dy != 0 else (math.pi / 2)
+    base_angle_deg = math.degrees(base_angle_rad)
+    angle = -base_angle_deg if dx < 0 else base_angle_deg
+    return (round(distance, 3), round(angle, 2))
+
+def build_features_possessions(df: pd.DataFrame) -> pd.DataFrame:
+    f = df.copy()
+    # Flags
+    f["is_shot"] = (f["event_type"] == "shot")
+    f["is_turnover"] = (f["event_type"] == "turnover")
+    f["is_ejection_drawn"] = (f["event_type"] == "ejection_drawn")
+    f["is_5m_drawn"] = (f["event_type"] == "5m_drawn")
+    f["is_man_up"] = f["man_state"].isin(MAN_UP_STATES_OUR) | (f["attack_type"].str.lower() == "man-up")
+    f["empty_net"] = (f["goalie_present"].str.lower() == "false")
+
+    # Geometry only for shots
+    x = f["shooter_x"].apply(to_float)
+    y = f["shooter_y"].apply(to_float)
+    dist, ang = [], []
+    for xi, yi, shot in zip(x, y, f["is_shot"]):
+        if shot:
+            d, a = compute_distance_angle(xi, yi)
+        else:
+            d, a = (float("nan"), float("nan"))
+        dist.append(d); ang.append(a)
+    f["distance_m"] = dist
+    f["angle_deg"] = ang
+
+    # Outcome fields for readability
+    def outcome_simple(row):
+        if row["event_type"] == "shot":
+            return "goal" if (row["shot_result"] == "goal") else "shot_no_goal"
+        if row["event_type"] == "turnover":
+            return "turnover"
+        if row["event_type"] == "ejection_drawn":
+            return "ejection_drawn"
+        if row["event_type"] == "5m_drawn":
+            return "5m_drawn"
+        return "other"
+
+    def outcome_detail(row):
+        if row["event_type"] == "shot":
+            return row["shot_result"] or ""
+        if row["event_type"] == "turnover":
+            return row["turnover_type"] or "turnover"
+        return row["event_type"]
+
+    f["possession_outcome_simple"] = f.apply(outcome_simple, axis=1)
+    f["possession_outcome_detail"] = f.apply(outcome_detail, axis=1)
+
+    # Numeric casts where useful (won't crash if blank)
+    for col in ["defender_count","goalie_distance_m","player_number","possession_passes"]:
+        f[col] = pd.to_numeric(f[col], errors="coerce")
+
+    # Columns to export
+    cols = [
+        "possession_id","game_id","period","time_remaining","man_state","attack_type",
+        "event_type","possession_outcome_simple","possession_outcome_detail",
+        "is_shot","is_turnover","is_ejection_drawn","is_5m_drawn","is_man_up",
+        "empty_net","defender_count","goalie_distance_m","goalie_lateral",
+        "shooter_x","shooter_y","distance_m","angle_deg","shot_type","shot_result",
+        "shooter_handedness","player_number","possession_passes",
+        "video_file","video_timestamp_mmss",
+    ]
+    for c in cols:
+        if c not in f.columns:
+            f[c] = pd.NA
+    return f[cols].sort_values(["game_id","possession_id"], kind="stable")
+
+def build_features_shots_from_possessions(fp: pd.DataFrame) -> pd.DataFrame:
+    s = fp[fp["is_shot"]].copy()
+    # Keep a focused set for modeling
+    cols = [
+        "possession_id","game_id","period","time_remaining","man_state","is_man_up",
+        "empty_net","shooter_x","shooter_y","distance_m","angle_deg",
+        "defender_count","goalie_distance_m","goalie_lateral",
+        "attack_type","shot_type","shooter_handedness","player_number",
+        "possession_passes","shot_result","video_file","video_timestamp_mmss",
+    ]
+    for c in cols:
+        if c not in s.columns:
+            s[c] = pd.NA
+    return s[cols].sort_values(["game_id","possession_id"], kind="stable")
+
+def summarize_offense(fp: pd.DataFrame) -> pd.DataFrame:
+    # Group by game_id for per-game summary
+    g = fp.groupby("game_id", dropna=False)
+    rows = []
+    for gid, df in g:
+        poss = len(df)
+        shots = int(df["is_shot"].sum())
+        goals = int((df["possession_outcome_detail"] == "goal").sum())
+        turnovers = int(df["is_turnover"].sum())
+        ejects = int(df["is_ejection_drawn"].sum())
+        five_m_drawn = int(df["is_5m_drawn"].sum())
+        manup_poss = int(df["is_man_up"].sum())
+        manup_shots = int(df.loc[df["is_shot"], "is_man_up"].sum())
+        manup_goals = int(((df["is_shot"]) & (df["is_man_up"]) & (df["possession_outcome_detail"] == "goal")).sum())
+        empty_net_shots = int((df["is_shot"] & df["empty_net"]).sum())
+        empty_net_goals = int((df["is_shot"] & df["empty_net"] & (df["possession_outcome_detail"] == "goal")).sum())
+
+        avg_def = float(df.loc[df["is_shot"], "defender_count"].mean())
+        avg_dist = float(df.loc[df["is_shot"], "distance_m"].mean())
+        avg_ang = float(df.loc[df["is_shot"], "angle_deg"].mean())
+
+        rows.append({
+            "game_id": gid,
+            "possessions": poss,
+            "shots": shots,
+            "goals": goals,
+            "shot_rate": round(shots/poss, 3) if poss else None,
+            "goal_rate": round(goals/poss, 3) if poss else None,
+            "turnovers": turnovers,
+            "turnover_rate": round(turnovers/poss, 3) if poss else None,
+            "ejections_drawn": ejects,
+            "ejections_per_poss": round(ejects/poss, 3) if poss else None,
+            "five_m_drawn": five_m_drawn,
+            "5m_per_poss": round(five_m_drawn/poss, 3) if poss else None,
+            "manup_possessions": manup_poss,
+            "manup_poss_rate": round(manup_poss/poss, 3) if poss else None,
+            "manup_shots": manup_shots,
+            "manup_goals": manup_goals,
+            "manup_conversion": round(manup_goals/manup_shots, 3) if manup_shots else None,
+            "empty_net_shots": empty_net_shots,
+            "empty_net_goals": empty_net_goals,
+            "avg_defenders_on_shots": round(avg_def, 3) if not pd.isna(avg_def) else None,
+            "avg_distance_m_on_shots": round(avg_dist, 3) if not pd.isna(avg_dist) else None,
+            "avg_angle_deg_on_shots": round(avg_ang, 3) if not pd.isna(avg_ang) else None,
+        })
+    return pd.DataFrame(rows)
+
+def summarize_overall(per_game: pd.DataFrame) -> pd.DataFrame:
+    # Weighted overall across games
+    if per_game.empty:
+        return per_game
+    totals = {}
+    numeric_cols = [
+        "possessions","shots","goals","turnovers","ejections_drawn","five_m_drawn",
+        "manup_possessions","manup_shots","manup_goals","empty_net_shots","empty_net_goals"
+    ]
+    for c in numeric_cols:
+        if c in per_game.columns:
+            totals[c] = per_game[c].fillna(0).sum()
+    poss = totals.get("possessions", 0) or 1
+    overall = {
+        "possessions": totals.get("possessions", 0),
+        "shots": totals.get("shots", 0),
+        "goals": totals.get("goals", 0),
+        "shot_rate": round(totals.get("shots", 0)/poss, 3),
+        "goal_rate": round(totals.get("goals", 0)/poss, 3),
+        "turnovers": totals.get("turnovers", 0),
+        "turnover_rate": round(totals.get("turnovers", 0)/poss, 3),
+        "ejections_drawn": totals.get("ejections_drawn", 0),
+        "ejections_per_poss": round(totals.get("ejections_drawn", 0)/poss, 3),
+        "five_m_drawn": totals.get("five_m_drawn", 0),
+        "5m_per_poss": round(totals.get("five_m_drawn", 0)/poss, 3),
+        "manup_possessions": totals.get("manup_possessions", 0),
+        "manup_poss_rate": round(totals.get("manup_possessions", 0)/poss, 3),
+        "manup_shots": totals.get("manup_shots", 0),
+        "manup_goals": totals.get("manup_goals", 0),
+        "manup_conversion": round(
+            totals.get("manup_goals", 0) / totals.get("manup_shots", 0), 3
+        ) if totals.get("manup_shots", 0) else None,
+        "empty_net_shots": totals.get("empty_net_shots", 0),
+        "empty_net_goals": totals.get("empty_net_goals", 0),
+    }
+    return pd.DataFrame([overall])
+
+def main():
+    ap = argparse.ArgumentParser(description="Export shots, possessions, and offense summaries from shots.csv")
+    ap.add_argument("--input", default="shots.csv", help="Path to shots.csv")
+    ap.add_argument("--out_dir", default=".", help="Directory to write outputs")
+    args = ap.parse_args()
+
+    in_path = Path(args.input)
+    out_dir = Path(args.out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    df = load_csv(in_path)
+    features_possessions = build_features_possessions(df)
+    features_shots = build_features_shots_from_possessions(features_possessions)
+    report_by_game = summarize_offense(features_possessions)
+    report_overall = summarize_overall(report_by_game)
+
+    # Write files
+    (out_dir / "features_possessions.csv").write_text(features_possessions.to_csv(index=False), encoding="utf-8")
+    (out_dir / "features_shots.csv").write_text(features_shots.to_csv(index=False), encoding="utf-8")
+    (out_dir / "offense_report_by_game.csv").write_text(report_by_game.to_csv(index=False), encoding="utf-8")
+    (out_dir / "offense_report_overall.csv").write_text(report_overall.to_csv(index=False), encoding="utf-8")
+
+    print("✓ Wrote:")
+    print(" -", (out_dir / "features_possessions.csv").resolve())
+    print(" -", (out_dir / "features_shots.csv").resolve())
+    print(" -", (out_dir / "offense_report_by_game.csv").resolve())
+    print(" -", (out_dir / "offense_report_overall.csv").resolve())
+
+if __name__ == "__main__":
+    main()

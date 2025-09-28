@@ -1,0 +1,2 @@
+possession_id,game_id,our_team_name,opponent_team_name,our_team_level,opponent_team_level,period,time_remaining,man_state,event_type,turnover_type,turnover_player_number,drawn_by_player_number,shooter_x,shooter_y,defender_count,goalie_present,goalie_distance_m,goalie_lateral,possession_passes,attack_type,shot_type,shot_result,shooter_handedness,player_number,video_file,video_timestamp_mmss
+12_P0001,12,west_sub,capc,IL Club,IL HS,,,6v6,shot,,,,0.500000,0.733333,1,true,1.5,center,2,perimeter,standard,goal,right,4,IMG_6444.MOV,00:18

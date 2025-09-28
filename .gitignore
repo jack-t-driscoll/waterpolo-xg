@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Local video files (not tracked in GitHub)
+videos/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.gif

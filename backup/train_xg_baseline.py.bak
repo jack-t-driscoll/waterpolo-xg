@@ -1,0 +1,186 @@
+# tools/train_xg_baseline.py
+import argparse, json
+from pathlib import Path
+import numpy as np
+import pandas as pd
+import joblib
+import matplotlib.pyplot as plt
+
+from sklearn.compose import ColumnTransformer
+from sklearn.impute import SimpleImputer
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import roc_auc_score, log_loss, brier_score_loss
+from sklearn.model_selection import GroupShuffleSplit, GroupKFold
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from sklearn.ensemble import HistGradientBoostingClassifier
+from sklearn.base import clone
+from sklearn.isotonic import IsotonicRegression
+
+def ece_score(y_true, y_prob, n_bins=10):
+    y_true = np.asarray(y_true).astype(int); y_prob = np.asarray(y_prob)
+    bins = np.linspace(0.0, 1.0, n_bins + 1); ece = 0.0
+    for i in range(n_bins):
+        lo, hi = bins[i], bins[i+1]
+        mask = (y_prob >= lo) & (y_prob < hi if i < n_bins-1 else y_prob <= hi)
+        if mask.sum() == 0: continue
+        acc = y_true[mask].mean(); conf = y_prob[mask].mean()
+        ece += (mask.mean()) * abs(acc - conf)
+    return float(ece)
+
+def plot_calibration(y_true, y_prob, out_path):
+    bins = np.linspace(0,1,11)
+    digitized = np.digitize(y_prob, bins) - 1
+    xs, ys, ns = [], [], []
+    for i in range(10):
+        m = (digitized == i)
+        if m.sum()==0: continue
+        xs.append(y_prob[m].mean()); ys.append(y_true[m].mean()); ns.append(m.sum())
+    plt.figure(); plt.plot([0,1],[0,1],'--'); plt.scatter(xs, ys, s=np.array(ns))
+    plt.xlabel("Predicted probability"); plt.ylabel("Observed goal rate"); plt.title("Calibration")
+    plt.tight_layout(); plt.savefig(out_path); plt.close()
+
+def main():
+    ap = argparse.ArgumentParser(description="Train baseline xG with per-level OOF isotonic calibration and export predictions")
+    ap.add_argument("--input", default="app/features_shots.csv")
+    ap.add_argument("--out_dir", default="app/models")
+    args = ap.parse_args()
+
+    in_path = Path(args.input)
+    out_dir = Path(args.out_dir); out_dir.mkdir(parents=True, exist_ok=True)
+    reports_dir = out_dir.parent / "reports"; reports_dir.mkdir(parents=True, exist_ok=True)
+
+    df = pd.read_csv(in_path, dtype=str)
+
+    # Target
+    y = (df["shot_result"].str.lower() == "goal").astype(int).values
+
+    # Ensure features exist
+    keep_cols = ["distance_m","angle_deg","defender_count","goalie_distance_m","possession_passes",
+                 "shooter_x","shooter_y","is_man_up","empty_net",
+                 "goalie_lateral","attack_type","shot_type","shooter_handedness",
+                 "our_team_level","opponent_team_level",
+                 "game_id","possession_id","video_file","video_timestamp_mmss"]
+    for c in keep_cols:
+        if c not in df.columns: df[c] = np.nan
+
+    # Numerics
+    num_cols = ["distance_m","angle_deg","defender_count","goalie_distance_m","possession_passes","shooter_x","shooter_y"]
+    for c in num_cols: df[c] = pd.to_numeric(df[c], errors="coerce")
+
+    # Booleans → 0/1
+    df["is_man_up"] = df["is_man_up"].map({True:1, False:0, "true":1, "false":0, 1:1, 0:0}).fillna(0).astype(int)
+    df["empty_net"] = df["empty_net"].map({True:1, False:0, "true":1, "false":0, 1:1, 0:0}).fillna(0).astype(int)
+
+    # Categoricals (now includes opponent_team_level)
+    cat_cols = ["goalie_lateral","attack_type","shot_type","shooter_handedness","opponent_team_level"]
+
+    groups = df["game_id"].astype(str).fillna("")
+
+    # Train/val split (by game) for honest metrics
+    gss = GroupShuffleSplit(n_splits=1, train_size=0.8, random_state=42)
+    (tr_idx, va_idx) = next(gss.split(df, y, groups))
+    df_tr, df_va = df.iloc[tr_idx], df.iloc[va_idx]
+    y_tr, y_va = y[tr_idx], y[va_idx]
+
+    # Preprocess
+    numeric_pipeline = Pipeline([("impute", SimpleImputer(strategy="median")),
+                                 ("scale", StandardScaler())])
+    categorical_pipeline = Pipeline([("impute", SimpleImputer(strategy="most_frequent")),
+                                     ("onehot", OneHotEncoder(handle_unknown="ignore"))])
+    pre = ColumnTransformer([
+        ("num", numeric_pipeline, num_cols + ["is_man_up","empty_net"]),
+        ("cat", categorical_pipeline, cat_cols),
+    ])
+
+    models = {
+        "logreg": Pipeline([("pre", pre), ("clf", LogisticRegression(max_iter=1000, C=1.0))]),
+        "hgb":    Pipeline([("pre", pre), ("clf", HistGradientBoostingClassifier(
+                             max_depth=None, learning_rate=0.06, max_iter=400, l2_regularization=0.0, random_state=42))]),
+    }
+
+    metrics_rows = []
+    for name, pipe in models.items():
+        # ---- Honest validation ----
+        pipe.fit(df_tr, y_tr)
+        proba_val = pipe.predict_proba(df_va)[:,1]
+        roc = roc_auc_score(y_va, proba_val)
+        ll = log_loss(y_va, proba_val, labels=[0,1])
+        brier = brier_score_loss(y_va, proba_val)
+        ece = ece_score(y_va, proba_val, n_bins=10)
+        metrics_rows.append({"model": name, "roc_auc": roc, "logloss": ll, "brier": brier, "ece": ece})
+
+        joblib.dump(pipe, out_dir / f"xg_{name}.pkl")
+        plot_calibration(y_va, proba_val, reports_dir / f"calibration_{name}.png")
+
+        # Validation exports
+        xg_va = df_va[["possession_id","game_id","video_file","video_timestamp_mmss"]].copy()
+        xg_va["xg"] = proba_val
+        xg_va.to_csv(reports_dir / f"xg_by_shot_{name}.csv", index=False)
+        by_game = xg_va.groupby("game_id", as_index=False).agg(shots=("xg","size"), xg_sum=("xg","sum"))
+        goals_by_game = df_va.assign(goal=y_va).groupby("game_id", as_index=False)["goal"].sum()
+        by_game = by_game.merge(goals_by_game, on="game_id", how="left").rename(columns={"goal":"goals"})
+        by_game["xg_diff"] = by_game["goals"] - by_game["xg_sum"]
+        by_game.to_csv(reports_dir / f"xg_by_game_{name}.csv", index=False)
+
+        # ---- OOF isotonic calibration (GroupKFold by game) ----
+        gkf = GroupKFold(n_splits=min(5, df["game_id"].nunique()))
+        oof = np.zeros(len(df), dtype=float)
+        for tr, va in gkf.split(df, y, groups):
+            pipe_cv = clone(pipe)
+            pipe_cv.fit(df.iloc[tr], y[tr])
+            oof[va] = pipe_cv.predict_proba(df.iloc[va])[:,1]
+
+        # Global calibrator
+        iso_global = IsotonicRegression(out_of_bounds="clip")
+        iso_global.fit(oof, y)
+
+        # Per-opponent-level calibrators (fallback to global if too few samples)
+        level_col = "opponent_team_level"
+        levels = sorted(df[level_col].astype(str).fillna("Unknown").unique())
+        iso_by_level = {}
+        for lv in levels:
+            idx = df[level_col].astype(str).fillna("Unknown").values == lv
+            if idx.sum() >= 40 and len(np.unique(y[idx])) > 1:  # guard: enough samples and both classes present
+                iso = IsotonicRegression(out_of_bounds="clip")
+                iso.fit(oof[idx], y[idx])
+                iso_by_level[lv] = iso
+            else:
+                iso_by_level[lv] = iso_global
+
+        joblib.dump(iso_global, out_dir / f"xg_{name}_isotonic.pkl")
+        joblib.dump(iso_by_level, out_dir / f"xg_{name}_isotonic_by_level.pkl")
+
+        # ---- Final model on ALL data + calibrated ALL-GAMES predictions ----
+        pipe_full = clone(pipe)
+        pipe_full.fit(df, y)
+        joblib.dump(pipe_full, out_dir / f"xg_{name}_full.pkl")
+
+        proba_all_raw = pipe_full.predict_proba(df)[:,1]
+
+        # Apply per-level calibration; fallback to global
+        def apply_cal(row_prob, row_level):
+            lv = str(row_level) if pd.notna(row_level) else "Unknown"
+            iso = iso_by_level.get(lv, iso_global)
+            return float(iso.predict([row_prob])[0])
+
+        proba_all_cal = np.array([apply_cal(p, lv) for p, lv in zip(proba_all_raw, df[level_col])], dtype=float)
+
+        # Save raw and calibrated all-games predictions
+        for tag, probs in [("all", proba_all_raw), ("all_calibrated", proba_all_cal)]:
+            xg_all = df[["possession_id","game_id","video_file","video_timestamp_mmss"]].copy()
+            xg_all["xg"] = probs
+            xg_all.to_csv(reports_dir / f"xg_by_shot_{tag}_{name}.csv", index=False)
+            by_game_all = xg_all.groupby("game_id", as_index=False).agg(shots=("xg","size"), xg_sum=("xg","sum"))
+            goals_by_game_all = df.assign(goal=y).groupby("game_id", as_index=False)["goal"].sum()
+            by_game_all = by_game_all.merge(goals_by_game_all, on="game_id", how="left").rename(columns={"goal":"goals"})
+            by_game_all["xg_diff"] = by_game_all["goals"] - by_game_all["xg_sum"]
+            by_game_all.to_csv(reports_dir / f"xg_by_game_{tag}_{name}.csv", index=False)
+
+    pd.DataFrame(metrics_rows).to_csv(reports_dir / "metrics_validation.csv", index=False)
+    (reports_dir / "metrics_validation.json").write_text(json.dumps(metrics_rows, indent=2))
+    print(pd.DataFrame(metrics_rows))
+    print("✓ wrote models & reports to", reports_dir.resolve())
+
+if __name__ == "__main__":
+    main()
