@@ -1,2 +1,2 @@
-model,roc_auc,logloss,brier,ece
-logreg_final_C0.3,0.7842105263157895,0.764353472941444,0.2551788150797529,0.3099513844188698
+auc_raw,auc_cal,brier,logloss,n_rows,model,folds
+0.7617,0.7578,0.199,0.5803,203,logreg_C0.3_iso_oof,5

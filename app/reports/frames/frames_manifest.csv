@@ -1,0 +1,559 @@
+row_idx,video,t_s,context,frame_path,possession_id,video_file,clipped_to_zero
+222,D:\upload_2025_09_29\IMG_0077.MOV,21.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\14_14_P0001_Qnan_#7_goal_t0.jpg,14_P0001,IMG_0077.MOV,
+222,D:\upload_2025_09_29\IMG_0077.MOV,19.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\14_14_P0001_Qnan_#7_goal_tm.jpg,14_P0001,IMG_0077.MOV,False
+223,D:\upload_2025_09_29\IMG_0131.MOV,37.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\15_15_P0001_Qnan_#7_field block_t0.jpg,15_P0001,IMG_0131.MOV,
+223,D:\upload_2025_09_29\IMG_0131.MOV,35.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\15_15_P0001_Qnan_#7_field block_tm.jpg,15_P0001,IMG_0131.MOV,False
+224,D:\upload_2025_09_29\IMG_0135.MOV,13.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\15_15_P0002_Qnan_#10_goal_t0.jpg,15_P0002,IMG_0135.MOV,
+224,D:\upload_2025_09_29\IMG_0135.MOV,11.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\15_15_P0002_Qnan_#10_goal_tm.jpg,15_P0002,IMG_0135.MOV,False
+47,D:\upload_2025_09_29\IMG_0157.MOV,27.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0001_Q1_#4_blocked (GK)_t0.jpg,3_P0001,IMG_0157.MOV,
+47,D:\upload_2025_09_29\IMG_0157.MOV,25.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0001_Q1_#4_blocked (GK)_tm.jpg,3_P0001,IMG_0157.MOV,False
+48,D:\upload_2025_09_29\IMG_0159.MOV,2.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0002_Q1_#6_goal_t0.jpg,3_P0002,IMG_0159.MOV,
+48,D:\upload_2025_09_29\IMG_0159.MOV,0.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0002_Q1_#6_goal_tm.jpg,3_P0002,IMG_0159.MOV,False
+49,D:\upload_2025_09_29\IMG_0165.MOV,21.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0004_Q1_#4_goal_t0.jpg,3_P0004,IMG_0165.MOV,
+49,D:\upload_2025_09_29\IMG_0165.MOV,19.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0004_Q1_#4_goal_tm.jpg,3_P0004,IMG_0165.MOV,False
+50,D:\upload_2025_09_29\IMG_0168.MOV,17.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0005_Q1_#2_goal_t0.jpg,3_P0005,IMG_0168.MOV,
+50,D:\upload_2025_09_29\IMG_0168.MOV,15.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0005_Q1_#2_goal_tm.jpg,3_P0005,IMG_0168.MOV,False
+51,D:\upload_2025_09_29\IMG_0172.MOV,15.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0006_Q2_#5_missed_t0.jpg,3_P0006,IMG_0172.MOV,
+51,D:\upload_2025_09_29\IMG_0172.MOV,13.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0006_Q2_#5_missed_tm.jpg,3_P0006,IMG_0172.MOV,False
+52,D:\upload_2025_09_29\IMG_0176.MOV,8.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0007_Q2_#6_field block_t0.jpg,3_P0007,IMG_0176.MOV,
+52,D:\upload_2025_09_29\IMG_0176.MOV,6.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0007_Q2_#6_field block_tm.jpg,3_P0007,IMG_0176.MOV,False
+53,D:\upload_2025_09_29\IMG_0177.MOV,4.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0008_Q2_#6_goal_t0.jpg,3_P0008,IMG_0177.MOV,
+53,D:\upload_2025_09_29\IMG_0177.MOV,2.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0008_Q2_#6_goal_tm.jpg,3_P0008,IMG_0177.MOV,False
+54,D:\upload_2025_09_29\IMG_0179.MOV,32.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0009_Q2_#2_goal_t0.jpg,3_P0009,IMG_0179.MOV,
+54,D:\upload_2025_09_29\IMG_0179.MOV,30.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0009_Q2_#2_goal_tm.jpg,3_P0009,IMG_0179.MOV,False
+55,D:\upload_2025_09_29\IMG_0181.MOV,31.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0010_Q3_#7_blocked (GK)_t0.jpg,3_P0010,IMG_0181.MOV,
+55,D:\upload_2025_09_29\IMG_0181.MOV,29.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0010_Q3_#7_blocked (GK)_tm.jpg,3_P0010,IMG_0181.MOV,False
+56,D:\upload_2025_09_29\IMG_0183.MOV,30.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0011_Q3_#10_blocked (GK)_t0.jpg,3_P0011,IMG_0183.MOV,
+56,D:\upload_2025_09_29\IMG_0183.MOV,28.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0011_Q3_#10_blocked (GK)_tm.jpg,3_P0011,IMG_0183.MOV,False
+56,D:\upload_2025_09_29\IMG_0183.MOV,32.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0011_Q3_#10_blocked (GK)_tp.jpg,3_P0011,IMG_0183.MOV,
+57,D:\upload_2025_09_29\IMG_0185.MOV,48.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0014_Q3_#4_goal_t0.jpg,3_P0014,IMG_0185.MOV,
+57,D:\upload_2025_09_29\IMG_0185.MOV,46.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0014_Q3_#4_goal_tm.jpg,3_P0014,IMG_0185.MOV,False
+58,D:\upload_2025_09_29\IMG_0185.MOV,48.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0014_Q3_#4_goal_t0.jpg,3_P0014,IMG_0185.MOV,
+58,D:\upload_2025_09_29\IMG_0185.MOV,46.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0014_Q3_#4_goal_tm.jpg,3_P0014,IMG_0185.MOV,False
+59,D:\upload_2025_09_29\IMG_0185.MOV,48.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0014_Q3_#4_goal_t0.jpg,3_P0014,IMG_0185.MOV,
+59,D:\upload_2025_09_29\IMG_0185.MOV,46.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0014_Q3_#4_goal_tm.jpg,3_P0014,IMG_0185.MOV,False
+60,D:\upload_2025_09_29\IMG_0187.MOV,11.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0015_Q3_#7_missed_t0.jpg,3_P0015,IMG_0187.MOV,
+60,D:\upload_2025_09_29\IMG_0187.MOV,9.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0015_Q3_#7_missed_tm.jpg,3_P0015,IMG_0187.MOV,False
+61,D:\upload_2025_09_29\IMG_0189.MOV,20.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0016_Q3_#7_goal_t0.jpg,3_P0016,IMG_0189.MOV,
+61,D:\upload_2025_09_29\IMG_0189.MOV,18.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0016_Q3_#7_goal_tm.jpg,3_P0016,IMG_0189.MOV,False
+62,D:\upload_2025_09_29\IMG_0196.MOV,18.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0017_Q4_#4_field block_t0.jpg,3_P0017,IMG_0196.MOV,
+62,D:\upload_2025_09_29\IMG_0196.MOV,16.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0017_Q4_#4_field block_tm.jpg,3_P0017,IMG_0196.MOV,False
+63,D:\upload_2025_09_29\IMG_0200.MOV,19.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0018_Q4_#2_blocked (GK)_t0.jpg,3_P0018,IMG_0200.MOV,
+63,D:\upload_2025_09_29\IMG_0200.MOV,17.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0018_Q4_#2_blocked (GK)_tm.jpg,3_P0018,IMG_0200.MOV,False
+64,D:\upload_2025_09_29\IMG_0204.MOV,10.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0020_Q4_#4_blocked (GK)_t0.jpg,3_P0020,IMG_0204.MOV,
+64,D:\upload_2025_09_29\IMG_0204.MOV,8.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\3_3_P0020_Q4_#4_blocked (GK)_tm.jpg,3_P0020,IMG_0204.MOV,False
+166,D:\upload_2025_09_29\IMG_1525.MOV,24.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\9_9_P0001_Qnan_#5_missed_t0.jpg,9_P0001,IMG_1525.MOV,
+166,D:\upload_2025_09_29\IMG_1525.MOV,22.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\9_9_P0001_Qnan_#5_missed_tm.jpg,9_P0001,IMG_1525.MOV,False
+167,D:\upload_2025_09_29\IMG_1531.MOV,45.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\9_9_P0002_Qnan_#5_goal_t0.jpg,9_P0002,IMG_1531.MOV,
+167,D:\upload_2025_09_29\IMG_1531.MOV,43.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\9_9_P0002_Qnan_#5_goal_tm.jpg,9_P0002,IMG_1531.MOV,False
+168,D:\upload_2025_09_29\IMG_1540.MOV,6.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\9_9_P0003_Qnan_#15_goal_t0.jpg,9_P0003,IMG_1540.MOV,
+168,D:\upload_2025_09_29\IMG_1540.MOV,4.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\9_9_P0003_Qnan_#15_goal_tm.jpg,9_P0003,IMG_1540.MOV,False
+169,D:\upload_2025_09_29\IMG_1543.MOV,70.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\9_9_P0004_Qnan_#14_post\bar_t0.jpg,9_P0004,IMG_1543.MOV,
+169,D:\upload_2025_09_29\IMG_1543.MOV,68.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\9_9_P0004_Qnan_#14_post\bar_tm.jpg,9_P0004,IMG_1543.MOV,False
+169,D:\upload_2025_09_29\IMG_1543.MOV,72.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\9_9_P0004_Qnan_#14_post\bar_tp.jpg,9_P0004,IMG_1543.MOV,
+170,D:\upload_2025_09_29\IMG_1552.MOV,34.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\9_9_P0005_Qnan_#15_field block_t0.jpg,9_P0005,IMG_1552.MOV,
+170,D:\upload_2025_09_29\IMG_1552.MOV,32.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\9_9_P0005_Qnan_#15_field block_tm.jpg,9_P0005,IMG_1552.MOV,False
+170,D:\upload_2025_09_29\IMG_1552.MOV,36.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\9_9_P0005_Qnan_#15_field block_tp.jpg,9_P0005,IMG_1552.MOV,
+171,D:\upload_2025_09_29\IMG_1553.MOV,45.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\9_9_P0006_Qnan_#5_blocked (GK)_t0.jpg,9_P0006,IMG_1553.MOV,
+171,D:\upload_2025_09_29\IMG_1553.MOV,43.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\9_9_P0006_Qnan_#5_blocked (GK)_tm.jpg,9_P0006,IMG_1553.MOV,False
+171,D:\upload_2025_09_29\IMG_1553.MOV,47.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\9_9_P0006_Qnan_#5_blocked (GK)_tp.jpg,9_P0006,IMG_1553.MOV,
+172,D:\upload_2025_09_29\IMG_1555.MOV,15.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\9_9_P0007_Qnan_#3_blocked (GK)_t0.jpg,9_P0007,IMG_1555.MOV,
+172,D:\upload_2025_09_29\IMG_1555.MOV,13.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\9_9_P0007_Qnan_#3_blocked (GK)_tm.jpg,9_P0007,IMG_1555.MOV,False
+204,D:\upload_2025_09_29\IMG_2070.MOV,5.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0001_Q1_#9_goal_t0.jpg,11_P0001,IMG_2070.MOV,
+204,D:\upload_2025_09_29\IMG_2070.MOV,3.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0001_Q1_#9_goal_tm.jpg,11_P0001,IMG_2070.MOV,False
+205,D:\upload_2025_09_29\IMG_2071.MOV,39.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0002_Qnan_#20_goal_t0.jpg,11_P0002,IMG_2071.MOV,
+205,D:\upload_2025_09_29\IMG_2071.MOV,37.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0002_Qnan_#20_goal_tm.jpg,11_P0002,IMG_2071.MOV,False
+205,D:\upload_2025_09_29\IMG_2071.MOV,41.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0002_Qnan_#20_goal_tp.jpg,11_P0002,IMG_2071.MOV,
+206,D:\upload_2025_09_29\IMG_2073.MOV,20.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0003_Qnan_#10_missed_t0.jpg,11_P0003,IMG_2073.MOV,
+206,D:\upload_2025_09_29\IMG_2073.MOV,18.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0003_Qnan_#10_missed_tm.jpg,11_P0003,IMG_2073.MOV,False
+207,D:\upload_2025_09_29\IMG_2077.MOV,39.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0004_Qnan_#13_missed_t0.jpg,11_P0004,IMG_2077.MOV,
+207,D:\upload_2025_09_29\IMG_2077.MOV,37.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0004_Qnan_#13_missed_tm.jpg,11_P0004,IMG_2077.MOV,False
+208,D:\upload_2025_09_29\IMG_2078.MOV,42.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0005_Qnan_#9_goal_t0.jpg,11_P0005,IMG_2078.MOV,
+208,D:\upload_2025_09_29\IMG_2078.MOV,40.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0005_Qnan_#9_goal_tm.jpg,11_P0005,IMG_2078.MOV,False
+209,D:\upload_2025_09_29\IMG_2081.MOV,28.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0006_Qnan_#9_goal_t0.jpg,11_P0006,IMG_2081.MOV,
+209,D:\upload_2025_09_29\IMG_2081.MOV,26.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0006_Qnan_#9_goal_tm.jpg,11_P0006,IMG_2081.MOV,False
+210,D:\upload_2025_09_29\IMG_2084.MOV,39.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0007_Qnan_#10_missed_t0.jpg,11_P0007,IMG_2084.MOV,
+210,D:\upload_2025_09_29\IMG_2084.MOV,37.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0007_Qnan_#10_missed_tm.jpg,11_P0007,IMG_2084.MOV,False
+211,D:\upload_2025_09_29\IMG_2088.MOV,17.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0008_Qnan_#20_post\bar_t0.jpg,11_P0008,IMG_2088.MOV,
+211,D:\upload_2025_09_29\IMG_2088.MOV,15.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0008_Qnan_#20_post\bar_tm.jpg,11_P0008,IMG_2088.MOV,False
+211,D:\upload_2025_09_29\IMG_2088.MOV,19.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0008_Qnan_#20_post\bar_tp.jpg,11_P0008,IMG_2088.MOV,
+212,D:\upload_2025_09_29\IMG_2093.MOV,17.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0009_Qnan_#2_goal_t0.jpg,11_P0009,IMG_2093.MOV,
+212,D:\upload_2025_09_29\IMG_2093.MOV,15.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0009_Qnan_#2_goal_tm.jpg,11_P0009,IMG_2093.MOV,False
+213,D:\upload_2025_09_29\IMG_2096.MOV,68.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0010_Qnan_#20_missed_t0.jpg,11_P0010,IMG_2096.MOV,
+213,D:\upload_2025_09_29\IMG_2096.MOV,66.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0010_Qnan_#20_missed_tm.jpg,11_P0010,IMG_2096.MOV,False
+214,D:\upload_2025_09_29\IMG_2098.MOV,39.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0011_Qnan_#9_goal_t0.jpg,11_P0011,IMG_2098.MOV,
+214,D:\upload_2025_09_29\IMG_2098.MOV,37.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0011_Qnan_#9_goal_tm.jpg,11_P0011,IMG_2098.MOV,False
+214,D:\upload_2025_09_29\IMG_2098.MOV,41.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0011_Qnan_#9_goal_tp.jpg,11_P0011,IMG_2098.MOV,
+215,D:\upload_2025_09_29\IMG_2102.MOV,9.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0012_Q4_#10_goal_t0.jpg,11_P0012,IMG_2102.MOV,
+215,D:\upload_2025_09_29\IMG_2102.MOV,7.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0012_Q4_#10_goal_tm.jpg,11_P0012,IMG_2102.MOV,False
+215,D:\upload_2025_09_29\IMG_2102.MOV,11.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\11_11_P0012_Q4_#10_goal_tp.jpg,11_P0012,IMG_2102.MOV,
+65,D:\upload_2025_09_29\IMG_2598.MOV,21.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0001_Q1_#2_blocked (GK)_t0.jpg,4_P0001,IMG_2598.MOV,
+65,D:\upload_2025_09_29\IMG_2598.MOV,19.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0001_Q1_#2_blocked (GK)_tm.jpg,4_P0001,IMG_2598.MOV,False
+65,D:\upload_2025_09_29\IMG_2598.MOV,23.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0001_Q1_#2_blocked (GK)_tp.jpg,4_P0001,IMG_2598.MOV,
+66,D:\upload_2025_09_29\IMG_2600.MOV,16.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0002_Q1_#10_goal_t0.jpg,4_P0002,IMG_2600.MOV,
+66,D:\upload_2025_09_29\IMG_2600.MOV,14.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0002_Q1_#10_goal_tm.jpg,4_P0002,IMG_2600.MOV,False
+67,D:\upload_2025_09_29\IMG_2604.MOV,34.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0004_Q1_#2_field block_t0.jpg,4_P0004,IMG_2604.MOV,
+67,D:\upload_2025_09_29\IMG_2604.MOV,32.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0004_Q1_#2_field block_tm.jpg,4_P0004,IMG_2604.MOV,False
+68,D:\upload_2025_09_29\IMG_2606.MOV,21.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0005_Q1_#2_field block_t0.jpg,4_P0005,IMG_2606.MOV,
+68,D:\upload_2025_09_29\IMG_2606.MOV,19.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0005_Q1_#2_field block_tm.jpg,4_P0005,IMG_2606.MOV,False
+68,D:\upload_2025_09_29\IMG_2606.MOV,23.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0005_Q1_#2_field block_tp.jpg,4_P0005,IMG_2606.MOV,
+69,D:\upload_2025_09_29\IMG_2608.MOV,31.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0006_Q1_#3_field block_t0.jpg,4_P0006,IMG_2608.MOV,
+69,D:\upload_2025_09_29\IMG_2608.MOV,29.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0006_Q1_#3_field block_tm.jpg,4_P0006,IMG_2608.MOV,False
+69,D:\upload_2025_09_29\IMG_2608.MOV,33.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0006_Q1_#3_field block_tp.jpg,4_P0006,IMG_2608.MOV,
+70,D:\upload_2025_09_29\IMG_2612.MOV,16.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0008_Q2_#10_post\bar_t0.jpg,4_P0008,IMG_2612.MOV,
+70,D:\upload_2025_09_29\IMG_2612.MOV,14.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0008_Q2_#10_post\bar_tm.jpg,4_P0008,IMG_2612.MOV,False
+70,D:\upload_2025_09_29\IMG_2612.MOV,18.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0008_Q2_#10_post\bar_tp.jpg,4_P0008,IMG_2612.MOV,
+71,D:\upload_2025_09_29\IMG_2613.MOV,15.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0009_Q2_#10_blocked (GK)_t0.jpg,4_P0009,IMG_2613.MOV,
+71,D:\upload_2025_09_29\IMG_2613.MOV,13.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0009_Q2_#10_blocked (GK)_tm.jpg,4_P0009,IMG_2613.MOV,False
+71,D:\upload_2025_09_29\IMG_2613.MOV,17.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0009_Q2_#10_blocked (GK)_tp.jpg,4_P0009,IMG_2613.MOV,
+72,D:\upload_2025_09_29\IMG_2618.MOV,19.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0012_Q2_#2_goal_t0.jpg,4_P0012,IMG_2618.MOV,
+72,D:\upload_2025_09_29\IMG_2618.MOV,17.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0012_Q2_#2_goal_tm.jpg,4_P0012,IMG_2618.MOV,False
+73,D:\upload_2025_09_29\IMG_2622.MOV,43.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0014_Q3_#9_post\bar_t0.jpg,4_P0014,IMG_2622.MOV,
+73,D:\upload_2025_09_29\IMG_2622.MOV,41.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0014_Q3_#9_post\bar_tm.jpg,4_P0014,IMG_2622.MOV,False
+73,D:\upload_2025_09_29\IMG_2622.MOV,45.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0014_Q3_#9_post\bar_tp.jpg,4_P0014,IMG_2622.MOV,
+74,D:\upload_2025_09_29\IMG_2624.MOV,28.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0015_Q3_#12_field block_t0.jpg,4_P0015,IMG_2624.MOV,
+74,D:\upload_2025_09_29\IMG_2624.MOV,26.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0015_Q3_#12_field block_tm.jpg,4_P0015,IMG_2624.MOV,False
+75,D:\upload_2025_09_29\IMG_2626.MOV,45.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0017_Q3_#3_post\bar_t0.jpg,4_P0017,IMG_2626.MOV,
+75,D:\upload_2025_09_29\IMG_2626.MOV,43.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0017_Q3_#3_post\bar_tm.jpg,4_P0017,IMG_2626.MOV,False
+75,D:\upload_2025_09_29\IMG_2626.MOV,47.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0017_Q3_#3_post\bar_tp.jpg,4_P0017,IMG_2626.MOV,
+76,D:\upload_2025_09_29\IMG_2628.MOV,14.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0018_Q3_#1_goals_t0.jpg,4_P0018,IMG_2628.MOV,
+76,D:\upload_2025_09_29\IMG_2628.MOV,12.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0018_Q3_#1_goals_tm.jpg,4_P0018,IMG_2628.MOV,False
+76,D:\upload_2025_09_29\IMG_2628.MOV,16.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0018_Q3_#1_goals_tp.jpg,4_P0018,IMG_2628.MOV,
+77,D:\upload_2025_09_29\IMG_2633.MOV,23.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0020_Q4_#9_goal_t0.jpg,4_P0020,IMG_2633.MOV,
+77,D:\upload_2025_09_29\IMG_2633.MOV,21.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0020_Q4_#9_goal_tm.jpg,4_P0020,IMG_2633.MOV,False
+77,D:\upload_2025_09_29\IMG_2633.MOV,25.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0020_Q4_#9_goal_tp.jpg,4_P0020,IMG_2633.MOV,
+78,D:\upload_2025_09_29\IMG_2635.MOV,19.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0021_Q4_#3_field block_t0.jpg,4_P0021,IMG_2635.MOV,
+78,D:\upload_2025_09_29\IMG_2635.MOV,17.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0021_Q4_#3_field block_tm.jpg,4_P0021,IMG_2635.MOV,False
+79,D:\upload_2025_09_29\IMG_2636.MOV,37.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0022_Q4_#5_missed_t0.jpg,4_P0022,IMG_2636.MOV,
+79,D:\upload_2025_09_29\IMG_2636.MOV,35.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0022_Q4_#5_missed_tm.jpg,4_P0022,IMG_2636.MOV,False
+80,D:\upload_2025_09_29\IMG_2638.MOV,31.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0023_Q4_#3_blocked (GK)_t0.jpg,4_P0023,IMG_2638.MOV,
+80,D:\upload_2025_09_29\IMG_2638.MOV,29.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0023_Q4_#3_blocked (GK)_tm.jpg,4_P0023,IMG_2638.MOV,False
+80,D:\upload_2025_09_29\IMG_2638.MOV,33.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0023_Q4_#3_blocked (GK)_tp.jpg,4_P0023,IMG_2638.MOV,
+81,D:\upload_2025_09_29\IMG_2638.MOV,31.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0023_Q4_#3_blocked (GK)_t0.jpg,4_P0023,IMG_2638.MOV,
+81,D:\upload_2025_09_29\IMG_2638.MOV,29.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0023_Q4_#3_blocked (GK)_tm.jpg,4_P0023,IMG_2638.MOV,False
+81,D:\upload_2025_09_29\IMG_2638.MOV,33.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0023_Q4_#3_blocked (GK)_tp.jpg,4_P0023,IMG_2638.MOV,
+82,D:\upload_2025_09_29\IMG_2638.MOV,31.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0023_Q4_#3_blocked (GK)_t0.jpg,4_P0023,IMG_2638.MOV,
+82,D:\upload_2025_09_29\IMG_2638.MOV,29.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0023_Q4_#3_blocked (GK)_tm.jpg,4_P0023,IMG_2638.MOV,False
+82,D:\upload_2025_09_29\IMG_2638.MOV,33.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0023_Q4_#3_blocked (GK)_tp.jpg,4_P0023,IMG_2638.MOV,
+83,D:\upload_2025_09_29\IMG_2638.MOV,34.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0024_Q4_#12_blocked (GK)_t0.jpg,4_P0024,IMG_2638.MOV,
+83,D:\upload_2025_09_29\IMG_2638.MOV,32.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0024_Q4_#12_blocked (GK)_tm.jpg,4_P0024,IMG_2638.MOV,False
+83,D:\upload_2025_09_29\IMG_2638.MOV,36.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0024_Q4_#12_blocked (GK)_tp.jpg,4_P0024,IMG_2638.MOV,
+84,D:\upload_2025_09_29\IMG_2638.MOV,34.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0024_Q4_#12_blocked (GK)_t0.jpg,4_P0024,IMG_2638.MOV,
+84,D:\upload_2025_09_29\IMG_2638.MOV,32.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0024_Q4_#12_blocked (GK)_tm.jpg,4_P0024,IMG_2638.MOV,False
+84,D:\upload_2025_09_29\IMG_2638.MOV,36.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0024_Q4_#12_blocked (GK)_tp.jpg,4_P0024,IMG_2638.MOV,
+85,D:\upload_2025_09_29\IMG_2638.MOV,34.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0024_Q4_#12_blocked (GK)_t0.jpg,4_P0024,IMG_2638.MOV,
+85,D:\upload_2025_09_29\IMG_2638.MOV,32.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0024_Q4_#12_blocked (GK)_tm.jpg,4_P0024,IMG_2638.MOV,False
+85,D:\upload_2025_09_29\IMG_2638.MOV,36.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0024_Q4_#12_blocked (GK)_tp.jpg,4_P0024,IMG_2638.MOV,
+86,D:\upload_2025_09_29\IMG_2638.MOV,35.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0025_Q4_#5_goal_t0.jpg,4_P0025,IMG_2638.MOV,
+86,D:\upload_2025_09_29\IMG_2638.MOV,33.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0025_Q4_#5_goal_tm.jpg,4_P0025,IMG_2638.MOV,False
+86,D:\upload_2025_09_29\IMG_2638.MOV,37.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0025_Q4_#5_goal_tp.jpg,4_P0025,IMG_2638.MOV,
+87,D:\upload_2025_09_29\IMG_2638.MOV,35.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0025_Q4_#5_goal_t0.jpg,4_P0025,IMG_2638.MOV,
+87,D:\upload_2025_09_29\IMG_2638.MOV,33.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0025_Q4_#5_goal_tm.jpg,4_P0025,IMG_2638.MOV,False
+87,D:\upload_2025_09_29\IMG_2638.MOV,37.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0025_Q4_#5_goal_tp.jpg,4_P0025,IMG_2638.MOV,
+88,D:\upload_2025_09_29\IMG_2638.MOV,35.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0025_Q4_#5_goal_t0.jpg,4_P0025,IMG_2638.MOV,
+88,D:\upload_2025_09_29\IMG_2638.MOV,33.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0025_Q4_#5_goal_tm.jpg,4_P0025,IMG_2638.MOV,False
+88,D:\upload_2025_09_29\IMG_2638.MOV,37.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\4_4_P0025_Q4_#5_goal_tp.jpg,4_P0025,IMG_2638.MOV,
+89,D:\upload_2025_09_29\IMG_2645.MOV,31.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0002_Qnan_#15_missed_t0.jpg,5_P0002,IMG_2645.MOV,
+89,D:\upload_2025_09_29\IMG_2645.MOV,29.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0002_Qnan_#15_missed_tm.jpg,5_P0002,IMG_2645.MOV,False
+89,D:\upload_2025_09_29\IMG_2645.MOV,33.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0002_Qnan_#15_missed_tp.jpg,5_P0002,IMG_2645.MOV,
+90,D:\upload_2025_09_29\IMG_2658.MOV,45.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0010_Qnan_#15_blocked (GK)_t0.jpg,5_P0010,IMG_2658.MOV,
+90,D:\upload_2025_09_29\IMG_2658.MOV,43.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0010_Qnan_#15_blocked (GK)_tm.jpg,5_P0010,IMG_2658.MOV,False
+91,D:\upload_2025_09_29\IMG_2663.MOV,55.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0012_Qnan_#3_post\bar_t0.jpg,5_P0012,IMG_2663.MOV,
+91,D:\upload_2025_09_29\IMG_2663.MOV,53.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0012_Qnan_#3_post\bar_tm.jpg,5_P0012,IMG_2663.MOV,False
+91,D:\upload_2025_09_29\IMG_2663.MOV,57.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0012_Qnan_#3_post\bar_tp.jpg,5_P0012,IMG_2663.MOV,
+92,D:\upload_2025_09_29\IMG_2667.MOV,9.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0014_Qnan_#15_goal_t0.jpg,5_P0014,IMG_2667.MOV,
+92,D:\upload_2025_09_29\IMG_2667.MOV,7.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0014_Qnan_#15_goal_tm.jpg,5_P0014,IMG_2667.MOV,False
+92,D:\upload_2025_09_29\IMG_2667.MOV,11.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0014_Qnan_#15_goal_tp.jpg,5_P0014,IMG_2667.MOV,
+93,D:\upload_2025_09_29\IMG_2675.MOV,36.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0016_Qnan_#5_blocked (GK)_t0.jpg,5_P0016,IMG_2675.MOV,
+93,D:\upload_2025_09_29\IMG_2675.MOV,34.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0016_Qnan_#5_blocked (GK)_tm.jpg,5_P0016,IMG_2675.MOV,False
+94,D:\upload_2025_09_29\IMG_2677.MOV,20.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0017_Qnan_#15_goal_t0.jpg,5_P0017,IMG_2677.MOV,
+94,D:\upload_2025_09_29\IMG_2677.MOV,18.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0017_Qnan_#15_goal_tm.jpg,5_P0017,IMG_2677.MOV,False
+95,D:\upload_2025_09_29\IMG_2678.MOV,42.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0018_Qnan_#2_blocked (GK)_t0.jpg,5_P0018,IMG_2678.MOV,
+95,D:\upload_2025_09_29\IMG_2678.MOV,40.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0018_Qnan_#2_blocked (GK)_tm.jpg,5_P0018,IMG_2678.MOV,False
+95,D:\upload_2025_09_29\IMG_2678.MOV,44.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0018_Qnan_#2_blocked (GK)_tp.jpg,5_P0018,IMG_2678.MOV,
+96,D:\upload_2025_09_29\IMG_2678.MOV,42.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0018_Qnan_#2_blocked (GK)_t0.jpg,5_P0018,IMG_2678.MOV,
+96,D:\upload_2025_09_29\IMG_2678.MOV,40.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0018_Qnan_#2_blocked (GK)_tm.jpg,5_P0018,IMG_2678.MOV,False
+96,D:\upload_2025_09_29\IMG_2678.MOV,44.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0018_Qnan_#2_blocked (GK)_tp.jpg,5_P0018,IMG_2678.MOV,
+97,D:\upload_2025_09_29\IMG_2678.MOV,44.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0019_Qnan_#12_goal_t0.jpg,5_P0019,IMG_2678.MOV,
+97,D:\upload_2025_09_29\IMG_2678.MOV,42.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0019_Qnan_#12_goal_tm.jpg,5_P0019,IMG_2678.MOV,False
+98,D:\upload_2025_09_29\IMG_2678.MOV,44.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0019_Qnan_#12_goal_t0.jpg,5_P0019,IMG_2678.MOV,
+98,D:\upload_2025_09_29\IMG_2678.MOV,42.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0019_Qnan_#12_goal_tm.jpg,5_P0019,IMG_2678.MOV,False
+99,D:\upload_2025_09_29\IMG_2680.MOV,18.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0020_Qnan_#12_blocked_t0.jpg,5_P0020,IMG_2680.MOV,
+99,D:\upload_2025_09_29\IMG_2680.MOV,16.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0020_Qnan_#12_blocked_tm.jpg,5_P0020,IMG_2680.MOV,False
+100,D:\upload_2025_09_29\IMG_2687.MOV,26.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0023_Qnan_#5_goal_t0.jpg,5_P0023,IMG_2687.MOV,
+100,D:\upload_2025_09_29\IMG_2687.MOV,24.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0023_Qnan_#5_goal_tm.jpg,5_P0023,IMG_2687.MOV,False
+100,D:\upload_2025_09_29\IMG_2687.MOV,28.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\5_5_P0023_Qnan_#5_goal_tp.jpg,5_P0023,IMG_2687.MOV,
+143,D:\upload_2025_09_29\IMG_3689.MOV,34.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0001_Q1_#2_goal_t0.jpg,8_P0001,IMG_3689.MOV,
+143,D:\upload_2025_09_29\IMG_3689.MOV,32.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0001_Q1_#2_goal_tm.jpg,8_P0001,IMG_3689.MOV,False
+144,D:\upload_2025_09_29\IMG_3692.MOV,15.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0002_Q1_#13_goal_t0.jpg,8_P0002,IMG_3692.MOV,
+144,D:\upload_2025_09_29\IMG_3692.MOV,13.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0002_Q1_#13_goal_tm.jpg,8_P0002,IMG_3692.MOV,False
+145,D:\upload_2025_09_29\IMG_3694.MOV,27.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0003_Q1_#2_goal_t0.jpg,8_P0003,IMG_3694.MOV,
+145,D:\upload_2025_09_29\IMG_3694.MOV,25.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0003_Q1_#2_goal_tm.jpg,8_P0003,IMG_3694.MOV,False
+146,D:\upload_2025_09_29\IMG_3695.MOV,48.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0004_Q1_#10_goal_t0.jpg,8_P0004,IMG_3695.MOV,
+146,D:\upload_2025_09_29\IMG_3695.MOV,46.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0004_Q1_#10_goal_tm.jpg,8_P0004,IMG_3695.MOV,False
+147,D:\upload_2025_09_29\IMG_3696.MOV,51.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0005_Q1_#15_blocked (GK)_t0.jpg,8_P0005,IMG_3696.MOV,
+147,D:\upload_2025_09_29\IMG_3696.MOV,49.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0005_Q1_#15_blocked (GK)_tm.jpg,8_P0005,IMG_3696.MOV,False
+147,D:\upload_2025_09_29\IMG_3696.MOV,53.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0005_Q1_#15_blocked (GK)_tp.jpg,8_P0005,IMG_3696.MOV,
+148,D:\upload_2025_09_29\IMG_3697.MOV,36.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0006_Q1_#4_goal_t0.jpg,8_P0006,IMG_3697.MOV,
+148,D:\upload_2025_09_29\IMG_3697.MOV,34.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0006_Q1_#4_goal_tm.jpg,8_P0006,IMG_3697.MOV,False
+149,D:\upload_2025_09_29\IMG_3698.MOV,36.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0007_Q1_#4_post\bar_t0.jpg,8_P0007,IMG_3698.MOV,
+149,D:\upload_2025_09_29\IMG_3698.MOV,34.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0007_Q1_#4_post\bar_tm.jpg,8_P0007,IMG_3698.MOV,False
+149,D:\upload_2025_09_29\IMG_3698.MOV,38.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0007_Q1_#4_post\bar_tp.jpg,8_P0007,IMG_3698.MOV,
+150,D:\upload_2025_09_29\IMG_3700.MOV,26.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0008_Q2_#4_goal_t0.jpg,8_P0008,IMG_3700.MOV,
+150,D:\upload_2025_09_29\IMG_3700.MOV,24.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0008_Q2_#4_goal_tm.jpg,8_P0008,IMG_3700.MOV,False
+151,D:\upload_2025_09_29\IMG_3702.MOV,40.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0009_Q2_#4_goal_t0.jpg,8_P0009,IMG_3702.MOV,
+151,D:\upload_2025_09_29\IMG_3702.MOV,38.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0009_Q2_#4_goal_tm.jpg,8_P0009,IMG_3702.MOV,False
+152,D:\upload_2025_09_29\IMG_3704.MOV,19.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0010_Q2_#15_goal_t0.jpg,8_P0010,IMG_3704.MOV,
+152,D:\upload_2025_09_29\IMG_3704.MOV,17.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0010_Q2_#15_goal_tm.jpg,8_P0010,IMG_3704.MOV,False
+152,D:\upload_2025_09_29\IMG_3704.MOV,21.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0010_Q2_#15_goal_tp.jpg,8_P0010,IMG_3704.MOV,
+153,D:\upload_2025_09_29\IMG_3706.MOV,41.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0011_Q2_#4_goal_t0.jpg,8_P0011,IMG_3706.MOV,
+153,D:\upload_2025_09_29\IMG_3706.MOV,39.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0011_Q2_#4_goal_tm.jpg,8_P0011,IMG_3706.MOV,False
+154,D:\upload_2025_09_29\IMG_3707.MOV,59.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0012_Q2_#8_goal_t0.jpg,8_P0012,IMG_3707.MOV,
+154,D:\upload_2025_09_29\IMG_3707.MOV,57.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0012_Q2_#8_goal_tm.jpg,8_P0012,IMG_3707.MOV,False
+155,D:\upload_2025_09_29\IMG_3709.MOV,11.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0013_Q2_#22_goal_t0.jpg,8_P0013,IMG_3709.MOV,
+155,D:\upload_2025_09_29\IMG_3709.MOV,9.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0013_Q2_#22_goal_tm.jpg,8_P0013,IMG_3709.MOV,False
+156,D:\upload_2025_09_29\IMG_3713.MOV,25.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0014_Q3_#20_goal_t0.jpg,8_P0014,IMG_3713.MOV,
+156,D:\upload_2025_09_29\IMG_3713.MOV,23.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0014_Q3_#20_goal_tm.jpg,8_P0014,IMG_3713.MOV,False
+156,D:\upload_2025_09_29\IMG_3713.MOV,27.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0014_Q3_#20_goal_tp.jpg,8_P0014,IMG_3713.MOV,
+157,D:\upload_2025_09_29\IMG_3714.MOV,24.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0015_Q3_#8_goal_t0.jpg,8_P0015,IMG_3714.MOV,
+157,D:\upload_2025_09_29\IMG_3714.MOV,22.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0015_Q3_#8_goal_tm.jpg,8_P0015,IMG_3714.MOV,False
+158,D:\upload_2025_09_29\IMG_3716.MOV,23.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0016_Q3_#20_goal_t0.jpg,8_P0016,IMG_3716.MOV,
+158,D:\upload_2025_09_29\IMG_3716.MOV,21.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0016_Q3_#20_goal_tm.jpg,8_P0016,IMG_3716.MOV,False
+159,D:\upload_2025_09_29\IMG_3717.MOV,54.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0017_Q3_#5_missed_t0.jpg,8_P0017,IMG_3717.MOV,
+159,D:\upload_2025_09_29\IMG_3717.MOV,52.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0017_Q3_#5_missed_tm.jpg,8_P0017,IMG_3717.MOV,False
+160,D:\upload_2025_09_29\IMG_3719.MOV,27.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0018_Q3_#5_goal_t0.jpg,8_P0018,IMG_3719.MOV,
+160,D:\upload_2025_09_29\IMG_3719.MOV,25.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0018_Q3_#5_goal_tm.jpg,8_P0018,IMG_3719.MOV,False
+161,D:\upload_2025_09_29\IMG_3726.MOV,12.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0019_Q4_#16_missed_t0.jpg,8_P0019,IMG_3726.MOV,
+161,D:\upload_2025_09_29\IMG_3726.MOV,10.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0019_Q4_#16_missed_tm.jpg,8_P0019,IMG_3726.MOV,False
+162,D:\upload_2025_09_29\IMG_3730.MOV,3.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0020_Q4_#15_goal_t0.jpg,8_P0020,IMG_3730.MOV,
+162,D:\upload_2025_09_29\IMG_3730.MOV,1.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0020_Q4_#15_goal_tm.jpg,8_P0020,IMG_3730.MOV,False
+163,D:\upload_2025_09_29\IMG_3731.MOV,31.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0021_Q4_#13_goal_t0.jpg,8_P0021,IMG_3731.MOV,
+163,D:\upload_2025_09_29\IMG_3731.MOV,29.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0021_Q4_#13_goal_tm.jpg,8_P0021,IMG_3731.MOV,False
+163,D:\upload_2025_09_29\IMG_3731.MOV,33.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0021_Q4_#13_goal_tp.jpg,8_P0021,IMG_3731.MOV,
+164,D:\upload_2025_09_29\IMG_3733.MOV,13.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0022_Q4_#10_post\bar_t0.jpg,8_P0022,IMG_3733.MOV,
+164,D:\upload_2025_09_29\IMG_3733.MOV,11.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0022_Q4_#10_post\bar_tm.jpg,8_P0022,IMG_3733.MOV,False
+165,D:\upload_2025_09_29\IMG_3734.MOV,44.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0023_Q4_#8_post\bar_t0.jpg,8_P0023,IMG_3734.MOV,
+165,D:\upload_2025_09_29\IMG_3734.MOV,42.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0023_Q4_#8_post\bar_tm.jpg,8_P0023,IMG_3734.MOV,False
+165,D:\upload_2025_09_29\IMG_3734.MOV,46.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\8_8_P0023_Q4_#8_post\bar_tp.jpg,8_P0023,IMG_3734.MOV,
+101,D:\upload_2025_09_29\IMG_4559.MOV,52.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0001_Q1_#14_blocked (GK)_t0.jpg,6_P0001,IMG_4559.MOV,
+101,D:\upload_2025_09_29\IMG_4559.MOV,50.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0001_Q1_#14_blocked (GK)_tm.jpg,6_P0001,IMG_4559.MOV,False
+101,D:\upload_2025_09_29\IMG_4559.MOV,54.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0001_Q1_#14_blocked (GK)_tp.jpg,6_P0001,IMG_4559.MOV,
+102,D:\upload_2025_09_29\IMG_4561.MOV,54.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0003_Qnan_#8_blocked (GK)_t0.jpg,6_P0003,IMG_4561.MOV,
+102,D:\upload_2025_09_29\IMG_4561.MOV,52.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0003_Qnan_#8_blocked (GK)_tm.jpg,6_P0003,IMG_4561.MOV,False
+102,D:\upload_2025_09_29\IMG_4561.MOV,56.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0003_Qnan_#8_blocked (GK)_tp.jpg,6_P0003,IMG_4561.MOV,
+103,D:\upload_2025_09_29\IMG_4564.MOV,50.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0004_Qnan_#8_goal_t0.jpg,6_P0004,IMG_4564.MOV,
+103,D:\upload_2025_09_29\IMG_4564.MOV,48.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0004_Qnan_#8_goal_tm.jpg,6_P0004,IMG_4564.MOV,False
+104,D:\upload_2025_09_29\IMG_4566.MOV,34.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0005_Qnan_#8_blocked (GK)_t0.jpg,6_P0005,IMG_4566.MOV,
+104,D:\upload_2025_09_29\IMG_4566.MOV,32.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0005_Qnan_#8_blocked (GK)_tm.jpg,6_P0005,IMG_4566.MOV,False
+104,D:\upload_2025_09_29\IMG_4566.MOV,36.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0005_Qnan_#8_blocked (GK)_tp.jpg,6_P0005,IMG_4566.MOV,
+105,D:\upload_2025_09_29\IMG_4567.MOV,35.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0006_Qnan_#8_post\bar_t0.jpg,6_P0006,IMG_4567.MOV,
+105,D:\upload_2025_09_29\IMG_4567.MOV,33.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0006_Qnan_#8_post\bar_tm.jpg,6_P0006,IMG_4567.MOV,False
+105,D:\upload_2025_09_29\IMG_4567.MOV,37.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0006_Qnan_#8_post\bar_tp.jpg,6_P0006,IMG_4567.MOV,
+106,D:\upload_2025_09_29\IMG_4567.MOV,35.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0006_Qnan_#8_post\bar_t0.jpg,6_P0006,IMG_4567.MOV,
+106,D:\upload_2025_09_29\IMG_4567.MOV,33.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0006_Qnan_#8_post\bar_tm.jpg,6_P0006,IMG_4567.MOV,False
+106,D:\upload_2025_09_29\IMG_4567.MOV,37.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0006_Qnan_#8_post\bar_tp.jpg,6_P0006,IMG_4567.MOV,
+107,D:\upload_2025_09_29\IMG_4571.MOV,36.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0009_Qnan_#10_goal_t0.jpg,6_P0009,IMG_4571.MOV,
+107,D:\upload_2025_09_29\IMG_4571.MOV,34.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0009_Qnan_#10_goal_tm.jpg,6_P0009,IMG_4571.MOV,False
+107,D:\upload_2025_09_29\IMG_4571.MOV,38.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0009_Qnan_#10_goal_tp.jpg,6_P0009,IMG_4571.MOV,
+108,D:\upload_2025_09_29\IMG_4572.MOV,55.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0010_Qnan_#15_blocked (GK)_t0.jpg,6_P0010,IMG_4572.MOV,
+108,D:\upload_2025_09_29\IMG_4572.MOV,53.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0010_Qnan_#15_blocked (GK)_tm.jpg,6_P0010,IMG_4572.MOV,False
+108,D:\upload_2025_09_29\IMG_4572.MOV,57.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0010_Qnan_#15_blocked (GK)_tp.jpg,6_P0010,IMG_4572.MOV,
+109,D:\upload_2025_09_29\IMG_4581.MOV,30.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0013_Qnan_#11_goal_t0.jpg,6_P0013,IMG_4581.MOV,
+109,D:\upload_2025_09_29\IMG_4581.MOV,28.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0013_Qnan_#11_goal_tm.jpg,6_P0013,IMG_4581.MOV,False
+110,D:\upload_2025_09_29\IMG_4587.MOV,22.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0016_Qnan_#12_blocked (GK)_t0.jpg,6_P0016,IMG_4587.MOV,
+110,D:\upload_2025_09_29\IMG_4587.MOV,20.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0016_Qnan_#12_blocked (GK)_tm.jpg,6_P0016,IMG_4587.MOV,False
+110,D:\upload_2025_09_29\IMG_4587.MOV,24.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0016_Qnan_#12_blocked (GK)_tp.jpg,6_P0016,IMG_4587.MOV,
+111,D:\upload_2025_09_29\IMG_4587.MOV,22.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0016_Qnan_#12_blocked (GK)_t0.jpg,6_P0016,IMG_4587.MOV,
+111,D:\upload_2025_09_29\IMG_4587.MOV,20.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0016_Qnan_#12_blocked (GK)_tm.jpg,6_P0016,IMG_4587.MOV,False
+111,D:\upload_2025_09_29\IMG_4587.MOV,24.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0016_Qnan_#12_blocked (GK)_tp.jpg,6_P0016,IMG_4587.MOV,
+112,D:\upload_2025_09_29\IMG_4588.MOV,33.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0018_Qnan_#10_missed_t0.jpg,6_P0018,IMG_4588.MOV,
+112,D:\upload_2025_09_29\IMG_4588.MOV,31.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0018_Qnan_#10_missed_tm.jpg,6_P0018,IMG_4588.MOV,False
+112,D:\upload_2025_09_29\IMG_4588.MOV,35.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0018_Qnan_#10_missed_tp.jpg,6_P0018,IMG_4588.MOV,
+113,D:\upload_2025_09_29\IMG_4590.MOV,5.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0019_Qnan_#11_goal_t0.jpg,6_P0019,IMG_4590.MOV,
+113,D:\upload_2025_09_29\IMG_4590.MOV,3.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0019_Qnan_#11_goal_tm.jpg,6_P0019,IMG_4590.MOV,False
+114,D:\upload_2025_09_29\IMG_4592.MOV,21.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0020_Qnan_#11_post\bar_t0.jpg,6_P0020,IMG_4592.MOV,
+114,D:\upload_2025_09_29\IMG_4592.MOV,19.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0020_Qnan_#11_post\bar_tm.jpg,6_P0020,IMG_4592.MOV,False
+114,D:\upload_2025_09_29\IMG_4592.MOV,23.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0020_Qnan_#11_post\bar_tp.jpg,6_P0020,IMG_4592.MOV,
+115,D:\upload_2025_09_29\IMG_4594.MOV,11.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0021_Qnan_#11_blocked (GK)_t0.jpg,6_P0021,IMG_4594.MOV,
+115,D:\upload_2025_09_29\IMG_4594.MOV,9.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0021_Qnan_#11_blocked (GK)_tm.jpg,6_P0021,IMG_4594.MOV,False
+116,D:\upload_2025_09_29\IMG_4600.MOV,18.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0024_Qnan_#10_missed_t0.jpg,6_P0024,IMG_4600.MOV,
+116,D:\upload_2025_09_29\IMG_4600.MOV,16.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0024_Qnan_#10_missed_tm.jpg,6_P0024,IMG_4600.MOV,False
+117,D:\upload_2025_09_29\IMG_4611.MOV,23.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0025_Qnan_#15_blocked (GK)_t0.jpg,6_P0025,IMG_4611.MOV,
+117,D:\upload_2025_09_29\IMG_4611.MOV,21.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0025_Qnan_#15_blocked (GK)_tm.jpg,6_P0025,IMG_4611.MOV,False
+117,D:\upload_2025_09_29\IMG_4611.MOV,25.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\6_6_P0025_Qnan_#15_blocked (GK)_tp.jpg,6_P0025,IMG_4611.MOV,
+173,D:\upload_2025_09_29\IMG_5045.MOV,16.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0001_Qnan_#19_post\bar_t0.jpg,10_P0001,IMG_5045.MOV,
+173,D:\upload_2025_09_29\IMG_5045.MOV,14.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0001_Qnan_#19_post\bar_tm.jpg,10_P0001,IMG_5045.MOV,False
+173,D:\upload_2025_09_29\IMG_5045.MOV,18.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0001_Qnan_#19_post\bar_tp.jpg,10_P0001,IMG_5045.MOV,
+174,D:\upload_2025_09_29\IMG_5045.MOV,16.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0001_Qnan_#19_post\bar_t0.jpg,10_P0001,IMG_5045.MOV,
+174,D:\upload_2025_09_29\IMG_5045.MOV,14.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0001_Qnan_#19_post\bar_tm.jpg,10_P0001,IMG_5045.MOV,False
+174,D:\upload_2025_09_29\IMG_5045.MOV,18.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0001_Qnan_#19_post\bar_tp.jpg,10_P0001,IMG_5045.MOV,
+175,D:\upload_2025_09_29\IMG_5045.MOV,27.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0002_Qnan_#5_goal_t0.jpg,10_P0002,IMG_5045.MOV,
+175,D:\upload_2025_09_29\IMG_5045.MOV,25.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0002_Qnan_#5_goal_tm.jpg,10_P0002,IMG_5045.MOV,False
+175,D:\upload_2025_09_29\IMG_5045.MOV,29.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0002_Qnan_#5_goal_tp.jpg,10_P0002,IMG_5045.MOV,
+176,D:\upload_2025_09_29\IMG_5045.MOV,27.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0002_Qnan_#5_goal_t0.jpg,10_P0002,IMG_5045.MOV,
+176,D:\upload_2025_09_29\IMG_5045.MOV,25.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0002_Qnan_#5_goal_tm.jpg,10_P0002,IMG_5045.MOV,False
+176,D:\upload_2025_09_29\IMG_5045.MOV,29.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0002_Qnan_#5_goal_tp.jpg,10_P0002,IMG_5045.MOV,
+177,D:\upload_2025_09_29\IMG_5047.MOV,11.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0003_Qnan_#11_goal_t0.jpg,10_P0003,IMG_5047.MOV,
+177,D:\upload_2025_09_29\IMG_5047.MOV,9.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0003_Qnan_#11_goal_tm.jpg,10_P0003,IMG_5047.MOV,False
+177,D:\upload_2025_09_29\IMG_5047.MOV,13.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0003_Qnan_#11_goal_tp.jpg,10_P0003,IMG_5047.MOV,
+178,D:\upload_2025_09_29\IMG_5053.MOV,4.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0004_Qnan_#10_goal_t0.jpg,10_P0004,IMG_5053.MOV,
+178,D:\upload_2025_09_29\IMG_5053.MOV,2.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0004_Qnan_#10_goal_tm.jpg,10_P0004,IMG_5053.MOV,False
+179,D:\upload_2025_09_29\IMG_5056.MOV,21.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0005_Qnan_#11_goal_t0.jpg,10_P0005,IMG_5056.MOV,
+179,D:\upload_2025_09_29\IMG_5056.MOV,19.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0005_Qnan_#11_goal_tm.jpg,10_P0005,IMG_5056.MOV,False
+180,D:\upload_2025_09_29\IMG_5057.MOV,23.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0006_Qnan_#11_blocked (GK)_t0.jpg,10_P0006,IMG_5057.MOV,
+180,D:\upload_2025_09_29\IMG_5057.MOV,21.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0006_Qnan_#11_blocked (GK)_tm.jpg,10_P0006,IMG_5057.MOV,False
+180,D:\upload_2025_09_29\IMG_5057.MOV,25.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0006_Qnan_#11_blocked (GK)_tp.jpg,10_P0006,IMG_5057.MOV,
+181,D:\upload_2025_09_29\IMG_5059.MOV,33.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0007_Qnan_#8_goal_t0.jpg,10_P0007,IMG_5059.MOV,
+181,D:\upload_2025_09_29\IMG_5059.MOV,31.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0007_Qnan_#8_goal_tm.jpg,10_P0007,IMG_5059.MOV,False
+182,D:\upload_2025_09_29\IMG_5060.MOV,32.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0008_Qnan_#11_goal_t0.jpg,10_P0008,IMG_5060.MOV,
+182,D:\upload_2025_09_29\IMG_5060.MOV,30.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0008_Qnan_#11_goal_tm.jpg,10_P0008,IMG_5060.MOV,False
+183,D:\upload_2025_09_29\IMG_5063.MOV,34.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0009_Qnan_#5_post\bar_t0.jpg,10_P0009,IMG_5063.MOV,
+183,D:\upload_2025_09_29\IMG_5063.MOV,32.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0009_Qnan_#5_post\bar_tm.jpg,10_P0009,IMG_5063.MOV,False
+183,D:\upload_2025_09_29\IMG_5063.MOV,36.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0009_Qnan_#5_post\bar_tp.jpg,10_P0009,IMG_5063.MOV,
+184,D:\upload_2025_09_29\IMG_5063.MOV,34.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0009_Qnan_#5_post\bar_t0.jpg,10_P0009,IMG_5063.MOV,
+184,D:\upload_2025_09_29\IMG_5063.MOV,32.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0009_Qnan_#5_post\bar_tm.jpg,10_P0009,IMG_5063.MOV,False
+184,D:\upload_2025_09_29\IMG_5063.MOV,36.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0009_Qnan_#5_post\bar_tp.jpg,10_P0009,IMG_5063.MOV,
+185,D:\upload_2025_09_29\IMG_5063.MOV,39.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0010_Qnan_#10_goal_t0.jpg,10_P0010,IMG_5063.MOV,
+185,D:\upload_2025_09_29\IMG_5063.MOV,37.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0010_Qnan_#10_goal_tm.jpg,10_P0010,IMG_5063.MOV,False
+186,D:\upload_2025_09_29\IMG_5063.MOV,39.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0010_Qnan_#10_goal_t0.jpg,10_P0010,IMG_5063.MOV,
+186,D:\upload_2025_09_29\IMG_5063.MOV,37.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0010_Qnan_#10_goal_tm.jpg,10_P0010,IMG_5063.MOV,False
+187,D:\upload_2025_09_29\IMG_5065.MOV,31.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0011_Qnan_#9_post\bar_t0.jpg,10_P0011,IMG_5065.MOV,
+187,D:\upload_2025_09_29\IMG_5065.MOV,29.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0011_Qnan_#9_post\bar_tm.jpg,10_P0011,IMG_5065.MOV,False
+187,D:\upload_2025_09_29\IMG_5065.MOV,33.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0011_Qnan_#9_post\bar_tp.jpg,10_P0011,IMG_5065.MOV,
+188,D:\upload_2025_09_29\IMG_5066.MOV,1.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0012_Qnan_#8_blocked (GK)_t0.jpg,10_P0012,IMG_5066.MOV,
+188,D:\upload_2025_09_29\IMG_5066.MOV,0.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0012_Qnan_#8_blocked (GK)_tm.jpg,10_P0012,IMG_5066.MOV,True
+189,D:\upload_2025_09_29\IMG_5069.MOV,15.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0013_Qnan_#10_goal_t0.jpg,10_P0013,IMG_5069.MOV,
+189,D:\upload_2025_09_29\IMG_5069.MOV,13.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0013_Qnan_#10_goal_tm.jpg,10_P0013,IMG_5069.MOV,False
+190,D:\upload_2025_09_29\IMG_5071.MOV,27.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0014_Qnan_#8_goal_t0.jpg,10_P0014,IMG_5071.MOV,
+190,D:\upload_2025_09_29\IMG_5071.MOV,25.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0014_Qnan_#8_goal_tm.jpg,10_P0014,IMG_5071.MOV,False
+191,D:\upload_2025_09_29\IMG_5074.MOV,56.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0015_Qnan_#12_missed_t0.jpg,10_P0015,IMG_5074.MOV,
+191,D:\upload_2025_09_29\IMG_5074.MOV,54.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0015_Qnan_#12_missed_tm.jpg,10_P0015,IMG_5074.MOV,False
+192,D:\upload_2025_09_29\IMG_5078.MOV,37.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0016_Qnan_#9_field block_t0.jpg,10_P0016,IMG_5078.MOV,
+192,D:\upload_2025_09_29\IMG_5078.MOV,35.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0016_Qnan_#9_field block_tm.jpg,10_P0016,IMG_5078.MOV,False
+192,D:\upload_2025_09_29\IMG_5078.MOV,39.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0016_Qnan_#9_field block_tp.jpg,10_P0016,IMG_5078.MOV,
+193,D:\upload_2025_09_29\IMG_5081.MOV,34.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0017_Qnan_#11_field block_t0.jpg,10_P0017,IMG_5081.MOV,
+193,D:\upload_2025_09_29\IMG_5081.MOV,32.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0017_Qnan_#11_field block_tm.jpg,10_P0017,IMG_5081.MOV,False
+194,D:\upload_2025_09_29\IMG_5083.MOV,7.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0018_Qnan_#5_goal_t0.jpg,10_P0018,IMG_5083.MOV,
+194,D:\upload_2025_09_29\IMG_5083.MOV,5.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0018_Qnan_#5_goal_tm.jpg,10_P0018,IMG_5083.MOV,False
+195,D:\upload_2025_09_29\IMG_5086.MOV,4.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0019_Qnan_#11_goal_t0.jpg,10_P0019,IMG_5086.MOV,
+195,D:\upload_2025_09_29\IMG_5086.MOV,2.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0019_Qnan_#11_goal_tm.jpg,10_P0019,IMG_5086.MOV,False
+196,D:\upload_2025_09_29\IMG_5088.MOV,30.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0020_Qnan_#9_goal_t0.jpg,10_P0020,IMG_5088.MOV,
+196,D:\upload_2025_09_29\IMG_5088.MOV,28.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0020_Qnan_#9_goal_tm.jpg,10_P0020,IMG_5088.MOV,False
+196,D:\upload_2025_09_29\IMG_5088.MOV,32.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0020_Qnan_#9_goal_tp.jpg,10_P0020,IMG_5088.MOV,
+197,D:\upload_2025_09_29\IMG_5091.MOV,2.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0021_Qnan_#10_goal_t0.jpg,10_P0021,IMG_5091.MOV,
+197,D:\upload_2025_09_29\IMG_5091.MOV,0.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0021_Qnan_#10_goal_tm.jpg,10_P0021,IMG_5091.MOV,False
+198,D:\upload_2025_09_29\IMG_5094.MOV,18.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0022_Qnan_#15_goal_t0.jpg,10_P0022,IMG_5094.MOV,
+198,D:\upload_2025_09_29\IMG_5094.MOV,16.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0022_Qnan_#15_goal_tm.jpg,10_P0022,IMG_5094.MOV,False
+198,D:\upload_2025_09_29\IMG_5094.MOV,20.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0022_Qnan_#15_goal_tp.jpg,10_P0022,IMG_5094.MOV,
+199,D:\upload_2025_09_29\IMG_5100.MOV,11.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0023_Qnan_#11_blocked (GK)_t0.jpg,10_P0023,IMG_5100.MOV,
+199,D:\upload_2025_09_29\IMG_5100.MOV,9.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0023_Qnan_#11_blocked (GK)_tm.jpg,10_P0023,IMG_5100.MOV,False
+199,D:\upload_2025_09_29\IMG_5100.MOV,13.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0023_Qnan_#11_blocked (GK)_tp.jpg,10_P0023,IMG_5100.MOV,
+200,D:\upload_2025_09_29\IMG_5103.MOV,1.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0024_Qnan_#10_blocked (GK)_t0.jpg,10_P0024,IMG_5103.MOV,
+200,D:\upload_2025_09_29\IMG_5103.MOV,0.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0024_Qnan_#10_blocked (GK)_tm.jpg,10_P0024,IMG_5103.MOV,True
+201,D:\upload_2025_09_29\IMG_5107.MOV,20.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0025_Qnan_#12_post\bar_t0.jpg,10_P0025,IMG_5107.MOV,
+201,D:\upload_2025_09_29\IMG_5107.MOV,18.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0025_Qnan_#12_post\bar_tm.jpg,10_P0025,IMG_5107.MOV,False
+201,D:\upload_2025_09_29\IMG_5107.MOV,22.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0025_Qnan_#12_post\bar_tp.jpg,10_P0025,IMG_5107.MOV,
+202,D:\upload_2025_09_29\IMG_5111.MOV,13.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0026_Qnan_#9_goal_t0.jpg,10_P0026,IMG_5111.MOV,
+202,D:\upload_2025_09_29\IMG_5111.MOV,11.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0026_Qnan_#9_goal_tm.jpg,10_P0026,IMG_5111.MOV,False
+203,D:\upload_2025_09_29\IMG_5113.MOV,20.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0027_Qnan_#12_goal_t0.jpg,10_P0027,IMG_5113.MOV,
+203,D:\upload_2025_09_29\IMG_5113.MOV,18.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0027_Qnan_#12_goal_tm.jpg,10_P0027,IMG_5113.MOV,False
+203,D:\upload_2025_09_29\IMG_5113.MOV,22.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\10_10_P0027_Qnan_#12_goal_tp.jpg,10_P0027,IMG_5113.MOV,
+118,D:\upload_2025_09_29\IMG_5620.MOV,33.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0003_Qnan_#3_goal_t0.jpg,7_P0003,IMG_5620.MOV,
+118,D:\upload_2025_09_29\IMG_5620.MOV,31.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0003_Qnan_#3_goal_tm.jpg,7_P0003,IMG_5620.MOV,False
+119,D:\upload_2025_09_29\IMG_5622.MOV,21.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0004_Qnan_#11_post\bar_t0.jpg,7_P0004,IMG_5622.MOV,
+119,D:\upload_2025_09_29\IMG_5622.MOV,19.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0004_Qnan_#11_post\bar_tm.jpg,7_P0004,IMG_5622.MOV,False
+120,D:\upload_2025_09_29\IMG_5634.MOV,45.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0008_Qnan_#2_blocked (GK)_t0.jpg,7_P0008,IMG_5634.MOV,
+120,D:\upload_2025_09_29\IMG_5634.MOV,43.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0008_Qnan_#2_blocked (GK)_tm.jpg,7_P0008,IMG_5634.MOV,False
+120,D:\upload_2025_09_29\IMG_5634.MOV,47.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0008_Qnan_#2_blocked (GK)_tp.jpg,7_P0008,IMG_5634.MOV,
+121,D:\upload_2025_09_29\IMG_5635.MOV,26.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0009_Qnan_#6_goal_t0.jpg,7_P0009,IMG_5635.MOV,
+121,D:\upload_2025_09_29\IMG_5635.MOV,24.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0009_Qnan_#6_goal_tm.jpg,7_P0009,IMG_5635.MOV,False
+122,D:\upload_2025_09_29\IMG_5645.MOV,29.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0013_Qnan_#8_missed_t0.jpg,7_P0013,IMG_5645.MOV,
+122,D:\upload_2025_09_29\IMG_5645.MOV,27.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0013_Qnan_#8_missed_tm.jpg,7_P0013,IMG_5645.MOV,False
+122,D:\upload_2025_09_29\IMG_5645.MOV,31.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0013_Qnan_#8_missed_tp.jpg,7_P0013,IMG_5645.MOV,
+123,D:\upload_2025_09_29\IMG_5652.MOV,13.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0014_Qnan_#2_blocked (GK)_t0.jpg,7_P0014,IMG_5652.MOV,
+123,D:\upload_2025_09_29\IMG_5652.MOV,11.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0014_Qnan_#2_blocked (GK)_tm.jpg,7_P0014,IMG_5652.MOV,False
+123,D:\upload_2025_09_29\IMG_5652.MOV,15.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0014_Qnan_#2_blocked (GK)_tp.jpg,7_P0014,IMG_5652.MOV,
+124,D:\upload_2025_09_29\IMG_5652.MOV,13.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0014_Qnan_#2_blocked (GK)_t0.jpg,7_P0014,IMG_5652.MOV,
+124,D:\upload_2025_09_29\IMG_5652.MOV,11.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0014_Qnan_#2_blocked (GK)_tm.jpg,7_P0014,IMG_5652.MOV,False
+124,D:\upload_2025_09_29\IMG_5652.MOV,15.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0014_Qnan_#2_blocked (GK)_tp.jpg,7_P0014,IMG_5652.MOV,
+125,D:\upload_2025_09_29\IMG_5652.MOV,45.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0015_Qnan_#2_blocked (GK)_t0.jpg,7_P0015,IMG_5652.MOV,
+125,D:\upload_2025_09_29\IMG_5652.MOV,43.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0015_Qnan_#2_blocked (GK)_tm.jpg,7_P0015,IMG_5652.MOV,False
+125,D:\upload_2025_09_29\IMG_5652.MOV,47.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0015_Qnan_#2_blocked (GK)_tp.jpg,7_P0015,IMG_5652.MOV,
+126,D:\upload_2025_09_29\IMG_5652.MOV,45.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0015_Qnan_#2_blocked (GK)_t0.jpg,7_P0015,IMG_5652.MOV,
+126,D:\upload_2025_09_29\IMG_5652.MOV,43.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0015_Qnan_#2_blocked (GK)_tm.jpg,7_P0015,IMG_5652.MOV,False
+126,D:\upload_2025_09_29\IMG_5652.MOV,47.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0015_Qnan_#2_blocked (GK)_tp.jpg,7_P0015,IMG_5652.MOV,
+127,D:\upload_2025_09_29\IMG_5656.MOV,17.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0016_Qnan_#3_missed_t0.jpg,7_P0016,IMG_5656.MOV,
+127,D:\upload_2025_09_29\IMG_5656.MOV,15.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0016_Qnan_#3_missed_tm.jpg,7_P0016,IMG_5656.MOV,False
+127,D:\upload_2025_09_29\IMG_5656.MOV,19.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0016_Qnan_#3_missed_tp.jpg,7_P0016,IMG_5656.MOV,
+128,D:\upload_2025_09_29\IMG_5658.MOV,23.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0017_Qnan_#10_goal_t0.jpg,7_P0017,IMG_5658.MOV,
+128,D:\upload_2025_09_29\IMG_5658.MOV,21.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0017_Qnan_#10_goal_tm.jpg,7_P0017,IMG_5658.MOV,False
+128,D:\upload_2025_09_29\IMG_5658.MOV,25.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0017_Qnan_#10_goal_tp.jpg,7_P0017,IMG_5658.MOV,
+129,D:\upload_2025_09_29\IMG_5660.MOV,5.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0019_Qnan_#10_goal_t0.jpg,7_P0019,IMG_5660.MOV,
+129,D:\upload_2025_09_29\IMG_5660.MOV,3.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0019_Qnan_#10_goal_tm.jpg,7_P0019,IMG_5660.MOV,False
+130,D:\upload_2025_09_29\IMG_5662.MOV,34.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0021_Qnan_#11_goal_t0.jpg,7_P0021,IMG_5662.MOV,
+130,D:\upload_2025_09_29\IMG_5662.MOV,32.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0021_Qnan_#11_goal_tm.jpg,7_P0021,IMG_5662.MOV,False
+130,D:\upload_2025_09_29\IMG_5662.MOV,36.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0021_Qnan_#11_goal_tp.jpg,7_P0021,IMG_5662.MOV,
+131,D:\upload_2025_09_29\IMG_5662.MOV,34.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0021_Qnan_#11_goal_t0.jpg,7_P0021,IMG_5662.MOV,
+131,D:\upload_2025_09_29\IMG_5662.MOV,32.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0021_Qnan_#11_goal_tm.jpg,7_P0021,IMG_5662.MOV,False
+131,D:\upload_2025_09_29\IMG_5662.MOV,36.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0021_Qnan_#11_goal_tp.jpg,7_P0021,IMG_5662.MOV,
+132,D:\upload_2025_09_29\IMG_5667.MOV,13.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0022_Qnan_#10_goal_t0.jpg,7_P0022,IMG_5667.MOV,
+132,D:\upload_2025_09_29\IMG_5667.MOV,11.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0022_Qnan_#10_goal_tm.jpg,7_P0022,IMG_5667.MOV,False
+133,D:\upload_2025_09_29\IMG_5669.MOV,24.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0023_Qnan_#10_goal_t0.jpg,7_P0023,IMG_5669.MOV,
+133,D:\upload_2025_09_29\IMG_5669.MOV,22.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0023_Qnan_#10_goal_tm.jpg,7_P0023,IMG_5669.MOV,False
+133,D:\upload_2025_09_29\IMG_5669.MOV,26.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0023_Qnan_#10_goal_tp.jpg,7_P0023,IMG_5669.MOV,
+134,D:\upload_2025_09_29\IMG_5671.MOV,26.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0024_Qnan_#11_post\bar_t0.jpg,7_P0024,IMG_5671.MOV,
+134,D:\upload_2025_09_29\IMG_5671.MOV,24.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0024_Qnan_#11_post\bar_tm.jpg,7_P0024,IMG_5671.MOV,False
+134,D:\upload_2025_09_29\IMG_5671.MOV,28.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0024_Qnan_#11_post\bar_tp.jpg,7_P0024,IMG_5671.MOV,
+135,D:\upload_2025_09_29\IMG_5673.MOV,26.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0025_Qnan_#10_goal_t0.jpg,7_P0025,IMG_5673.MOV,
+135,D:\upload_2025_09_29\IMG_5673.MOV,24.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0025_Qnan_#10_goal_tm.jpg,7_P0025,IMG_5673.MOV,False
+135,D:\upload_2025_09_29\IMG_5673.MOV,28.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0025_Qnan_#10_goal_tp.jpg,7_P0025,IMG_5673.MOV,
+136,D:\upload_2025_09_29\IMG_5675.MOV,24.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0026_Qnan_#2_blocked (GK)_t0.jpg,7_P0026,IMG_5675.MOV,
+136,D:\upload_2025_09_29\IMG_5675.MOV,22.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0026_Qnan_#2_blocked (GK)_tm.jpg,7_P0026,IMG_5675.MOV,False
+136,D:\upload_2025_09_29\IMG_5675.MOV,26.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0026_Qnan_#2_blocked (GK)_tp.jpg,7_P0026,IMG_5675.MOV,
+137,D:\upload_2025_09_29\IMG_5676.MOV,29.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0027_Qnan_#6_field block_t0.jpg,7_P0027,IMG_5676.MOV,
+137,D:\upload_2025_09_29\IMG_5676.MOV,27.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0027_Qnan_#6_field block_tm.jpg,7_P0027,IMG_5676.MOV,False
+137,D:\upload_2025_09_29\IMG_5676.MOV,31.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0027_Qnan_#6_field block_tp.jpg,7_P0027,IMG_5676.MOV,
+138,D:\upload_2025_09_29\IMG_5678.MOV,4.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0028_Qnan_#2_goal_t0.jpg,7_P0028,IMG_5678.MOV,
+138,D:\upload_2025_09_29\IMG_5678.MOV,2.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0028_Qnan_#2_goal_tm.jpg,7_P0028,IMG_5678.MOV,False
+139,D:\upload_2025_09_29\IMG_5680.MOV,5.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0029_Qnan_#10_blocked (GK)_t0.jpg,7_P0029,IMG_5680.MOV,
+139,D:\upload_2025_09_29\IMG_5680.MOV,3.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0029_Qnan_#10_blocked (GK)_tm.jpg,7_P0029,IMG_5680.MOV,False
+139,D:\upload_2025_09_29\IMG_5680.MOV,7.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0029_Qnan_#10_blocked (GK)_tp.jpg,7_P0029,IMG_5680.MOV,
+140,D:\upload_2025_09_29\IMG_5682.MOV,2.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0030_Qnan_#11_goal_t0.jpg,7_P0030,IMG_5682.MOV,
+140,D:\upload_2025_09_29\IMG_5682.MOV,0.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0030_Qnan_#11_goal_tm.jpg,7_P0030,IMG_5682.MOV,False
+141,D:\upload_2025_09_29\IMG_5684.MOV,9.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0031_Qnan_#7_goal_t0.jpg,7_P0031,IMG_5684.MOV,
+141,D:\upload_2025_09_29\IMG_5684.MOV,7.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0031_Qnan_#7_goal_tm.jpg,7_P0031,IMG_5684.MOV,False
+142,D:\upload_2025_09_29\IMG_5686.MOV,5.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0032_Qnan_#15_goal_t0.jpg,7_P0032,IMG_5686.MOV,
+142,D:\upload_2025_09_29\IMG_5686.MOV,3.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0032_Qnan_#15_goal_tm.jpg,7_P0032,IMG_5686.MOV,False
+142,D:\upload_2025_09_29\IMG_5686.MOV,7.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\7_7_P0032_Qnan_#15_goal_tp.jpg,7_P0032,IMG_5686.MOV,
+27,D:\upload_2025_09_29\IMG_6115.MOV,6.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0002_Q1_#3_goal_t0.jpg,2_P0002,IMG_6115.MOV,
+27,D:\upload_2025_09_29\IMG_6115.MOV,4.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0002_Q1_#3_goal_tm.jpg,2_P0002,IMG_6115.MOV,False
+27,D:\upload_2025_09_29\IMG_6115.MOV,8.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0002_Q1_#3_goal_tp.jpg,2_P0002,IMG_6115.MOV,
+26,D:\upload_2025_09_29\IMG_6117.MOV,7.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0001_Q1_#7_goal_t0.jpg,2_P0001,IMG_6117.MOV,
+26,D:\upload_2025_09_29\IMG_6117.MOV,5.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0001_Q1_#7_goal_tm.jpg,2_P0001,IMG_6117.MOV,False
+26,D:\upload_2025_09_29\IMG_6117.MOV,9.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0001_Q1_#7_goal_tp.jpg,2_P0001,IMG_6117.MOV,
+28,D:\upload_2025_09_29\IMG_6119.MOV,8.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0003_Q1_#3_missed_t0.jpg,2_P0003,IMG_6119.MOV,
+28,D:\upload_2025_09_29\IMG_6119.MOV,6.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0003_Q1_#3_missed_tm.jpg,2_P0003,IMG_6119.MOV,False
+28,D:\upload_2025_09_29\IMG_6119.MOV,10.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0003_Q1_#3_missed_tp.jpg,2_P0003,IMG_6119.MOV,
+29,D:\upload_2025_09_29\IMG_6123.MOV,5.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0004_Q1_#4_goal_t0.jpg,2_P0004,IMG_6123.MOV,
+29,D:\upload_2025_09_29\IMG_6123.MOV,3.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0004_Q1_#4_goal_tm.jpg,2_P0004,IMG_6123.MOV,False
+29,D:\upload_2025_09_29\IMG_6123.MOV,7.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0004_Q1_#4_goal_tp.jpg,2_P0004,IMG_6123.MOV,
+30,D:\upload_2025_09_29\IMG_6125.MOV,43.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0005_Q1_#4_blocked (GK)_t0.jpg,2_P0005,IMG_6125.MOV,
+30,D:\upload_2025_09_29\IMG_6125.MOV,41.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0005_Q1_#4_blocked (GK)_tm.jpg,2_P0005,IMG_6125.MOV,False
+30,D:\upload_2025_09_29\IMG_6125.MOV,45.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0005_Q1_#4_blocked (GK)_tp.jpg,2_P0005,IMG_6125.MOV,
+31,D:\upload_2025_09_29\IMG_6127.MOV,6.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0006_Q1_#7_goal_t0.jpg,2_P0006,IMG_6127.MOV,
+31,D:\upload_2025_09_29\IMG_6127.MOV,4.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0006_Q1_#7_goal_tm.jpg,2_P0006,IMG_6127.MOV,False
+32,D:\upload_2025_09_29\IMG_6128.MOV,22.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0007_Q2_#6_blocked (GK)_t0.jpg,2_P0007,IMG_6128.MOV,
+32,D:\upload_2025_09_29\IMG_6128.MOV,20.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0007_Q2_#6_blocked (GK)_tm.jpg,2_P0007,IMG_6128.MOV,False
+32,D:\upload_2025_09_29\IMG_6128.MOV,24.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0007_Q2_#6_blocked (GK)_tp.jpg,2_P0007,IMG_6128.MOV,
+33,D:\upload_2025_09_29\IMG_6128.MOV,22.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0007_Q2_#6_blocked (GK)_t0.jpg,2_P0007,IMG_6128.MOV,
+33,D:\upload_2025_09_29\IMG_6128.MOV,20.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0007_Q2_#6_blocked (GK)_tm.jpg,2_P0007,IMG_6128.MOV,False
+33,D:\upload_2025_09_29\IMG_6128.MOV,24.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0007_Q2_#6_blocked (GK)_tp.jpg,2_P0007,IMG_6128.MOV,
+34,D:\upload_2025_09_29\IMG_6130.MOV,35.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0009_Q2_#6_goal_t0.jpg,2_P0009,IMG_6130.MOV,
+34,D:\upload_2025_09_29\IMG_6130.MOV,33.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0009_Q2_#6_goal_tm.jpg,2_P0009,IMG_6130.MOV,False
+34,D:\upload_2025_09_29\IMG_6130.MOV,37.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0009_Q2_#6_goal_tp.jpg,2_P0009,IMG_6130.MOV,
+35,D:\upload_2025_09_29\IMG_6132.MOV,5.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0010_Q2_#3_goal_t0.jpg,2_P0010,IMG_6132.MOV,
+35,D:\upload_2025_09_29\IMG_6132.MOV,3.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0010_Q2_#3_goal_tm.jpg,2_P0010,IMG_6132.MOV,False
+35,D:\upload_2025_09_29\IMG_6132.MOV,7.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0010_Q2_#3_goal_tp.jpg,2_P0010,IMG_6132.MOV,
+36,D:\upload_2025_09_29\IMG_6136.MOV,11.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0012_Q2_#7_goal_t0.jpg,2_P0012,IMG_6136.MOV,
+36,D:\upload_2025_09_29\IMG_6136.MOV,9.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0012_Q2_#7_goal_tm.jpg,2_P0012,IMG_6136.MOV,False
+36,D:\upload_2025_09_29\IMG_6136.MOV,13.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0012_Q2_#7_goal_tp.jpg,2_P0012,IMG_6136.MOV,
+37,D:\upload_2025_09_29\IMG_6137.MOV,31.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0013_Q3_#7_missed_t0.jpg,2_P0013,IMG_6137.MOV,
+37,D:\upload_2025_09_29\IMG_6137.MOV,29.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0013_Q3_#7_missed_tm.jpg,2_P0013,IMG_6137.MOV,False
+38,D:\upload_2025_09_29\IMG_6139.MOV,21.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0014_Q3_#5_post\bar_t0.jpg,2_P0014,IMG_6139.MOV,
+38,D:\upload_2025_09_29\IMG_6139.MOV,19.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0014_Q3_#5_post\bar_tm.jpg,2_P0014,IMG_6139.MOV,False
+38,D:\upload_2025_09_29\IMG_6139.MOV,23.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0014_Q3_#5_post\bar_tp.jpg,2_P0014,IMG_6139.MOV,
+39,D:\upload_2025_09_29\IMG_6139.MOV,21.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0014_Q3_#5_post\bar_t0.jpg,2_P0014,IMG_6139.MOV,
+39,D:\upload_2025_09_29\IMG_6139.MOV,19.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0014_Q3_#5_post\bar_tm.jpg,2_P0014,IMG_6139.MOV,False
+39,D:\upload_2025_09_29\IMG_6139.MOV,23.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0014_Q3_#5_post\bar_tp.jpg,2_P0014,IMG_6139.MOV,
+40,D:\upload_2025_09_29\IMG_6141.MOV,20.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0017_Q3_#4_goal_t0.jpg,2_P0017,IMG_6141.MOV,
+40,D:\upload_2025_09_29\IMG_6141.MOV,18.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0017_Q3_#4_goal_tm.jpg,2_P0017,IMG_6141.MOV,False
+41,D:\upload_2025_09_29\IMG_6142.MOV,31.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0018_Q3_#7_goal_t0.jpg,2_P0018,IMG_6142.MOV,
+41,D:\upload_2025_09_29\IMG_6142.MOV,29.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0018_Q3_#7_goal_tm.jpg,2_P0018,IMG_6142.MOV,False
+42,D:\upload_2025_09_29\IMG_6143.MOV,14.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0019_Q4_#12_post\bar_t0.jpg,2_P0019,IMG_6143.MOV,
+42,D:\upload_2025_09_29\IMG_6143.MOV,12.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0019_Q4_#12_post\bar_tm.jpg,2_P0019,IMG_6143.MOV,False
+43,D:\upload_2025_09_29\IMG_6144.MOV,32.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0020_Q4_#3_blocked (GK)_t0.jpg,2_P0020,IMG_6144.MOV,
+43,D:\upload_2025_09_29\IMG_6144.MOV,30.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0020_Q4_#3_blocked (GK)_tm.jpg,2_P0020,IMG_6144.MOV,False
+46,D:\upload_2025_09_29\IMG_6150.MOV,24.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0024_Q4_#4_goal_t0.jpg,2_P0024,IMG_6150.MOV,
+46,D:\upload_2025_09_29\IMG_6150.MOV,22.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_2_P0024_Q4_#4_goal_tm.jpg,2_P0024,IMG_6150.MOV,False
+0,D:\upload_2025_09_29\IMG_6154.MOV,18.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0001_Q1_#7_goal_t0.jpg,1_P0001,IMG_6154.MOV,
+0,D:\upload_2025_09_29\IMG_6154.MOV,16.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0001_Q1_#7_goal_tm.jpg,1_P0001,IMG_6154.MOV,False
+1,D:\upload_2025_09_29\IMG_6155.MOV,39.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0002_Q1_#11_goal_t0.jpg,1_P0002,IMG_6155.MOV,
+1,D:\upload_2025_09_29\IMG_6155.MOV,37.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0002_Q1_#11_goal_tm.jpg,1_P0002,IMG_6155.MOV,False
+2,D:\upload_2025_09_29\IMG_6156.MOV,26.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0003_Q1_#7_post\bar_t0.jpg,1_P0003,IMG_6156.MOV,
+2,D:\upload_2025_09_29\IMG_6156.MOV,24.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0003_Q1_#7_post\bar_tm.jpg,1_P0003,IMG_6156.MOV,False
+2,D:\upload_2025_09_29\IMG_6156.MOV,28.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0003_Q1_#7_post\bar_tp.jpg,1_P0003,IMG_6156.MOV,
+3,D:\upload_2025_09_29\IMG_6162.MOV,31.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0006_Q1_#4_goal_t0.jpg,1_P0006,IMG_6162.MOV,
+3,D:\upload_2025_09_29\IMG_6162.MOV,29.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0006_Q1_#4_goal_tm.jpg,1_P0006,IMG_6162.MOV,False
+3,D:\upload_2025_09_29\IMG_6162.MOV,33.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0006_Q1_#4_goal_tp.jpg,1_P0006,IMG_6162.MOV,
+4,D:\upload_2025_09_29\IMG_6164.MOV,17.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0007_Q1_#4_blocked (GK)_t0.jpg,1_P0007,IMG_6164.MOV,
+4,D:\upload_2025_09_29\IMG_6164.MOV,15.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0007_Q1_#4_blocked (GK)_tm.jpg,1_P0007,IMG_6164.MOV,False
+5,D:\upload_2025_09_29\IMG_6165.MOV,11.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0008_Q1_#4_post\bar_t0.jpg,1_P0008,IMG_6165.MOV,
+5,D:\upload_2025_09_29\IMG_6165.MOV,9.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0008_Q1_#4_post\bar_tm.jpg,1_P0008,IMG_6165.MOV,False
+5,D:\upload_2025_09_29\IMG_6165.MOV,13.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0008_Q1_#4_post\bar_tp.jpg,1_P0008,IMG_6165.MOV,
+6,D:\upload_2025_09_29\IMG_6166.MOV,16.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0009_Q1_#5_missed_t0.jpg,1_P0009,IMG_6166.MOV,
+6,D:\upload_2025_09_29\IMG_6166.MOV,14.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0009_Q1_#5_missed_tm.jpg,1_P0009,IMG_6166.MOV,False
+6,D:\upload_2025_09_29\IMG_6166.MOV,18.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0009_Q1_#5_missed_tp.jpg,1_P0009,IMG_6166.MOV,
+7,D:\upload_2025_09_29\IMG_6169.MOV,24.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0011_Q1_#4_goal_t0.jpg,1_P0011,IMG_6169.MOV,
+7,D:\upload_2025_09_29\IMG_6169.MOV,22.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0011_Q1_#4_goal_tm.jpg,1_P0011,IMG_6169.MOV,False
+8,D:\upload_2025_09_29\IMG_6171.MOV,17.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0012_Q1_#3_goal_t0.jpg,1_P0012,IMG_6171.MOV,
+8,D:\upload_2025_09_29\IMG_6171.MOV,15.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0012_Q1_#3_goal_tm.jpg,1_P0012,IMG_6171.MOV,False
+9,D:\upload_2025_09_29\IMG_6173.MOV,34.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0013_Q2_#7_missed_t0.jpg,1_P0013,IMG_6173.MOV,
+9,D:\upload_2025_09_29\IMG_6173.MOV,32.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0013_Q2_#7_missed_tm.jpg,1_P0013,IMG_6173.MOV,False
+10,D:\upload_2025_09_29\IMG_6175.MOV,16.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0014_Q2_#7_missed_t0.jpg,1_P0014,IMG_6175.MOV,
+10,D:\upload_2025_09_29\IMG_6175.MOV,14.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0014_Q2_#7_missed_tm.jpg,1_P0014,IMG_6175.MOV,False
+11,D:\upload_2025_09_29\IMG_6177.MOV,13.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0015_Q2_#3_missed_t0.jpg,1_P0015,IMG_6177.MOV,
+11,D:\upload_2025_09_29\IMG_6177.MOV,11.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0015_Q2_#3_missed_tm.jpg,1_P0015,IMG_6177.MOV,False
+12,D:\upload_2025_09_29\IMG_6179.MOV,10.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0016_Q2_#4_blocked (GK)_t0.jpg,1_P0016,IMG_6179.MOV,
+12,D:\upload_2025_09_29\IMG_6179.MOV,8.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0016_Q2_#4_blocked (GK)_tm.jpg,1_P0016,IMG_6179.MOV,False
+13,D:\upload_2025_09_29\IMG_6181.MOV,20.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0017_Q2_#3_goal_t0.jpg,1_P0017,IMG_6181.MOV,
+13,D:\upload_2025_09_29\IMG_6181.MOV,18.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0017_Q2_#3_goal_tm.jpg,1_P0017,IMG_6181.MOV,False
+14,D:\upload_2025_09_29\IMG_6183.MOV,26.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0018_Q2_#12_goal_t0.jpg,1_P0018,IMG_6183.MOV,
+14,D:\upload_2025_09_29\IMG_6183.MOV,24.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0018_Q2_#12_goal_tm.jpg,1_P0018,IMG_6183.MOV,False
+14,D:\upload_2025_09_29\IMG_6183.MOV,28.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0018_Q2_#12_goal_tp.jpg,1_P0018,IMG_6183.MOV,
+15,D:\upload_2025_09_29\IMG_6184.MOV,38.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0019_Q2_#14_post\bar_t0.jpg,1_P0019,IMG_6184.MOV,
+15,D:\upload_2025_09_29\IMG_6184.MOV,36.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0019_Q2_#14_post\bar_tm.jpg,1_P0019,IMG_6184.MOV,False
+15,D:\upload_2025_09_29\IMG_6184.MOV,40.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0019_Q2_#14_post\bar_tp.jpg,1_P0019,IMG_6184.MOV,
+16,D:\upload_2025_09_29\IMG_6186.MOV,41.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0020_Q2_#12_blocked (GK)_t0.jpg,1_P0020,IMG_6186.MOV,
+16,D:\upload_2025_09_29\IMG_6186.MOV,39.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0020_Q2_#12_blocked (GK)_tm.jpg,1_P0020,IMG_6186.MOV,False
+17,D:\upload_2025_09_29\IMG_6189.MOV,10.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0021_Q3_#4_field block_t0.jpg,1_P0021,IMG_6189.MOV,
+17,D:\upload_2025_09_29\IMG_6189.MOV,8.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0021_Q3_#4_field block_tm.jpg,1_P0021,IMG_6189.MOV,False
+17,D:\upload_2025_09_29\IMG_6189.MOV,12.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0021_Q3_#4_field block_tp.jpg,1_P0021,IMG_6189.MOV,
+18,D:\upload_2025_09_29\IMG_6190.MOV,15.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0022_Q3_#4_goal_t0.jpg,1_P0022,IMG_6190.MOV,
+18,D:\upload_2025_09_29\IMG_6190.MOV,13.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0022_Q3_#4_goal_tm.jpg,1_P0022,IMG_6190.MOV,False
+19,D:\upload_2025_09_29\IMG_6194.MOV,9.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0023_Q3_#7_blocked (GK)_t0.jpg,1_P0023,IMG_6194.MOV,
+19,D:\upload_2025_09_29\IMG_6194.MOV,7.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0023_Q3_#7_blocked (GK)_tm.jpg,1_P0023,IMG_6194.MOV,False
+19,D:\upload_2025_09_29\IMG_6194.MOV,11.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0023_Q3_#7_blocked (GK)_tp.jpg,1_P0023,IMG_6194.MOV,
+20,D:\upload_2025_09_29\IMG_6196.MOV,6.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0024_Q3_#12_post\bar_t0.jpg,1_P0024,IMG_6196.MOV,
+20,D:\upload_2025_09_29\IMG_6196.MOV,4.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0024_Q3_#12_post\bar_tm.jpg,1_P0024,IMG_6196.MOV,False
+20,D:\upload_2025_09_29\IMG_6196.MOV,8.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0024_Q3_#12_post\bar_tp.jpg,1_P0024,IMG_6196.MOV,
+21,D:\upload_2025_09_29\IMG_6197.MOV,27.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0025_Q3_#3_goal_t0.jpg,1_P0025,IMG_6197.MOV,
+21,D:\upload_2025_09_29\IMG_6197.MOV,25.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0025_Q3_#3_goal_tm.jpg,1_P0025,IMG_6197.MOV,False
+22,D:\upload_2025_09_29\IMG_6200.MOV,5.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0026_Q4_#3_goal_t0.jpg,1_P0026,IMG_6200.MOV,
+22,D:\upload_2025_09_29\IMG_6200.MOV,3.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0026_Q4_#3_goal_tm.jpg,1_P0026,IMG_6200.MOV,False
+22,D:\upload_2025_09_29\IMG_6200.MOV,7.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0026_Q4_#3_goal_tp.jpg,1_P0026,IMG_6200.MOV,
+23,D:\upload_2025_09_29\IMG_6202.MOV,15.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0027_Q4_#3_goal_t0.jpg,1_P0027,IMG_6202.MOV,
+23,D:\upload_2025_09_29\IMG_6202.MOV,13.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0027_Q4_#3_goal_tm.jpg,1_P0027,IMG_6202.MOV,False
+24,D:\upload_2025_09_29\IMG_6204.MOV,23.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0028_Q4_#6_missed_t0.jpg,1_P0028,IMG_6204.MOV,
+24,D:\upload_2025_09_29\IMG_6204.MOV,21.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0028_Q4_#6_missed_tm.jpg,1_P0028,IMG_6204.MOV,False
+24,D:\upload_2025_09_29\IMG_6204.MOV,25.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0028_Q4_#6_missed_tp.jpg,1_P0028,IMG_6204.MOV,
+25,D:\upload_2025_09_29\IMG_6207.MOV,10.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0029_Q4_#4_goal_t0.jpg,1_P0029,IMG_6207.MOV,
+25,D:\upload_2025_09_29\IMG_6207.MOV,8.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0029_Q4_#4_goal_tm.jpg,1_P0029,IMG_6207.MOV,False
+25,D:\upload_2025_09_29\IMG_6207.MOV,12.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\1_1_P0029_Q4_#4_goal_tp.jpg,1_P0029,IMG_6207.MOV,
+219,D:\upload_2025_09_29\IMG_6391.MOV,18.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\13_13_P0002_Qnan_#3_goal_t0.jpg,13_P0002,IMG_6391.MOV,
+219,D:\upload_2025_09_29\IMG_6391.MOV,16.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\13_13_P0002_Qnan_#3_goal_tm.jpg,13_P0002,IMG_6391.MOV,False
+219,D:\upload_2025_09_29\IMG_6391.MOV,20.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\13_13_P0002_Qnan_#3_goal_tp.jpg,13_P0002,IMG_6391.MOV,
+218,D:\upload_2025_09_29\IMG_6394.MOV,4.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\13_13_P0001_Qnan_#3_blocked (GK)_t0.jpg,13_P0001,IMG_6394.MOV,
+218,D:\upload_2025_09_29\IMG_6394.MOV,2.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\13_13_P0001_Qnan_#3_blocked (GK)_tm.jpg,13_P0001,IMG_6394.MOV,False
+218,D:\upload_2025_09_29\IMG_6394.MOV,6.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\13_13_P0001_Qnan_#3_blocked (GK)_tp.jpg,13_P0001,IMG_6394.MOV,
+217,D:\upload_2025_09_29\IMG_6421.MOV,28.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\12_12_P0002_Qnan_#7_goal_t0.jpg,12_P0002,IMG_6421.MOV,
+217,D:\upload_2025_09_29\IMG_6421.MOV,26.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\12_12_P0002_Qnan_#7_goal_tm.jpg,12_P0002,IMG_6421.MOV,False
+217,D:\upload_2025_09_29\IMG_6421.MOV,30.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\12_12_P0002_Qnan_#7_goal_tp.jpg,12_P0002,IMG_6421.MOV,
+216,D:\upload_2025_09_29\IMG_6444.MOV,18.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\12_12_P0001_Qnan_#4_goal_t0.jpg,12_P0001,IMG_6444.MOV,
+216,D:\upload_2025_09_29\IMG_6444.MOV,16.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\12_12_P0001_Qnan_#4_goal_tm.jpg,12_P0001,IMG_6444.MOV,False
+216,D:\upload_2025_09_29\IMG_6444.MOV,20.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\12_12_P0001_Qnan_#4_goal_tp.jpg,12_P0001,IMG_6444.MOV,
+221,D:\upload_2025_09_29\IMG_6462.MOV,15.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\12_12_P0004_Qnan_#8_blocked (GK)_t0.jpg,12_P0004,IMG_6462.MOV,
+221,D:\upload_2025_09_29\IMG_6462.MOV,13.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\12_12_P0004_Qnan_#8_blocked (GK)_tm.jpg,12_P0004,IMG_6462.MOV,False
+221,D:\upload_2025_09_29\IMG_6462.MOV,17.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\12_12_P0004_Qnan_#8_blocked (GK)_tp.jpg,12_P0004,IMG_6462.MOV,
+220,D:\upload_2025_09_29\IMG_6471.MOV,34.0,t0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\12_12_P0003_Qnan_#6_post\bar_t0.jpg,12_P0003,IMG_6471.MOV,
+220,D:\upload_2025_09_29\IMG_6471.MOV,32.0,tm,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\12_12_P0003_Qnan_#6_post\bar_tm.jpg,12_P0003,IMG_6471.MOV,False
+220,D:\upload_2025_09_29\IMG_6471.MOV,36.0,tp,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\12_12_P0003_Qnan_#6_post\bar_tp.jpg,12_P0003,IMG_6471.MOV,

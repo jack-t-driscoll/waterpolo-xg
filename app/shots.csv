@@ -1,14 +1,14 @@
 possession_id,game_id,our_team_name,opponent_team_name,our_team_level,opponent_team_level,period,time_remaining,man_state,event_type,turnover_type,turnover_player_number,drawn_by_player_number,shooter_x,shooter_y,defender_count,goalie_present,goalie_distance_m,goalie_lateral,possession_passes,attack_type,shot_type,shot_result,shooter_handedness,player_number,video_file,video_timestamp_mmss
 1_P0001,1,west_sub,evanston,IL Club,IL Club,1,06:50,6v6,shot,,,,0.65,0.2,1,true,1,right,1,counter,standard,goal,right,7,IMG_6154.MOV,00:18
 1_P0002,1,west_sub,evanston,IL Club,IL Club,1,06:17,6v6,shot,,,,0.5,0.2,1,true,1,center,0,perimeter,standard,goal,right,11,IMG_6155.MOV,00:39
-1_P0003,1,west_sub,evanston,IL Club,IL Club,1,05:51,6v6,shot,,,,0.7,0.4,2,true,1.5,right,1,counter,standard,post/bar,right,7,IMG_6156.MOV,00:29
-1_P0004,1,west_sub,evanston,IL Club,IL Club,1,05:03,6v6,turnover,steal/interception,7,,,,,,,,1,,,,right,,IMG_6157.MOV,00:48
-1_P0005,1,west_sub,evanston,IL Club,IL Club,1,04:25,6v6,turnover,steal/interception,4,,,,,,,,1,,,,right,,IMG_6159.MOV,00:03
+1_P0003,1,west_sub,evanston,IL Club,IL Club,1,05:51,6v6,shot,,,,0.7,0.4,2,true,1.5,right,1,counter,standard,post/bar,right,7,IMG_6156.MOV,00:26
+1_P0004,1,west_sub,evanston,IL Club,IL Club,1,05:03,6v6,turnover,steal/interception,7,,,,,,,,1,,,,,,IMG_6157.MOV,00:48
+1_P0005,1,west_sub,evanston,IL Club,IL Club,1,04:25,6v6,turnover,steal/interception,4,,,,,,,,1,,,,,,IMG_6159.MOV,00:03
 1_P0006,1,west_sub,evanston,IL Club,IL Club,1,03:33,6v6,shot,,,,0.7,0.2,1,true,1,right,9,perimeter,standard,goal,right,4,IMG_6162.MOV,00:31
 1_P0007,1,west_sub,evanston,IL Club,IL Club,1,02:55,6v6,shot,,,,0.7,0.2666666667,1,true,0.5,right,6,perimeter,standard,blocked (GK),right,4,IMG_6164.MOV,00:17
 1_P0008,1,west_sub,evanston,IL Club,IL Club,1,02:44,6v6,shot,,,,0.75,0.4,1,true,0.5,right,2,perimeter,lob,post/bar,right,4,IMG_6165.MOV,00:11
 1_P0009,1,west_sub,evanston,IL Club,IL Club,1,02:27,6v6,shot,,,,0.4,0.4666666667,1,true,1,center,3,perimeter,standard,missed,right,5,IMG_6166.MOV,00:16
-1_P0010,1,west_sub,evanston,IL Club,IL Club,1,02:01,6v6,turnover,bad pass / out of bounds,4,,,,,,,,1,,,,right,,IMG_6167.MOV,00:21
+1_P0010,1,west_sub,evanston,IL Club,IL Club,1,02:01,6v6,turnover,bad pass / out of bounds,4,,,,,,,,1,,,,,,IMG_6167.MOV,00:21
 1_P0011,1,west_sub,evanston,IL Club,IL Club,1,01:08,6v6,shot,,,,0.55,0.2,0,true,1,right,5,broken play,standard,goal,right,4,IMG_6169.MOV,00:24
 1_P0012,1,west_sub,evanston,IL Club,IL Club,1,00:38,6v6,shot,,,,0.45,0.06666666667,2,true,0,right,4,broken play,tip/deflection,goal,right,3,IMG_6171.MOV,00:17
 1_P0013,1,west_sub,evanston,IL Club,IL Club,2,06:35,6v6,shot,,,,0.85,0.2,2,true,0.5,right,6,perimeter,lob,missed,right,7,IMG_6173.MOV,00:34
@@ -35,26 +35,26 @@ possession_id,game_id,our_team_name,opponent_team_name,our_team_level,opponent_t
 2_P0005,2,west_sub,nwc,IL Club,IL Club,1,03:29,6v6,shot,,,,0.5,0.4,0,true,0.5,center,11,perimeter,standard,blocked (GK),right,4,IMG_6125.MOV,00:43
 2_P0006,2,west_sub,nwc,IL Club,IL Club,1,02:50,6v6,shot,,,,0.6,0.2,0,true,2,right,0,counter,lob,goal,right,7,IMG_6127.MOV,00:06
 2_P0007,2,west_sub,nwc,IL Club,IL Club,2,06:43,6v6,shot,,,,0.65,0.2666666667,1,true,0.5,right,5,set,skip,blocked (GK),right,6,IMG_6128.MOV,00:22
-2_P0008,2,west_sub,nwc,IL Club,IL Club,2,06:36,6v6,turnover,ball under,4,,,,,,,,2,,,,right,,IMG_6128.MOV,0:11
+2_P0008,2,west_sub,nwc,IL Club,IL Club,2,06:36,6v6,turnover,ball under,4,,,,,,,,2,,,,,,IMG_6128.MOV,0:11
 2_P0009,2,west_sub,nwc,IL Club,IL Club,2,05:54,6v6,shot,,,,0.75,0.2,1,true,2,right,1,counter,lob,goal,right,6,IMG_6130.MOV,00:35
 2_P0010,2,west_sub,nwc,IL Club,IL Club,2,05:12,6v6,shot,,,,0.5,0.3333333333,0,true,2,center,1,counter,lob,goal,right,3,IMG_6132.MOV,00:05
-2_P0011,2,west_sub,nwc,IL Club,IL Club,2,04:33,6v6,turnover,steal/interception,6,,,,,,,,1,,,,right,,IMG_6134.MOV,00:06
+2_P0011,2,west_sub,nwc,IL Club,IL Club,2,04:33,6v6,turnover,steal/interception,6,,,,,,,,1,,,,,,IMG_6134.MOV,00:06
 2_P0012,2,west_sub,nwc,IL Club,IL Club,2,03:45,6v6,shot,,,,0.55,0.1333333333,1,true,1.5,right,1,counter,standard,goal,right,7,IMG_6136.MOV,00:11
 2_P0013,2,west_sub,nwc,IL Club,IL Club,3,06:35,6v6,shot,,,,0.6,0.2,2,true,0.5,right,4,set,standard,missed,right,7,IMG_6137.MOV,00:31
 2_P0014,2,west_sub,nwc,IL Club,IL Club,3,05:46,6v6,shot,,,,0.45,0.4666666667,1,true,1,left,3,perimeter,standard,post/bar,right,5,IMG_6139.MOV,00:21
-2_P0015,2,west_sub,nwc,IL Club,IL Club,3,05:31,6v6,turnover,ball under,5,,,,,,,,2,,,,right,,IMG_6139.MOV,00:37
-2_P0016,2,west_sub,nwc,IL Club,IL Club,3,04:53,6v6,turnover,offensive foul (contra),4,,,,,,,,2,,,,right,,IMG_6140.MOV,00:12
+2_P0015,2,west_sub,nwc,IL Club,IL Club,3,05:31,6v6,turnover,ball under,5,,,,,,,,2,,,,,,IMG_6139.MOV,00:37
+2_P0016,2,west_sub,nwc,IL Club,IL Club,3,04:53,6v6,turnover,offensive foul (contra),4,,,,,,,,2,,,,,,IMG_6140.MOV,00:12
 2_P0017,2,west_sub,nwc,IL Club,IL Club,3,04:26,6v6,shot,,,,0.6,0.1333333333,1,true,1,center,1,counter,standard,goal,right,4,IMG_6141.MOV,00:20
 2_P0018,2,west_sub,nwc,IL Club,IL Club,3,03:53,6v6,shot,,,,0.6,0.1333333333,1,true,1,right,4,perimeter,standard,goal,right,7,IMG_6142.MOV,00:31
 2_P0019,2,west_sub,nwc,IL Club,IL Club,4,06:49,6v6,shot,,,,0.4,0.2,2,true,2,left,3,broken play,lob,post/bar,right,12,IMG_6143.MOV,00:14
 2_P0020,2,west_sub,nwc,IL Club,IL Club,4,06:12,6v6,shot,,,,0.5,0.2,1,true,1.5,center,3,counter,standard,blocked (GK),right,3,IMG_6144.MOV,00:32
-2_P0021,2,west_sub,nwc,IL Club,IL Club,4,06:06,6v6,turnover,bad pass / out of bounds,4,,,,,,,,1,,,,right,,IMG_6145.MOV,00:09
+2_P0021,2,west_sub,nwc,IL Club,IL Club,4,06:06,6v6,turnover,bad pass / out of bounds,4,,,,,,,,1,,,,,,IMG_6145.MOV,00:09
 2_P0022,2,west_sub,nwc,IL Club,IL Club,4,05:23,6v6,shot,,,,0.5,0.06666666667,0,true,0.5,center,1,counter,standard,goal,right,5,IMG_6145.MOV,00:36
-2_P0023,2,west_sub,nwc,IL Club,IL Club,4,04:46,6v6,turnover,steal/interception,7,,,,,,,,1,,,,right,,IMG_6149.MOV,00:11
+2_P0023,2,west_sub,nwc,IL Club,IL Club,4,04:46,6v6,turnover,steal/interception,7,,,,,,,,1,,,,,,IMG_6149.MOV,00:11
 2_P0024,2,west_sub,nwc,IL Club,IL Club,4,04:13,6v6,shot,,,,0.65,0.06666666667,0,true,1,center,1,counter,standard,goal,right,4,IMG_6150.MOV,00:24
 3_P0001,3,west_sub,new_trier,IL Club,IL Club,1,06:46,6v6,shot,,,,0.55,0.4666666667,1,true,0.5,center,4,perimeter,standard,blocked (GK),right,4,IMG_0157.MOV,00:27
 3_P0002,3,west_sub,new_trier,IL Club,IL Club,1,06:10,6v6,shot,,,,0.35,0.3333333333,1,true,0.5,left,0,counter,standard,goal,right,6,IMG_0159.MOV,00:02
-3_P0003,3,west_sub,new_trier,IL Club,IL Club,1,05:35,6v6,turnover,steal/interception,10,,,,,,,,1,,,,right,,IMG_0163.MOV,00:03
+3_P0003,3,west_sub,new_trier,IL Club,IL Club,1,05:35,6v6,turnover,steal/interception,10,,,,,,,,1,,,,,,IMG_0163.MOV,00:03
 3_P0004,3,west_sub,new_trier,IL Club,IL Club,1,04:47,6v6,shot,,,,0.5,0.4,1,true,0.5,center,4,perimeter,standard,goal,right,4,IMG_0165.MOV,00:21
 3_P0005,3,west_sub,new_trier,IL Club,IL Club,1,04:04,6v6,shot,,,,0.35,0.2,2,true,0.5,left,4,set,standard,goal,left,2,IMG_0168.MOV,00:17
 3_P0006,3,west_sub,new_trier,IL Club,IL Club,2,06:13,6v6,shot,,,,0.55,0.2666666667,1,true,1,center,3,broken play,tip/deflection,missed,right,5,IMG_0172.MOV,00:15
@@ -63,92 +63,92 @@ possession_id,game_id,our_team_name,opponent_team_name,our_team_level,opponent_t
 3_P0009,3,west_sub,new_trier,IL Club,IL Club,2,03:21,6v6,shot,,,,0.3,0.2,1,true,0.5,left,10,perimeter,skip,goal,left,2,IMG_0179.MOV,00:32
 3_P0010,3,west_sub,new_trier,IL Club,IL Club,3,06:36,6v6,shot,,,,0.75,0.1333333333,1,true,0.5,center,6,perimeter,standard,blocked (GK),right,7,IMG_0181.MOV,00:31
 3_P0011,3,west_sub,new_trier,IL Club,IL Club,3,05:48,6v6,shot,,,,0.75,0.2,1,true,0.5,right,5,perimeter,standard,blocked (GK),right,10,IMG_0183.MOV,00:30
-3_P0012,3,west_sub,new_trier,IL Club,IL Club,3,04:45,6v6,ejection_drawn,,,7,,,,,,,,,,,,,IMG_0185.MOV,00:23
-3_P0013,3,west_sub,new_trier,IL Club,IL Club,3,04:25,6v5,ejection_drawn,,,4,,,,,,,,man-up,,,,,IMG_0185.MOV,00:43
+3_P0012,3,west_sub,new_trier,IL Club,IL Club,3,04:45,6v6,ejection_drawn,,,7,,,,,,,5,set,,,,,IMG_0185.MOV,00:23
+3_P0013,3,west_sub,new_trier,IL Club,IL Club,3,04:25,6v5,ejection_drawn,,,4,,,,,,,6,man-up,,,,,IMG_0185.MOV,00:43
 3_P0014,3,west_sub,new_trier,IL Club,IL Club,3,04:24,6v4,shot,,,,0.6,0.2,1,true,1,right,2,man-up,standard,goal,right,4,IMG_0185.MOV,00:48
 3_P0015,3,west_sub,new_trier,IL Club,IL Club,3,03:17,6v6,shot,,,,0.2,0.4,0,true,0.5,right,2,perimeter,standard,missed,right,7,IMG_0187.MOV,00:11
 3_P0016,3,west_sub,new_trier,IL Club,IL Club,3,02:37,6v6,shot,,,,0.75,0.1333333333,0,true,0.5,right,3,perimeter,skip,goal,right,7,IMG_0189.MOV,00:20
 3_P0017,3,west_sub,new_trier,IL Club,IL Club,4,06:09,6v6,shot,,,,0.65,0.06666666667,1,true,0.5,center,3,broken play,tip/deflection,field block,right,4,IMG_0196.MOV,00:18
 3_P0018,3,west_sub,new_trier,IL Club,IL Club,4,04:44,6v6,shot,,,,0.5,0.1333333333,1,true,0.5,left,3,set,tip/deflection,blocked (GK),left,2,IMG_0200.MOV,00:19
-3_P0019,3,west_sub,new_trier,IL Club,IL Club,4,04:04,6v6,turnover,steal/interception,6,,,,,,,,1,,,,right,,IMG_0202.MOV,00:11
+3_P0019,3,west_sub,new_trier,IL Club,IL Club,4,04:04,6v6,turnover,steal/interception,6,,,,,,,,1,,,,,,IMG_0202.MOV,00:11
 3_P0020,3,west_sub,new_trier,IL Club,IL Club,4,03:23,6v6,shot,,,,0.5,0.4666666667,1,true,1.5,center,1,perimeter,standard,blocked (GK),right,4,IMG_0204.MOV,00:10
-3_P0021,3,west_sub,new_trier,IL Club,IL Club,4,03:00,6v6,turnover,procedural violation (2m/6m/restart),5,,,,,,,,8,,,,right,,IMG_0205.MOV,00:26
-3_P0022,3,west_sub,new_trier,IL Club,IL Club,4,02:13,6v6,turnover,shot clock violation,,,,,,,,,6,,,,right,,IMG_0207.MOV,00:28
-3_P0023,3,west_sub,new_trier,IL Club,IL Club,4,01:08,6v6,turnover,shot clock violation,,,,,,,,,0,,,,right,,IMG_0209.MOV,00:16
-4_P0001,4,usa_academy,brown,ODP Academy,College,1,,6v6,shot,,,,0.5,0.4,1,true,0.5,center,3,perimeter,skip,blocked (GK),right,2,IMG_2598.MOV,00:24
+3_P0021,3,west_sub,new_trier,IL Club,IL Club,4,03:00,6v6,turnover,procedural violation (2m/6m/restart),5,,,,,,,,8,,,,,,IMG_0205.MOV,00:26
+3_P0022,3,west_sub,new_trier,IL Club,IL Club,4,02:13,6v6,turnover,shot clock violation,,,,,,,,,6,,,,,,IMG_0207.MOV,00:28
+3_P0023,3,west_sub,new_trier,IL Club,IL Club,4,01:08,6v6,turnover,shot clock violation,,,,,,,,,0,,,,,,IMG_0209.MOV,00:16
+4_P0001,4,usa_academy,brown,ODP Academy,College,1,,6v6,shot,,,,0.5,0.4,1,true,0.5,center,3,perimeter,skip,blocked (GK),right,2,IMG_2598.MOV,00:21
 4_P0002,4,usa_academy,brown,ODP Academy,College,1,,6v6,shot,,,,0.55,0.2,2,true,0.5,right,4,set,skip,goal,right,10,IMG_2600.MOV,00:16
-4_P0003,4,usa_academy,brown,ODP Academy,College,1,,6v6,turnover,steal/interception,10,,,,,,,,8,,,,right,,IMG_2602.MOV,00:25
+4_P0003,4,usa_academy,brown,ODP Academy,College,1,,6v6,turnover,steal/interception,10,,,,,,,,8,,,,,,IMG_2602.MOV,00:25
 4_P0004,4,usa_academy,brown,ODP Academy,College,1,,6v5,shot,,,,0.4,0.4,1,true,0.5,left,3,man-up,skip,field block,right,2,IMG_2604.MOV,00:34
 4_P0005,4,usa_academy,brown,ODP Academy,College,1,,6v6,shot,,,,0.3,0.2666666667,2,true,0.5,left,8,perimeter,skip,field block,right,2,IMG_2606.MOV,00:21
 4_P0006,4,usa_academy,brown,ODP Academy,College,1,,6v6,shot,,,,0.6,0.5333333333,1,true,0.5,right,4,perimeter,standard,field block,right,3,IMG_2608.MOV,00:31
-4_P0007,4,usa_academy,brown,ODP Academy,College,2,,6v6,turnover,steal/interception,8,,,,,,,,9,,,,right,,IMG_2610.MOV,00:35
-4_P0008,4,usa_academy,brown,ODP Academy,College,2,,6v6,shot,,,,0.5,0.2666666667,2,true,0.5,center,2,set,standard,post/bar,right,0,IMG_2612.MOV,00:16
+4_P0007,4,usa_academy,brown,ODP Academy,College,2,,6v6,turnover,steal/interception,8,,,,,,,,9,,,,,,IMG_2610.MOV,00:35
+4_P0008,4,usa_academy,brown,ODP Academy,College,2,,6v6,shot,,,,0.5,0.2666666667,2,true,0.5,center,2,set,standard,post/bar,right,10,IMG_2612.MOV,00:16
 4_P0009,4,usa_academy,brown,ODP Academy,College,2,,6v6,shot,,,,0.45,0.1333333333,1,true,1,left,1,counter,standard,blocked (GK),right,10,IMG_2613.MOV,00:15
-4_P0010,4,usa_academy,brown,ODP Academy,College,2,,6v6,turnover,steal/interception,9,,,,,,,,6,,,,right,,IMG_2615.MOV,00:23
-4_P0011,4,usa_academy,brown,ODP Academy,College,2,,6v6,turnover,ball under,9,,,,,,,,7,,,,right,,IMG_2617.MOV,00:28
+4_P0010,4,usa_academy,brown,ODP Academy,College,2,,6v6,turnover,steal/interception,9,,,,,,,,6,,,,,,IMG_2615.MOV,00:23
+4_P0011,4,usa_academy,brown,ODP Academy,College,2,,6v6,turnover,ball under,9,,,,,,,,7,,,,,,IMG_2617.MOV,00:28
 4_P0012,4,usa_academy,brown,ODP Academy,College,2,,6v6,shot,,,,0.4,0.4,1,true,0.5,left,4,perimeter,skip,goal,right,2,IMG_2618.MOV,00:19
-4_P0013,4,usa_academy,brown,ODP Academy,College,3,,6v6,turnover,steal/interception,3,,,,,,,,7,,,,right,,IMG_2621.MOV,00:16
+4_P0013,4,usa_academy,brown,ODP Academy,College,3,,6v6,turnover,steal/interception,3,,,,,,,,7,,,,,,IMG_2621.MOV,00:16
 4_P0014,4,usa_academy,brown,ODP Academy,College,3,,6v6,shot,,,,0.45,0.2666666667,0,true,0.5,center,3,perimeter,standard,post/bar,right,9,IMG_2622.MOV,00:43
 4_P0015,4,usa_academy,brown,ODP Academy,College,3,,6v6,shot,,,,0.6,0.2666666667,2,true,0.5,right,6,set,standard,field block,right,12,IMG_2624.MOV,00:28
-4_P0016,4,usa_academy,brown,ODP Academy,College,3,,6v6,turnover,offensive foul (contra),2,,,,,,,,4,,,,right,,IMG_2625.MOV,00:36
+4_P0016,4,usa_academy,brown,ODP Academy,College,3,,6v6,turnover,offensive foul (contra),2,,,,,,,,4,,,,,,IMG_2625.MOV,00:36
 4_P0017,4,usa_academy,brown,ODP Academy,College,3,,6v6,shot,,,,0.75,0.4,1,true,0.5,right,1,perimeter,lob,post/bar,right,3,IMG_2626.MOV,00:45
 4_P0018,4,usa_academy,brown,ODP Academy,College,3,,6v7,shot,,,,0.5,1,0,false,,,0,other,standard,goals,right,1,IMG_2628.MOV,00:14
-4_P0019,4,usa_academy,brown,ODP Academy,College,4,,6v6,turnover,steal/interception,1,,,,,,,,1,,,,right,,IMG_2631.MOV,00:28
+4_P0019,4,usa_academy,brown,ODP Academy,College,4,,6v6,turnover,steal/interception,1,,,,,,,,1,,,,,,IMG_2631.MOV,00:28
 4_P0020,4,usa_academy,brown,ODP Academy,College,4,,6v6,shot,,,,0.25,0.1333333333,1,true,0,left,3,perimeter,standard,goal,right,9,IMG_2633.MOV,00:23
 4_P0021,4,usa_academy,brown,ODP Academy,College,4,,6v6,shot,,,,0.85,0.2666666667,1,true,0.5,center,4,perimeter,standard,field block,right,3,IMG_2635.MOV,00:19
 4_P0022,4,usa_academy,brown,ODP Academy,College,4,,6v6,shot,,,,0.2,0.2,1,true,0.5,center,6,perimeter,standard,missed,right,5,IMG_2636.MOV,00:37
 4_P0023,4,usa_academy,brown,ODP Academy,College,4,,6v6,shot,,,,0.5,0.4,1,true,0.5,center,5,perimeter,standard,blocked (GK),right,3,IMG_2638.MOV,00:31
 4_P0024,4,usa_academy,brown,ODP Academy,College,4,,6v6,shot,,,,0.55,0.1333333333,1,true,0.5,right,0,broken play,standard,blocked (GK),right,12,IMG_2638.MOV,00:34
 4_P0025,4,usa_academy,brown,ODP Academy,College,4,,6v6,shot,,,,0.45,0.06666666667,1,true,0.5,right,0,broken play,other,goal,right,5,IMG_2638.MOV,00:35
-5_P0001,5,usa_academy,air_force,ODP Academy,College,1,4:21,6v6,turnover,steal/interception,9,,,,,,,,5,,,,right,,IMG_2644.MOV,00:18
-5_P0002,5,usa_academy,air_force,ODP Academy,College,,,6v6,shot,,,,0.35,0.4,1,true,1,left,7,perimeter,standard,missed,right,0,IMG_2645.MOV,00:31
-5_P0003,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,ball under,3,,,,,,,,2,,,,right,,IMG_2647.MOV,00:15
-5_P0004,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,steal/interception,12,,,,,,,,6,,,,right,,IMG_2648.MOV,00:29
-5_P0005,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,steal/interception,5,,,,,,,,3,,,,right,,IMG_2650.MOV,00:25
-5_P0006,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,bad pass / out of bounds,11,,,,,,,,2,,,,right,,IMG_2652.MOV,00:18
-5_P0007,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,steal/interception,3,,,,,,,,1,,,,right,,IMG_2654.MOV,00:11
-5_P0008,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,steal/interception,3,,,,,,,,2,,,,right,,IMG_2655.MOV,00:18
-5_P0009,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,steal/interception,9,,,,,,,,2,,,,right,,IMG_2655.MOV,00:57
+5_P0001,5,usa_academy,air_force,ODP Academy,College,1,4:21,6v6,turnover,steal/interception,9,,,,,,,,5,,,,,,IMG_2644.MOV,00:18
+5_P0002,5,usa_academy,air_force,ODP Academy,College,,,6v6,shot,,,,0.35,0.4,1,true,1,left,7,perimeter,standard,missed,right,15,IMG_2645.MOV,00:31
+5_P0003,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,ball under,3,,,,,,,,2,,,,,,IMG_2647.MOV,00:15
+5_P0004,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,steal/interception,12,,,,,,,,6,,,,,,IMG_2648.MOV,00:29
+5_P0005,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,steal/interception,5,,,,,,,,3,,,,,,IMG_2650.MOV,00:25
+5_P0006,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,bad pass / out of bounds,11,,,,,,,,2,,,,,,IMG_2652.MOV,00:18
+5_P0007,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,steal/interception,3,,,,,,,,1,,,,,,IMG_2654.MOV,00:11
+5_P0008,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,steal/interception,3,,,,,,,,2,,,,,,IMG_2655.MOV,00:18
+5_P0009,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,steal/interception,9,,,,,,,,2,,,,,,IMG_2655.MOV,00:57
 5_P0010,5,usa_academy,air_force,ODP Academy,College,,,6v6,shot,,,,0.2,0.4666666667,1,true,1,left,3,perimeter,standard,blocked (GK),right,15,IMG_2658.MOV,00:45
-5_P0011,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,steal/interception,9,,,,,,,,1,,,,right,,IMG_2659.MOV,00:37
+5_P0011,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,steal/interception,9,,,,,,,,1,,,,,,IMG_2659.MOV,00:37
 5_P0012,5,usa_academy,air_force,ODP Academy,College,,,6v5,shot,,,,0.75,0.2666666667,1,true,0.5,right,9,man-up,skip,post/bar,right,3,IMG_2663.MOV,00:55
-5_P0013,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,steal/interception,15,,,,,,,,3,,,,right,,IMG_2666.MOV,00:20
+5_P0013,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,steal/interception,15,,,,,,,,3,,,,,,IMG_2666.MOV,00:20
 5_P0014,5,usa_academy,air_force,ODP Academy,College,,,6v6,shot,,,,0.45,0.2,1,true,1.5,center,1,counter,skip,goal,right,15,IMG_2667.MOV,00:09
-5_P0015,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,offensive foul (contra),12,,,,,,,,10,,,,right,,IMG_2669.MOV,00:33
+5_P0015,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,offensive foul (contra),12,,,,,,,,10,,,,,,IMG_2669.MOV,00:33
 5_P0016,5,usa_academy,air_force,ODP Academy,College,,,6v6,shot,,,,0.5,0.4666666667,1,true,1,center,6,perimeter,standard,blocked (GK),right,5,IMG_2675.MOV,00:36
 5_P0017,5,usa_academy,air_force,ODP Academy,College,,,6v6,shot,,,,0.35,0.4,1,true,1,left,2,perimeter,standard,goal,right,15,IMG_2677.MOV,00:20
 5_P0018,5,usa_academy,air_force,ODP Academy,College,,,6v6,shot,,,,0.7,0.2,1,true,1,right,0,counter,standard,blocked (GK),right,2,IMG_2678.MOV,00:42
 5_P0019,5,usa_academy,air_force,ODP Academy,College,,,6v6,shot,,,,0.5,0.06666666667,0,true,1,right,0,broken play,tip/deflection,goal,right,12,IMG_2678.MOV,00:44
 5_P0020,5,usa_academy,air_force,ODP Academy,College,,,6v6,shot,,,,0.7,0.4,0,true,1,right,2,perimeter,standard,blocked,right,12,IMG_2680.MOV,00:18
-5_P0021,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,steal/interception,12,,,,,,,,3,,,,right,,IMG_2681.MOV,00:17
-5_P0022,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,steal/interception,12,,,,,,,,5,,,,right,,IMG_2685.MOV,00:32
+5_P0021,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,steal/interception,12,,,,,,,,3,,,,,,IMG_2681.MOV,00:17
+5_P0022,5,usa_academy,air_force,ODP Academy,College,,,6v6,turnover,steal/interception,12,,,,,,,,5,,,,,,IMG_2685.MOV,00:32
 5_P0023,5,usa_academy,air_force,ODP Academy,College,,,6v6,shot,,,,0.5,0.4,1,true,0,center,5,perimeter,skip,goal,right,5,IMG_2687.MOV,00:26
 6_P0001,6,carlsbad,ca_1,CA Club,CA Club,1,,6v6,shot,,,,0.6,0.3333333333,0,true,1,right,0,broken play,skip,blocked (GK),right,14,IMG_4559.MOV,00:52
-6_P0002,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,steal/interception,9,,,,,,,,3,,,,right,,IMG_4560.MOV,00:17
+6_P0002,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,steal/interception,9,,,,,,,,3,,,,,,IMG_4560.MOV,00:17
 6_P0003,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,shot,,,,0.4,0.4666666667,1,true,0,center,2,perimeter,standard,blocked (GK),right,8,IMG_4561.MOV,00:54
 6_P0004,6,carlsbad,ca_1,CA Club,CA Club,,,6v5,shot,,,,0.7,0.1333333333,1,true,0.5,right,7,man-up,skip,goal,right,8,IMG_4564.MOV,00:50
 6_P0005,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,shot,,,,0.6,0.1333333333,1,true,0.5,center,5,set,standard,blocked (GK),right,8,IMG_4566.MOV,00:34
 6_P0006,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,shot,,,,0.5,0.4666666667,1,true,1,center,6,perimeter,skip,post/bar,right,8,IMG_4567.MOV,00:35
-6_P0007,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,steal/interception,15,,,,,,,,1,,,,right,,IMG_4567.MOV,00:44
-6_P0008,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,steal/interception,11,,,,,,,,3,,,,right,,IMG_4570_1.MOV,00:18
+6_P0007,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,steal/interception,15,,,,,,,,1,,,,,,IMG_4567.MOV,00:44
+6_P0008,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,steal/interception,11,,,,,,,,3,,,,,,IMG_4570_1.MOV,00:18
 6_P0009,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,shot,,,,0.5,0.2,1,true,0.5,center,4,broken play,skip,goal,right,10,IMG_4571.MOV,00:36
 6_P0010,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,shot,,,,0.5,0.4,1,true,1,center,2,perimeter,skip,blocked (GK),right,15,IMG_4572.MOV,00:55
-6_P0011,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,shot clock violation,,,,,,,,,0,,,,right,,IMG_4577.MOV,00:13
-6_P0012,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,steal/interception,f,,,,,,,,1,,,,right,,IMG_4579.MOV,00:09
-6_P0013,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,shot,,,,0.6,0.6,1,true,1.5,center,2,perimeter,skip,blocked (GK),right,0,IMG_4581.MOV,00:30
-6_P0014,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,bad pass / out of bounds,14,,,,,,,,4,,,,right,,IMG_4583.MOV,00:29
-6_P0015,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,ball under,9,,,,,,,,2,,,,right,,IMG_4585.MOV,00:18
+6_P0011,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,shot clock violation,,,,,,,,,0,,,,,,IMG_4577.MOV,00:13
+6_P0012,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,steal/interception,14,,,,,,,,1,,,,,,IMG_4579.MOV,00:09
+6_P0013,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,shot,,,,0.6,0.6,1,true,1.5,center,2,perimeter,skip,goal,right,11,IMG_4581.MOV,00:30
+6_P0014,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,bad pass / out of bounds,14,,,,,,,,4,,,,,,IMG_4583.MOV,00:29
+6_P0015,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,ball under,9,,,,,,,,2,,,,,,IMG_4585.MOV,00:18
 6_P0016,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,shot,,,,0.3,0.4,0,true,0.5,left,2,perimeter,lob,blocked (GK),right,12,IMG_4587.MOV,00:22
-6_P0017,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,ball under,13,,,,,,,,1,,,,right,,IMG_4587.MOV,00:54
+6_P0017,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,ball under,13,,,,,,,,1,,,,,,IMG_4587.MOV,00:54
 6_P0018,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,shot,,,,0.5,0.2,1,true,1,center,4,set,tip/deflection,missed,right,10,IMG_4588.MOV,00:33
 6_P0019,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,shot,,,,0.5,0.1333333333,1,true,0.5,center,1,broken play,tip/deflection,goal,right,11,IMG_4590.MOV,00:05
 6_P0020,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,shot,,,,0.25,0.1333333333,1,true,0.5,left,4,perimeter,standard,post/bar,right,11,IMG_4592.MOV,00:21
 6_P0021,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,shot,,,,0.3,0.3333333333,1,true,1,left,0,counter,standard,blocked (GK),right,11,IMG_4594.MOV,00:11
-6_P0022,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,bad pass / out of bounds,15,,,,,,,,2,,,,right,,IMG_4596.MOV,00:10
-6_P0023,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,bad pass / out of bounds,15,,,,,,,,4,,,,right,,IMG_4597.MOV,00:26
+6_P0022,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,bad pass / out of bounds,15,,,,,,,,2,,,,,,IMG_4596.MOV,00:10
+6_P0023,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,bad pass / out of bounds,15,,,,,,,,4,,,,,,IMG_4597.MOV,00:26
 6_P0024,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,shot,,,,0.6,0.2666666667,1,true,1.5,right,4,set,backhand,missed,right,10,IMG_4600.MOV,00:18
 6_P0025,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,shot,,,,0.6,0.4,1,true,1,right,5,perimeter,standard,blocked (GK),right,15,IMG_4611.MOV,00:23
-6_P0026,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,steal/interception,10,,,,,,,,4,,,,right,,IMG_4613.MOV,00:25
+6_P0026,6,carlsbad,ca_1,CA Club,CA Club,,,6v6,turnover,steal/interception,10,,,,,,,,4,,,,,,IMG_4613.MOV,00:25
 7_P0001,7,carlsbad,ca_2,CA Club,CA Club,,,6v6,turnover,steal/interception,6,,,,,,,,2,counter,,,,,IMG_5618.MOV,00:18
 7_P0002,7,carlsbad,ca_2,CA Club,CA Club,,,6v6,turnover,steal/interception,6,,,,,,,,2,counter,,,,,IMG_5618.MOV,00:14
 7_P0003,7,carlsbad,ca_2,CA Club,CA Club,,,6v6,shot,,,,0.200000,0.133333,1,true,0.5,center,7,perimeter,standard,goal,left,3,IMG_5620.MOV,00:33
@@ -169,7 +169,7 @@ possession_id,game_id,our_team_name,opponent_team_name,our_team_level,opponent_t
 7_P0018,7,carlsbad,ca_2,CA Club,CA Club,,,6v6,5m_drawn,,,2,,,,,,,1,counter,,,,,IMG_5659.MOV,00:15
 7_P0019,7,carlsbad,ca_2,CA Club,CA Club,,,other,shot,,,,0.500000,0.333333,0,true,0.0,center,0,5m penalty,standard,goal,right,10,IMG_5660.MOV,00:05
 7_P0020,7,carlsbad,ca_2,CA Club,CA Club,,,6v6,ejection_drawn,,,10,,,,,,,0,set,,,,,IMG_5662.MOV,00:17
-7_P0021,7,carlsbad,ca_2,CA Club,CA Club,,,6v5,shot,,,,0.450000,0.400000,1,true,0.5,center,6,man-up,standard,goal,unknown,0,IMG_5662.MOV,00:34
+7_P0021,7,carlsbad,ca_2,CA Club,CA Club,,,6v5,shot,,,,0.450000,0.400000,1,true,0.5,center,6,man-up,standard,goal,right,11,IMG_5662.MOV,00:34
 7_P0022,7,carlsbad,ca_2,CA Club,CA Club,,,6v6,shot,,,,0.400000,0.200000,2,true,0.5,left,6,counter,skip,goal,right,10,IMG_5667.MOV,00:13
 7_P0023,7,carlsbad,ca_2,CA Club,CA Club,,,6v6,shot,,,,0.550000,0.200000,1,true,1.5,right,6,set,backhand,goal,right,10,IMG_5669.MOV,00:24
 7_P0024,7,carlsbad,ca_2,CA Club,CA Club,,,6v5,shot,,,,0.350000,0.400000,0,true,0.5,right,2,man-up,standard,post/bar,right,11,IMG_5671.MOV,00:26
@@ -200,7 +200,7 @@ possession_id,game_id,our_team_name,opponent_team_name,our_team_level,opponent_t
 8_P0017,8,hinsdale_central,ilhs_1,IL HS,IL HS,3,,6v6,shot,,,,0.300000,0.200000,1,true,0.5,left,1,set,lob,missed,right,5,IMG_3717.MOV,00:54
 8_P0018,8,hinsdale_central,ilhs_1,IL HS,IL HS,3,,6v6,shot,,,,0.400000,0.200000,0,true,1.5,left,2,counter,standard,goal,right,5,IMG_3719.MOV,00:27
 8_P0019,8,hinsdale_central,ilhs_1,IL HS,IL HS,4,,6v6,shot,,,,0.600000,0.333333,0,true,0.0,right,1,broken play,standard,missed,right,16,IMG_3726.MOV,00:12
-8_P0020,8,hinsdale_central,ilhs_1,IL HS,IL HS,4,,6v6,shot,,,,0.500000,0.333333,0,true,0.0,right,0,5m penalty,standard,goal,right,15,IMG_3730.MOV,00:05
+8_P0020,8,hinsdale_central,ilhs_1,IL HS,IL HS,4,,6v6,shot,,,,0.500000,0.333333,0,true,0.0,right,0,5m penalty,standard,goal,right,15,IMG_3730.MOV,00:03
 8_P0021,8,hinsdale_central,ilhs_1,IL HS,IL HS,4,,6v6,shot,,,,0.650000,0.066667,1,true,1.0,right,2,set,standard,goal,right,13,IMG_3731.MOV,00:31
 8_P0022,8,hinsdale_central,ilhs_1,IL HS,IL HS,4,,6v6,shot,,,,0.450000,0.533333,1,true,0.5,right,2,perimeter,standard,post/bar,right,10,IMG_3733.MOV,00:13
 8_P0023,8,hinsdale_central,ilhs_1,IL HS,IL HS,4,,6v6,shot,,,,0.350000,0.066667,1,true,1.0,left,6,perimeter,lob,post/bar,right,8,IMG_3734.MOV,00:44
@@ -230,7 +230,7 @@ possession_id,game_id,our_team_name,opponent_team_name,our_team_level,opponent_t
 10_P0017,10,carlsbad,ca_3,CA Club,CA Club,,,6v6,shot,,,,0.350000,0.266667,1,true,0.5,left,6,broken play,standard,field block,right,11,IMG_5081.MOV,00:34
 10_P0018,10,carlsbad,ca_3,CA Club,CA Club,,,6v6,shot,,,,0.400000,0.133333,1,true,1.0,left,1,counter,standard,goal,right,5,IMG_5083.MOV,00:07
 10_P0019,10,carlsbad,ca_3,CA Club,CA Club,,,6v6,shot,,,,0.500000,0.333333,0,true,1.0,center,0,5m penalty,standard,goal,right,11,IMG_5086.MOV,00:04
-10_P0020,10,carlsbad,ca_3,CA Club,CA Club,,,6v6,shot,,,,0.600000,0.133333,0,true,0.5,right,5,broken play,standard,goal,right,9,IMG_5088.MOV,00:33
+10_P0020,10,carlsbad,ca_3,CA Club,CA Club,,,6v6,shot,,,,0.600000,0.133333,0,true,0.5,right,5,broken play,standard,goal,right,9,IMG_5088.MOV,00:30
 10_P0021,10,carlsbad,ca_3,CA Club,CA Club,,,6v6,shot,,,,0.500000,0.333333,0,true,0.5,center,0,5m penalty,skip,goal,right,10,IMG_5091.MOV,00:02
 10_P0022,10,carlsbad,ca_3,CA Club,CA Club,,,6v5,shot,,,,0.550000,0.266667,0,true,0.5,center,7,man-up,standard,goal,right,15,IMG_5094.MOV,00:18
 10_P0023,10,carlsbad,ca_3,CA Club,CA Club,,,6v6,shot,,,,0.550000,0.266667,1,true,0.5,left,0,broken play,lob,blocked (GK),right,11,IMG_5100.MOV,00:11
