@@ -1,0 +1,37 @@
+{
+  "video_file": "IMG_4560.MOV",
+  "image_path": "C:/Users/sdris/Documents/git/waterpolo-xg/app/reports/frames/6-6-p0002-qnan-nnan-nan_t0.jpg",
+  "image_shape": {
+    "h": 2160,
+    "w": 3840
+  },
+  "H": [
+    [
+      0.004418992963101327,
+      -0.05274287343070341,
+      61.78652349001133
+    ],
+    [
+      -0.004944403347032071,
+      -0.028022389596714103,
+      38.24363317050004
+    ],
+    [
+      -2.342897698696975e-05,
+      -0.002372008309699478,
+      0.928366865466002
+    ]
+  ],
+  "method": "propagated: H = H_ref(IMG_4559.MOV) @ F(IMG_4560.MOV\u2192IMG_4559.MOV)",
+  "reprojection_error": null,
+  "points_px": null,
+  "points_m": null,
+  "notes": "Propagated from reference IMG_4559.MOV",
+  "parent_reference": "IMG_4559.MOV",
+  "matches_info": {
+    "kpA": 3000,
+    "kpB": 3000,
+    "good": 537,
+    "inliers": 277
+  }
+}

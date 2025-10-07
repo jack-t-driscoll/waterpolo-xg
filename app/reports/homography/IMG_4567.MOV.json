@@ -1,0 +1,37 @@
+{
+  "video_file": "IMG_4567.MOV",
+  "image_path": "C:/Users/sdris/Documents/git/waterpolo-xg/app/reports/frames/6-6-p0006-qnan-n8-skip_t0.jpg",
+  "image_shape": {
+    "h": 2160,
+    "w": 3840
+  },
+  "H": [
+    [
+      0.0023686874186884563,
+      -0.05843385492045112,
+      57.91316004702425
+    ],
+    [
+      -0.0073404013575716,
+      -0.030782986423429474,
+      39.989900125376366
+    ],
+    [
+      -0.00019819951254151322,
+      -0.0026798919429007226,
+      0.8805231133983558
+    ]
+  ],
+  "method": "propagated: H = H_ref(IMG_4559.MOV) @ F(IMG_4567.MOV\u2192IMG_4559.MOV)",
+  "reprojection_error": null,
+  "points_px": null,
+  "points_m": null,
+  "notes": "Propagated from reference IMG_4559.MOV",
+  "parent_reference": "IMG_4559.MOV",
+  "matches_info": {
+    "kpA": 3000,
+    "kpB": 3000,
+    "good": 318,
+    "inliers": 193
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "video_file": "IMG_5056.MOV",
+  "image_path": "C:/Users/sdris/Documents/git/waterpolo-xg/app/reports/frames/10_10_P0005_Qnan_#11_goal_t0.jpg",
+  "image_shape": {
+    "h": 2160,
+    "w": 3840
+  },
+  "H": [
+    [
+      -0.008053032650104378,
+      0.0993161026361009,
+      -101.79757376989588
+    ],
+    [
+      0.020288613316234588,
+      0.06003176859483012,
+      -87.23735945194116
+    ],
+    [
+      0.00038948556620556146,
+      0.004326769308463338,
+      0.41353760600577993
+    ]
+  ],
+  "method": "propagated: H = H_ref(IMG_5047.MOV) @ F(IMG_5056.MOV\u2192IMG_5047.MOV)",
+  "reprojection_error": null,
+  "points_px": null,
+  "points_m": null,
+  "notes": "Propagated from reference IMG_5047.MOV",
+  "parent_reference": "IMG_5047.MOV",
+  "matches_info": {
+    "kpA": 3000,
+    "kpB": 3000,
+    "good": 768,
+    "inliers": 687
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "video_file": "IMG_6177.MOV",
+  "image_path": "C:/Users/sdris/Documents/git/waterpolo-xg/app/reports/frames/1_1_P0015_Q2_#3_missed_t0.jpg",
+  "image_shape": {
+    "h": 2160,
+    "w": 3840
+  },
+  "H": [
+    [
+      0.03104882562255863,
+      0.12312563986699465,
+      -199.88611673209732
+    ],
+    [
+      0.0342918097323467,
+      -0.08355765705732662,
+      5.4072571004603756
+    ],
+    [
+      0.0004395621519896267,
+      -0.009070967257821383,
+      -0.8167475353130098
+    ]
+  ],
+  "method": "propagated: H = H_ref(IMG_6154.MOV) @ F(IMG_6177.MOV\u2192IMG_6154.MOV)",
+  "reprojection_error": null,
+  "points_px": null,
+  "points_m": null,
+  "notes": "Propagated from reference IMG_6154.MOV",
+  "parent_reference": "IMG_6154.MOV",
+  "matches_info": {
+    "kpA": 3000,
+    "kpB": 3000,
+    "good": 824,
+    "inliers": 677
+  }
+}

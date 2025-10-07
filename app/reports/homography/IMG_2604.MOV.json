@@ -1,0 +1,37 @@
+{
+  "video_file": "IMG_2604.MOV",
+  "image_path": "C:/Users/sdris/Documents/git/waterpolo-xg/app/reports/frames/4_4_P0004_Q1_#2_field block_t0.jpg",
+  "image_shape": {
+    "h": 2160,
+    "w": 3840
+  },
+  "H": [
+    [
+      0.025434677231822817,
+      -0.2513111804735322,
+      253.60964797905237
+    ],
+    [
+      -0.05700237027603735,
+      -0.1487057505597556,
+      218.0063018483717
+    ],
+    [
+      -0.0005296180872848355,
+      -0.012611912077787914,
+      -0.5127401588809712
+    ]
+  ],
+  "method": "propagated: H = H_ref(IMG_2598.MOV) @ F(IMG_2604.MOV\u2192IMG_2598.MOV)",
+  "reprojection_error": null,
+  "points_px": null,
+  "points_m": null,
+  "notes": "Propagated from reference IMG_2598.MOV",
+  "parent_reference": "IMG_2598.MOV",
+  "matches_info": {
+    "kpA": 3000,
+    "kpB": 3000,
+    "good": 916,
+    "inliers": 839
+  }
+}

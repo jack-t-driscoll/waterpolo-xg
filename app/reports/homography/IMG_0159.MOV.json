@@ -1,0 +1,37 @@
+{
+  "video_file": "IMG_0159.MOV",
+  "image_path": "C:/Users/sdris/Documents/git/waterpolo-xg/app/reports/frames/3_3_P0002_Q1_#6_goal_t0.jpg",
+  "image_shape": {
+    "h": 1080,
+    "w": 1920
+  },
+  "H": [
+    [
+      0.041081298445695996,
+      0.2896798672887982,
+      -226.00023409017925
+    ],
+    [
+      0.07252476379619041,
+      -0.1507214657279646,
+      -6.098991921259222
+    ],
+    [
+      -7.354543461313433e-05,
+      -0.017390254953326568,
+      0.811330243590348
+    ]
+  ],
+  "method": "propagated: H = H_ref(IMG_0157.MOV) @ F(IMG_0159.MOV\u2192IMG_0157.MOV)",
+  "reprojection_error": null,
+  "points_px": null,
+  "points_m": null,
+  "notes": "Propagated from reference IMG_0157.MOV",
+  "parent_reference": "IMG_0157.MOV",
+  "matches_info": {
+    "kpA": 3000,
+    "kpB": 3000,
+    "good": 1143,
+    "inliers": 1071
+  }
+}

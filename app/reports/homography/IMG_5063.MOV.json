@@ -1,0 +1,37 @@
+{
+  "video_file": "IMG_5063.MOV",
+  "image_path": "C:/Users/sdris/Documents/git/waterpolo-xg/app/reports/frames/10-10-p0009-qnan-n5-standard_t0.jpg",
+  "image_shape": {
+    "h": 2160,
+    "w": 3840
+  },
+  "H": [
+    [
+      -0.006425020511672188,
+      0.10725541026915304,
+      -124.21054698415156
+    ],
+    [
+      0.023503428975128672,
+      0.06456317642215655,
+      -106.67282059351639
+    ],
+    [
+      0.0005428592425149347,
+      0.004705864157406258,
+      -0.7285942706528139
+    ]
+  ],
+  "method": "propagated: H = H_ref(IMG_5047.MOV) @ F(IMG_5063.MOV\u2192IMG_5047.MOV)",
+  "reprojection_error": null,
+  "points_px": null,
+  "points_m": null,
+  "notes": "Propagated from reference IMG_5047.MOV",
+  "parent_reference": "IMG_5047.MOV",
+  "matches_info": {
+    "kpA": 3000,
+    "kpB": 3000,
+    "good": 330,
+    "inliers": 216
+  }
+}

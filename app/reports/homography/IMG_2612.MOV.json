@@ -1,0 +1,37 @@
+{
+  "video_file": "IMG_2612.MOV",
+  "image_path": "C:/Users/sdris/Documents/git/waterpolo-xg/app/reports/frames/4-4-p0008-q2-n10-standard_t0.jpg",
+  "image_shape": {
+    "h": 2160,
+    "w": 3840
+  },
+  "H": [
+    [
+      0.019077152389604522,
+      -0.25429985122012655,
+      265.0477522786965
+    ],
+    [
+      -0.061295052108101336,
+      -0.14815811575660842,
+      222.0987583301465
+    ],
+    [
+      -0.0008437347523566089,
+      -0.012675055706857917,
+      -0.00010227674248697305
+    ]
+  ],
+  "method": "propagated: H = H_ref(IMG_2598.MOV) @ F(IMG_2612.MOV\u2192IMG_2598.MOV)",
+  "reprojection_error": null,
+  "points_px": null,
+  "points_m": null,
+  "notes": "Propagated from reference IMG_2598.MOV",
+  "parent_reference": "IMG_2598.MOV",
+  "matches_info": {
+    "kpA": 3000,
+    "kpB": 3000,
+    "good": 944,
+    "inliers": 835
+  }
+}

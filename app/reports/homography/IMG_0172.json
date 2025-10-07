@@ -1,0 +1,62 @@
+{
+  "video_file": "IMG_0172.MOV",
+  "image_path": "C:/Users/sdris/Documents/git/waterpolo-xg/app/reports/frames/3_3_P0006_Q2_#5_missed_t0.jpg",
+  "image_shape": {
+    "h": 1080,
+    "w": 1920
+  },
+  "H": [
+    [
+      0.0437321744873302,
+      0.3114929108047329,
+      -229.71950457819742
+    ],
+    [
+      0.07717091517173515,
+      -0.16190650112415889,
+      -18.07645912939906
+    ],
+    [
+      -0.00027619505169669176,
+      -0.018590610129057442,
+      0.7027771683525597
+    ]
+  ],
+  "method": "propagated: H = H_ref(IMG_0157.MOV) @ F(IMG_0172.MOV\u2192IMG_0157.MOV)",
+  "reprojection_error": null,
+  "points_px": null,
+  "points_m": null,
+  "notes": "Propagated from reference IMG_0157.MOV",
+  "parent_reference": "IMG_0157.MOV",
+  "matches_info": {
+    "kpA": 3000,
+    "kpB": 3000,
+    "good": 908,
+    "inliers": 819
+  },
+  "reference_frame": "C:\\Users\\sdris\\Documents\\git\\waterpolo-xg\\app\\reports\\frames\\3-3-p0006-q2-n5-tip-deflection_t0.jpg",
+  "meta": {
+    "propagated_from": "C:\\Users\\sdris\\Documents\\git\\waterpolo-xg\\app\\reports\\frames\\3-3-p0006-q2-n5-tip-deflection_t0.jpg",
+    "inliers": 3000,
+    "good_matches": 3000
+  },
+  "homography": {
+    "matrix": [
+      [
+        0.9999999999999998,
+        3.566906666207437e-16,
+        2.9143302762269127e-13
+      ],
+      [
+        -1.2056751215026904e-17,
+        0.9999999999999997,
+        1.9516173051272973e-13
+      ],
+      [
+        -4.8497914629525666e-20,
+        3.4042817891445366e-19,
+        1.0
+      ]
+    ]
+  }
+}

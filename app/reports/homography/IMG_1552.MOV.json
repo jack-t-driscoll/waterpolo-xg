@@ -1,0 +1,37 @@
+{
+  "video_file": "IMG_1552.MOV",
+  "image_path": "C:/Users/sdris/Documents/git/waterpolo-xg/app/reports/frames/9_9_P0005_Qnan_#15_field block_t0.jpg",
+  "image_shape": {
+    "h": 2160,
+    "w": 3840
+  },
+  "H": [
+    [
+      -0.008756648870502913,
+      -0.05933783667250078,
+      43.677970639228576
+    ],
+    [
+      0.0019650057275603138,
+      0.030910323329402307,
+      -18.909022139693565
+    ],
+    [
+      -0.00021755839941103535,
+      -0.0006100827547962753,
+      0.754831113780361
+    ]
+  ],
+  "method": "propagated: H = H_ref(IMG_1525.MOV) @ F(IMG_1552.MOV\u2192IMG_1525.MOV)",
+  "reprojection_error": null,
+  "points_px": null,
+  "points_m": null,
+  "notes": "Propagated from reference IMG_1525.MOV",
+  "parent_reference": "IMG_1525.MOV",
+  "matches_info": {
+    "kpA": 3000,
+    "kpB": 3000,
+    "good": 44,
+    "inliers": 20
+  }
+}

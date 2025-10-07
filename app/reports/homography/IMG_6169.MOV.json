@@ -1,0 +1,37 @@
+{
+  "video_file": "IMG_6169.MOV",
+  "image_path": "C:/Users/sdris/Documents/git/waterpolo-xg/app/reports/frames/1_1_P0011_Q1_#4_goal_t0.jpg",
+  "image_shape": {
+    "h": 2160,
+    "w": 3840
+  },
+  "H": [
+    [
+      0.01734243946713564,
+      0.08709639701555662,
+      -128.21539974748708
+    ],
+    [
+      0.02673370053351473,
+      -0.05675460902677989,
+      -22.51264573933028
+    ],
+    [
+      0.0005822286979797473,
+      -0.00633275571964581,
+      -5.199508826876657
+    ]
+  ],
+  "method": "propagated: H = H_ref(IMG_6154.MOV) @ F(IMG_6169.MOV\u2192IMG_6154.MOV)",
+  "reprojection_error": null,
+  "points_px": null,
+  "points_m": null,
+  "notes": "Propagated from reference IMG_6154.MOV",
+  "parent_reference": "IMG_6154.MOV",
+  "matches_info": {
+    "kpA": 3000,
+    "kpB": 3000,
+    "good": 333,
+    "inliers": 286
+  }
+}

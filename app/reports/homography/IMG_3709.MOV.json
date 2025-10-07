@@ -1,0 +1,37 @@
+{
+  "video_file": "IMG_3709.MOV",
+  "image_path": "C:/Users/sdris/Documents/git/waterpolo-xg/app/reports/frames/8_8_P0013_Q2_#22_goal_t0.jpg",
+  "image_shape": {
+    "h": 2160,
+    "w": 3840
+  },
+  "H": [
+    [
+      -0.011704314317920208,
+      -0.06749295170728853,
+      86.01482903378562
+    ],
+    [
+      -0.016261358921481152,
+      0.05054310290411328,
+      -8.706429714165134
+    ],
+    [
+      -3.973287665817712e-05,
+      0.0025145968275618576,
+      1.6146484499166518
+    ]
+  ],
+  "method": "propagated: H = H_ref(IMG_3689.MOV) @ F(IMG_3709.MOV\u2192IMG_3689.MOV)",
+  "reprojection_error": null,
+  "points_px": null,
+  "points_m": null,
+  "notes": "Propagated from reference IMG_3689.MOV",
+  "parent_reference": "IMG_3689.MOV",
+  "matches_info": {
+    "kpA": 3000,
+    "kpB": 3000,
+    "good": 887,
+    "inliers": 769
+  }
+}

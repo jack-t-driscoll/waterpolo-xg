@@ -1,0 +1,62 @@
+{
+  "video_file": "IMG_0177.MOV",
+  "image_path": "C:/Users/sdris/Documents/git/waterpolo-xg/app/reports/frames/3_3_P0008_Q2_#6_goal_t0.jpg",
+  "image_shape": {
+    "h": 1080,
+    "w": 1920
+  },
+  "H": [
+    [
+      0.03233955414794785,
+      0.20952080846149318,
+      -166.06889940637774
+    ],
+    [
+      0.05147343813334126,
+      -0.10988502826907146,
+      -3.9546570905424367
+    ],
+    [
+      -4.743142362751534e-05,
+      -0.012559082125242003,
+      -1.985750526146283
+    ]
+  ],
+  "method": "propagated: H = H_ref(IMG_0157.MOV) @ F(IMG_0177.MOV\u2192IMG_0157.MOV)",
+  "reprojection_error": null,
+  "points_px": null,
+  "points_m": null,
+  "notes": "Propagated from reference IMG_0157.MOV",
+  "parent_reference": "IMG_0157.MOV",
+  "matches_info": {
+    "kpA": 3000,
+    "kpB": 3000,
+    "good": 684,
+    "inliers": 636
+  },
+  "reference_frame": "C:\\Users\\sdris\\Documents\\git\\waterpolo-xg\\app\\reports\\frames\\3-3-p0008-q2-n6-standard_t0.jpg",
+  "meta": {
+    "propagated_from": "C:\\Users\\sdris\\Documents\\git\\waterpolo-xg\\app\\reports\\frames\\3-3-p0008-q2-n6-standard_t0.jpg",
+    "inliers": 3000,
+    "good_matches": 3000
+  },
+  "homography": {
+    "matrix": [
+      [
+        1.0000000000000027,
+        3.64647964038661e-15,
+        -2.5776533462777203e-12
+      ],
+      [
+        -1.5128619842330735e-17,
+        1.0000000000000038,
+        -6.921174805477834e-13
+      ],
+      [
+        2.6378695253609047e-19,
+        3.4980581412699015e-18,
+        1.0
+      ]
+    ]
+  }
+}

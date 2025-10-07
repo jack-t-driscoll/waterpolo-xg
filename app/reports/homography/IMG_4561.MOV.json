@@ -1,0 +1,37 @@
+{
+  "video_file": "IMG_4561.MOV",
+  "image_path": "C:/Users/sdris/Documents/git/waterpolo-xg/app/reports/frames/6_6_P0003_Qnan_#8_blocked (GK)_t0.jpg",
+  "image_shape": {
+    "h": 2160,
+    "w": 3840
+  },
+  "H": [
+    [
+      0.002724398346184563,
+      -0.06773219654450449,
+      82.03348841569581
+    ],
+    [
+      -0.008150853068147168,
+      -0.03527308598965994,
+      53.434495809005355
+    ],
+    [
+      -0.00018659191152655614,
+      -0.003028165941287552,
+      1.9984654279898555
+    ]
+  ],
+  "method": "propagated: H = H_ref(IMG_4559.MOV) @ F(IMG_4561.MOV\u2192IMG_4559.MOV)",
+  "reprojection_error": null,
+  "points_px": null,
+  "points_m": null,
+  "notes": "Propagated from reference IMG_4559.MOV",
+  "parent_reference": "IMG_4559.MOV",
+  "matches_info": {
+    "kpA": 3000,
+    "kpB": 3000,
+    "good": 354,
+    "inliers": 220
+  }
+}
