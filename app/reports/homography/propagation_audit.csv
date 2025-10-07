@@ -1,0 +1,245 @@
+game_id,video_file,status,inliers,good
+1,IMG_6154.MOV,propagated,3000,3000
+1,IMG_6155.MOV,propagated,303,452
+1,IMG_6156.MOV,propagated,324,441
+1,IMG_6157.MOV,propagated,238,373
+1,IMG_6159.MOV,propagated,240,425
+1,IMG_6162.MOV,propagated,500,676
+1,IMG_6164.MOV,propagated,382,549
+1,IMG_6165.MOV,propagated,395,564
+1,IMG_6166.MOV,propagated,250,353
+1,IMG_6167.MOV,propagated,489,659
+1,IMG_6169.MOV,propagated,218,320
+1,IMG_6171.MOV,propagated,631,777
+1,IMG_6173.MOV,propagated,440,611
+1,IMG_6175.MOV,propagated,458,625
+1,IMG_6177.MOV,propagated,582,747
+1,IMG_6179.MOV,propagated,554,823
+1,IMG_6181.MOV,propagated,423,583
+1,IMG_6183.MOV,propagated,320,486
+1,IMG_6184.MOV,propagated,260,448
+1,IMG_6186.MOV,propagated,239,373
+1,IMG_6189.MOV,"match FAIL (inliers=10, good=38)",10,38
+1,IMG_6190.MOV,"match FAIL (inliers=5, good=22)",5,22
+1,IMG_6194.MOV,"match FAIL (inliers=7, good=34)",7,34
+1,IMG_6196.MOV,"match FAIL (inliers=9, good=38)",9,38
+1,IMG_6197.MOV,"match FAIL (inliers=7, good=40)",7,40
+1,IMG_6200.MOV,"match FAIL (inliers=9, good=38)",9,38
+1,IMG_6202.MOV,"match FAIL (inliers=7, good=45)",7,45
+1,IMG_6204.MOV,"match FAIL (inliers=6, good=32)",6,32
+1,IMG_6207.MOV,"match FAIL (inliers=6, good=49)",6,49
+10,IMG_5045.MOV,propagated,3000,3000
+10,IMG_5047.MOV,propagated,649,799
+10,IMG_5053.MOV,propagated,433,538
+10,IMG_5056.MOV,propagated,515,806
+10,IMG_5057.MOV,propagated,342,551
+10,IMG_5059.MOV,propagated,279,491
+10,IMG_5060.MOV,propagated,276,492
+10,IMG_5063.MOV,propagated,232,408
+10,IMG_5065.MOV,propagated,312,481
+10,IMG_5066.MOV,propagated,207,345
+10,IMG_5069.MOV,propagated,285,431
+10,IMG_5071.MOV,propagated,265,420
+10,IMG_5074.MOV,propagated,316,468
+10,IMG_5078.MOV,propagated,205,387
+10,IMG_5081.MOV,"match FAIL (inliers=9, good=50)",9,50
+10,IMG_5083.MOV,"match FAIL (inliers=9, good=37)",9,37
+10,IMG_5086.MOV,"match FAIL (inliers=7, good=51)",7,51
+10,IMG_5088.MOV,"match FAIL (inliers=6, good=60)",6,60
+10,IMG_5091.MOV,"match FAIL (inliers=11, good=51)",11,51
+10,IMG_5094.MOV,"match FAIL (inliers=6, good=43)",6,43
+10,IMG_5100.MOV,"match FAIL (inliers=9, good=47)",9,47
+10,IMG_5103.MOV,"match FAIL (inliers=11, good=52)",11,52
+10,IMG_5107.MOV,"match FAIL (inliers=9, good=52)",9,52
+10,IMG_5111.MOV,"match FAIL (inliers=6, good=45)",6,45
+10,IMG_5113.MOV,"match FAIL (inliers=10, good=50)",10,50
+11,IMG_2070.MOV,propagated,3000,3000
+11,IMG_2071.MOV,propagated,129,280
+11,IMG_2073.MOV,propagated,141,273
+11,IMG_2077.MOV,propagated,88,239
+11,IMG_2078.MOV,propagated,166,410
+11,IMG_2081.MOV,propagated,83,170
+11,IMG_2084.MOV,propagated,142,389
+11,IMG_2088.MOV,propagated,70,185
+11,IMG_2093.MOV,propagated,108,268
+11,IMG_2096.MOV,propagated,149,357
+11,IMG_2098.MOV,propagated,145,355
+11,IMG_2102.MOV,"match FAIL (inliers=6, good=40)",6,40
+12,IMG_6421.MOV,"match FAIL (inliers=7, good=59)",7,59
+12,IMG_6444.MOV,propagated,3000,3000
+12,IMG_6462.MOV,propagated,261,396
+12,IMG_6471.MOV,propagated,366,580
+13,IMG_6391.MOV,propagated,126,295
+13,IMG_6394.MOV,propagated,3000,3000
+14,IMG_0077.MOV,propagated,3000,3000
+15,IMG_0131.MOV,propagated,3000,3000
+15,IMG_0135.MOV,"match FAIL (inliers=6, good=31)",6,31
+2,IMG_6115.MOV,propagated,386,601
+2,IMG_6117.MOV,propagated,3000,3000
+2,IMG_6119.MOV,propagated,350,669
+2,IMG_6123.MOV,propagated,278,508
+2,IMG_6125.MOV,propagated,276,511
+2,IMG_6127.MOV,propagated,275,540
+2,IMG_6128.MOV,propagated,371,718
+2,IMG_6130.MOV,propagated,419,747
+2,IMG_6132.MOV,propagated,344,608
+2,IMG_6134.MOV,propagated,284,377
+2,IMG_6136.MOV,propagated,404,625
+2,IMG_6137.MOV,"match FAIL (inliers=5, good=43)",5,43
+2,IMG_6139.MOV,"match FAIL (inliers=8, good=36)",8,36
+2,IMG_6140.MOV,"match FAIL (inliers=7, good=28)",7,28
+2,IMG_6141.MOV,"match FAIL (inliers=9, good=41)",9,41
+2,IMG_6142.MOV,"match FAIL (inliers=7, good=31)",7,31
+2,IMG_6143.MOV,"match FAIL (inliers=7, good=42)",7,42
+2,IMG_6144.MOV,"match FAIL (inliers=6, good=36)",6,36
+2,IMG_6145.MOV,"match FAIL (inliers=6, good=36)",6,36
+2,IMG_6146.MOV,"match FAIL (inliers=10, good=49)",10,49
+2,IMG_6149.MOV,"match FAIL (inliers=6, good=30)",6,30
+2,IMG_6150.MOV,"match FAIL (inliers=5, good=39)",5,39
+3,IMG_0157.MOV,propagated,3000,3000
+3,IMG_0159.MOV,propagated,915,1157
+3,IMG_0163.MOV,propagated,532,745
+3,IMG_0165.MOV,propagated,993,1234
+3,IMG_0168.MOV,propagated,778,965
+3,IMG_0172.MOV,propagated,775,917
+3,IMG_0176.MOV,propagated,790,986
+3,IMG_0177.MOV,propagated,531,691
+3,IMG_0179.MOV,propagated,636,778
+3,IMG_0181.MOV,"match FAIL (inliers=9, good=35)",9,35
+3,IMG_0183.MOV,"match FAIL (inliers=6, good=33)",6,33
+3,IMG_0185.MOV,"match FAIL (inliers=7, good=46)",7,46
+3,IMG_0187.MOV,"match FAIL (inliers=7, good=31)",7,31
+3,IMG_0189.MOV,"match FAIL (inliers=6, good=30)",6,30
+3,IMG_0196.MOV,"match FAIL (inliers=6, good=34)",6,34
+3,IMG_0200.MOV,"match FAIL (inliers=7, good=42)",7,42
+3,IMG_0202.MOV,"match FAIL (inliers=7, good=36)",7,36
+3,IMG_0204.MOV,"match FAIL (inliers=5, good=28)",5,28
+3,IMG_0205.MOV,"match FAIL (inliers=11, good=42)",11,42
+3,IMG_0207.MOV,"match FAIL (inliers=5, good=22)",5,22
+3,IMG_0209.MOV,propagated,134,176
+4,IMG_2598.MOV,propagated,3000,3000
+4,IMG_2600.MOV,propagated,1219,1352
+4,IMG_2602.MOV,propagated,660,873
+4,IMG_2604.MOV,propagated,779,951
+4,IMG_2606.MOV,propagated,1053,1198
+4,IMG_2608.MOV,propagated,828,1037
+4,IMG_2610.MOV,propagated,1046,1189
+4,IMG_2612.MOV,propagated,691,937
+4,IMG_2613.MOV,propagated,655,1006
+4,IMG_2615.MOV,propagated,465,614
+4,IMG_2617.MOV,propagated,788,1045
+4,IMG_2618.MOV,propagated,787,1027
+4,IMG_2621.MOV,"match FAIL (inliers=7, good=80)",7,80
+4,IMG_2622.MOV,"match FAIL (inliers=7, good=50)",7,50
+4,IMG_2624.MOV,"match FAIL (inliers=1, good=59)",1,59
+4,IMG_2625.MOV,"match FAIL (inliers=13, good=117)",13,117
+4,IMG_2626.MOV,propagated,58,177
+4,IMG_2628.MOV,propagated,618,768
+4,IMG_2631.MOV,propagated,75,174
+4,IMG_2633.MOV,propagated,60,193
+4,IMG_2635.MOV,"match FAIL (inliers=6, good=74)",6,74
+4,IMG_2636.MOV,"match FAIL (inliers=6, good=43)",6,43
+4,IMG_2638.MOV,"match FAIL (inliers=6, good=37)",6,37
+5,IMG_2644.MOV,propagated,3000,3000
+5,IMG_2645.MOV,propagated,1017,1232
+5,IMG_2647.MOV,propagated,240,501
+5,IMG_2648.MOV,propagated,559,739
+5,IMG_2650.MOV,propagated,582,782
+5,IMG_2652.MOV,propagated,561,890
+5,IMG_2654.MOV,propagated,320,563
+5,IMG_2655.MOV,propagated,1120,1252
+5,IMG_2658.MOV,propagated,553,768
+5,IMG_2659.MOV,propagated,489,674
+5,IMG_2663.MOV,"match FAIL (inliers=6, good=53)",6,53
+5,IMG_2666.MOV,propagated,60,195
+5,IMG_2667.MOV,propagated,69,239
+5,IMG_2669.MOV,propagated,79,229
+5,IMG_2675.MOV,"match FAIL (inliers=14, good=142)",14,142
+5,IMG_2677.MOV,"match FAIL (inliers=6, good=49)",6,49
+5,IMG_2678.MOV,propagated,31,153
+5,IMG_2680.MOV,"match FAIL (inliers=7, good=57)",7,57
+5,IMG_2681.MOV,"match FAIL (inliers=7, good=48)",7,48
+5,IMG_2685.MOV,"match FAIL (inliers=15, good=126)",15,126
+5,IMG_2687.MOV,"match FAIL (inliers=0, good=71)",0,71
+6,IMG_4559.MOV,propagated,3000,3000
+6,IMG_4560.MOV,propagated,247,549
+6,IMG_4561.MOV,propagated,252,412
+6,IMG_4564.MOV,propagated,210,348
+6,IMG_4566.MOV,propagated,172,307
+6,IMG_4567.MOV,propagated,199,354
+6,IMG_4570_1.MOV,propagated,140,273
+6,IMG_4571.MOV,propagated,139,294
+6,IMG_4572.MOV,propagated,171,351
+6,IMG_4577.MOV,propagated,70,186
+6,IMG_4579.MOV,"match FAIL (inliers=6, good=48)",6,48
+6,IMG_4581.MOV,"match FAIL (inliers=6, good=45)",6,45
+6,IMG_4583.MOV,"match FAIL (inliers=7, good=62)",7,62
+6,IMG_4585.MOV,"match FAIL (inliers=6, good=40)",6,40
+6,IMG_4587.MOV,"match FAIL (inliers=6, good=41)",6,41
+6,IMG_4588.MOV,"match FAIL (inliers=5, good=49)",5,49
+6,IMG_4590.MOV,"match FAIL (inliers=7, good=48)",7,48
+6,IMG_4592.MOV,"match FAIL (inliers=6, good=46)",6,46
+6,IMG_4594.MOV,"match FAIL (inliers=7, good=47)",7,47
+6,IMG_4596.MOV,"match FAIL (inliers=6, good=52)",6,52
+6,IMG_4597.MOV,"match FAIL (inliers=7, good=42)",7,42
+6,IMG_4600.MOV,"match FAIL (inliers=3, good=40)",3,40
+6,IMG_4611.MOV,"match FAIL (inliers=6, good=39)",6,39
+6,IMG_4613.MOV,"match FAIL (inliers=6, good=39)",6,39
+7,IMG_5618.MOV,propagated,3000,3000
+7,IMG_5620.MOV,propagated,156,244
+7,IMG_5622.MOV,propagated,169,237
+7,IMG_5623.MOV,propagated,154,244
+7,IMG_5628.MOV,propagated,160,236
+7,IMG_5632.MOV,propagated,54,129
+7,IMG_5634.MOV,propagated,78,146
+7,IMG_5635.MOV,propagated,76,146
+7,IMG_5636.MOV,propagated,33,86
+7,IMG_5638.MOV,propagated,80,175
+7,IMG_5645.MOV,propagated,66,134
+7,IMG_5652.MOV,"match FAIL (inliers=6, good=47)",6,47
+7,IMG_5656.MOV,"match FAIL (inliers=5, good=48)",5,48
+7,IMG_5658.MOV,"match FAIL (inliers=2, good=40)",2,40
+7,IMG_5659.MOV,"match FAIL (inliers=6, good=49)",6,49
+7,IMG_5660.MOV,"match FAIL (inliers=6, good=43)",6,43
+7,IMG_5662.MOV,"match FAIL (inliers=5, good=44)",5,44
+7,IMG_5667.MOV,"match FAIL (inliers=2, good=36)",2,36
+7,IMG_5669.MOV,"match FAIL (inliers=6, good=40)",6,40
+7,IMG_5671.MOV,"match FAIL (inliers=5, good=55)",5,55
+7,IMG_5673.MOV,"match FAIL (inliers=6, good=40)",6,40
+7,IMG_5675.MOV,"match FAIL (inliers=7, good=41)",7,41
+7,IMG_5676.MOV,"match FAIL (inliers=6, good=35)",6,35
+7,IMG_5678.MOV,propagated,73,121
+7,IMG_5680.MOV,"match FAIL (inliers=19, good=47)",19,47
+7,IMG_5682.MOV,propagated,59,97
+7,IMG_5684.MOV,propagated,49,105
+7,IMG_5686.MOV,propagated,30,67
+8,IMG_3689.MOV,propagated,3000,3000
+8,IMG_3692.MOV,propagated,625,723
+8,IMG_3694.MOV,propagated,732,857
+8,IMG_3695.MOV,propagated,652,775
+8,IMG_3696.MOV,propagated,715,851
+8,IMG_3697.MOV,propagated,752,861
+8,IMG_3698.MOV,propagated,702,840
+8,IMG_3700.MOV,propagated,481,779
+8,IMG_3702.MOV,propagated,609,741
+8,IMG_3704.MOV,propagated,566,685
+8,IMG_3706.MOV,propagated,208,332
+8,IMG_3707.MOV,propagated,640,835
+8,IMG_3709.MOV,propagated,614,826
+8,IMG_3713.MOV,"match FAIL (inliers=6, good=43)",6,43
+8,IMG_3714.MOV,"match FAIL (inliers=6, good=49)",6,49
+8,IMG_3716.MOV,"match FAIL (inliers=5, good=44)",5,44
+8,IMG_3717.MOV,"match FAIL (inliers=6, good=33)",6,33
+8,IMG_3719.MOV,"match FAIL (inliers=6, good=51)",6,51
+8,IMG_3726.MOV,"match FAIL (inliers=5, good=45)",5,45
+8,IMG_3730.MOV,"match FAIL (inliers=5, good=39)",5,39
+8,IMG_3731.MOV,"match FAIL (inliers=7, good=36)",7,36
+8,IMG_3733.MOV,"match FAIL (inliers=8, good=46)",8,46
+8,IMG_3734.MOV,"match FAIL (inliers=8, good=49)",8,49
+9,IMG_1525.MOV,propagated,3000,3000
+9,IMG_1531.MOV,propagated,153,315
+9,IMG_1540.MOV,"match FAIL (inliers=15, good=55)",15,55
+9,IMG_1543.MOV,"match FAIL (inliers=17, good=45)",17,45
+9,IMG_1552.MOV,propagated,20,71
+9,IMG_1553.MOV,propagated,29,62
+9,IMG_1555.MOV,propagated,37,89

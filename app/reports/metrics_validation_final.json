@@ -1,9 +1,8 @@
 {
-  "auc_raw": 0.7617,
-  "auc_cal": 0.7578,
-  "brier": 0.199,
-  "logloss": 0.5803,
-  "n_rows": 203,
-  "model": "logreg_C0.3_iso_oof",
-  "folds": 5
+  "model": "logreg_final_C0.3",
+  "roc_auc_holdout": 0.6564102564102564,
+  "logloss_holdout": 0.6849478134234818,
+  "brier_holdout": 0.24630262233162492,
+  "ece_holdout": 0.19127811032591163,
+  "n_rows": 203
 }

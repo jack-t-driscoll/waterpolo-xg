@@ -1,218 +1,317 @@
 # tools/extract_keyframes.py
-import argparse
+# -*- coding: utf-8 -*-
+"""
+Extracts reference frames around each labeled event for downstream CV tasks.
+
+Outputs:
+  - Images: app/reports/frames/<file-prefix>_<CONTEXT>.jpg   (CONTEXT ∈ {tm,t0,tp})
+  - Manifest: app/reports/frames/frames_manifest.csv
+      columns: game_id, possession_id, video_file, context, t_s, frame_path
+
+Key features:
+  - Safe, slugified filenames (no slashes/backslashes/# etc.)
+  - Clamp timestamps via data/videos.csv (duration_s) or via video length
+  - Backend fallback (FFMPEG → default → MSMF)
+  - --force to overwrite existing frames and rebuild manifest
+"""
+
+from __future__ import annotations
 from pathlib import Path
-import pandas as pd
-import numpy as np
+import argparse
+import math
+import re
+from typing import Dict, Optional, Tuple
+
 import cv2
+import numpy as np
+import pandas as pd
 
-# --- Paths ---
+# ---------- Paths ----------
 ROOT = Path(__file__).resolve().parents[1]
-APP_DIR = ROOT / "app"
-DATA_DIR = ROOT / "data"
-OUT_DIR_DEFAULT = APP_DIR / "reports" / "frames"
+APP = ROOT / "app"
+DATA = ROOT / "data"
+FRAMES_DIR = APP / "reports" / "frames"
+MANIFEST_CSV = FRAMES_DIR / "frames_manifest.csv"
+VIDEOS_CSV = DATA / "videos.csv"
+SHOTS_CSV = APP / "shots.csv"
 
-# --- Time parsing ---
-def mmss_to_seconds(s: str) -> float:
-    if s is None or (isinstance(s, float) and np.isnan(s)):
-        return np.nan
-    s = str(s).strip()
-    if not s:
-        return np.nan
-    parts = s.split(":")
-    try:
-        if len(parts) == 2:
-            m, sec = int(parts[0]), float(parts[1])
-            return m * 60 + sec
-        elif len(parts) == 3:
-            h, m, sec = int(parts[0]), int(parts[1]), float(parts[2])
-            return h * 3600 + m * 60 + sec
-        else:
-            return float(s)  # already seconds
-    except Exception:
-        return np.nan
-
-# --- Path utils ---
-def clean_path(p: str) -> str:
-    if p is None or (isinstance(p, float) and np.isnan(p)):
+# ---------- Helpers ----------
+_SLUG_RE = re.compile(r"[^a-zA-Z0-9]+")
+def slugify(s: str, max_len: int = 60) -> str:
+    """Convert any string to a safe slug: lowercase, alnum + single dashes."""
+    if s is None:
         return ""
-    s = str(p).strip()
-    # strip wrapping quotes
-    if (s.startswith('"') and s.endswith('"')) or (s.startswith("'") and s.endswith("'")):
-        s = s[1:-1]
-    return s
+    s = str(s)
+    s = s.replace("\\", "/")  # normalize separators
+    s = s.strip().lower()
+    s = _SLUG_RE.sub("-", s).strip("-")
+    return s[:max_len] if max_len else s
 
-# --- Video helpers ---
-def open_video(path: Path):
-    """Open video via FFmpeg backend only; raise clear errors if missing or unsupported."""
-    p = Path(clean_path(str(path)))
-    if not p.exists():
-        raise RuntimeError(f"Path does not exist: {repr(str(p))}")
-    cap = cv2.VideoCapture(str(p), cv2.CAP_FFMPEG)
-    if cap.isOpened():
-        fps = cap.get(cv2.CAP_PROP_FPS)
-        if not fps or np.isnan(fps) or fps <= 0:
-            fps = 30.0
-        return cap, float(fps)
-    raise RuntimeError(f"Failed to open video with FFmpeg: {repr(str(p))}")
-
-def grab_frame_at_time(cap, fps: float, t_s: float):
-    if np.isnan(t_s):
+def parse_mmss(mmss: str) -> Optional[float]:
+    """Parse 'MM:SS' (or 'M:SS') to seconds (float)."""
+    if not isinstance(mmss, str):
         return None
-    frame_idx = max(0, int(round(t_s * fps)))
+    mmss = mmss.strip()
+    if not mmss:
+        return None
+    parts = mmss.split(":")
+    if len(parts) != 2:
+        return None
+    try:
+        m = int(parts[0])
+        s = float(parts[1])
+        return max(0.0, m * 60.0 + s)
+    except Exception:
+        return None
+
+def try_open_video(path: str) -> Optional[cv2.VideoCapture]:
+    """Try several backends to open a video on Windows reliably."""
+    # Prefer FFMPEG, then default API, then MSMF
+    apis = [cv2.CAP_FFMPEG, 0, cv2.CAP_MSMF]
+    for api in apis:
+        cap = cv2.VideoCapture(path, api)
+        if cap is not None and cap.isOpened():
+            return cap
+        if cap is not None:
+            cap.release()
+    return None
+
+def get_frame_at_second(cap: cv2.VideoCapture, t_s: float) -> Optional[np.ndarray]:
+    """Grab a frame near t_s seconds using FPS to compute frame index."""
+    if cap is None or not cap.isOpened():
+        return None
+    fps = cap.get(cv2.CAP_PROP_FPS) or 0.0
+    if fps <= 0:
+        # fallback: just read the first frame
+        ok, img = cap.read()
+        return img if ok else None
+    frame_idx = int(round(t_s * fps))
+    # clamp
+    n_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT) or 0)
+    if n_frames > 0:
+        frame_idx = max(0, min(frame_idx, n_frames - 1))
     cap.set(cv2.CAP_PROP_POS_FRAMES, frame_idx)
-    ok, frame = cap.read()
-    if not ok or frame is None:
-        return None
-    return frame
+    ok, img = cap.read()
+    return img if ok else None
 
-def ensure_dir(p: Path):
-    p.mkdir(parents=True, exist_ok=True)
+def clamp_time(t: float, dur: Optional[float]) -> float:
+    if t < 0:
+        return 0.0
+    if dur is not None and dur > 0:
+        return min(t, max(0.0, dur - 1e-3))
+    return t
 
-# --- Main ---
+def load_videos_registry() -> Dict[str, Dict]:
+    """Load data/videos.csv into a dict keyed by source_video_id (filename)."""
+    reg = {}
+    if VIDEOS_CSV.exists():
+        vdf = pd.read_csv(VIDEOS_CSV, dtype=str)
+        for _, r in vdf.iterrows():
+            vid = str(r.get("source_video_id", "")).strip()
+            pth = str(r.get("source_video_path", "")).strip()
+            fps = r.get("fps", None)
+            dur = r.get("duration_s", None)
+            try:
+                dur_val = float(dur) if dur not in (None, "", "nan") else None
+            except Exception:
+                dur_val = None
+            if vid:
+                reg[vid] = {
+                    "path": pth,
+                    "fps": fps,
+                    "duration_s": dur_val
+                }
+    return reg
+
+def build_file_prefix(row: pd.Series) -> str:
+    """
+    Construct a safe, informative prefix for JPG names, WITHOUT nested dirs.
+    Example: 1_1-p0008-q1-4-post-bar
+    """
+    gid = slugify(row.get("game_id", ""))
+    pid = slugify(row.get("possession_id", ""))
+    qtr = slugify(row.get("period", ""))
+    shooter = slugify(row.get("player_number", ""))
+    stype = slugify(row.get("shot_type", ""))
+    # Minimal but helpful
+    parts = [gid, pid]
+    if qtr: parts.append(f"q{qtr}")
+    if shooter: parts.append(f"n{shooter}")
+    if stype: parts.append(stype)
+    return "-".join([p for p in parts if p])
+
+# ---------- Main ----------
 def main():
-    ap = argparse.ArgumentParser(description="Extract per-shot keyframes (and context) from source videos")
-    ap.add_argument("--shots", default=str(APP_DIR / "shots.csv"), help="Path to app/shots.csv")
-    ap.add_argument("--videos", default=str(DATA_DIR / "videos.csv"), help="Path to data/videos.csv")
-    ap.add_argument("--out_dir", default=str(OUT_DIR_DEFAULT), help="Output directory for frames")
-    ap.add_argument("--context_s", type=float, default=0.0, help="Also extract frames at ±context seconds (0 to disable)")
-    ap.add_argument("--limit", type=int, default=0, help="Process only first N shots (0 = all)")
+    ap = argparse.ArgumentParser(description="Extract keyframes around labeled timestamps into app/reports/frames/")
+    ap.add_argument("--shots", default=str(SHOTS_CSV), help="Path to app/shots.csv")
+    ap.add_argument("--videos", default=str(VIDEOS_CSV), help="Path to data/videos.csv")
+    ap.add_argument("--out_dir", default=str(FRAMES_DIR), help="Output directory for frames")
+    ap.add_argument("--context_s", type=float, default=2.0, help="Seconds before/after event for tm/tp")
+    ap.add_argument("--limit", type=int, default=None, help="Max rows to process (for testing)")
+    ap.add_argument("--only_missing", action="store_true", help="Skip rows that already have all frames")
+    ap.add_argument("--force", action="store_true", help="Overwrite existing frames and rebuild manifest")
     args = ap.parse_args()
 
     shots_path = Path(args.shots)
     videos_path = Path(args.videos)
     out_dir = Path(args.out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
 
+    # Load inputs
     if not shots_path.exists():
-        raise FileNotFoundError(f"Missing shots CSV: {shots_path}")
-    if not videos_path.exists():
-        raise FileNotFoundError(f"Missing videos CSV: {videos_path}")
+        raise SystemExit(f"Missing shots CSV: {shots_path}")
+    df = pd.read_csv(shots_path, dtype=str)
 
-    ensure_dir(out_dir)
+    # Keep only rows with required time fields present
+    need_cols = ["video_file", "video_timestamp_mmss", "possession_id", "game_id"]
+    for c in need_cols:
+        if c not in df.columns:
+            raise SystemExit(f"shots.csv missing required column: {c}")
 
-    shots = pd.read_csv(shots_path, dtype=str)
-    vids = pd.read_csv(videos_path, dtype=str)
+    # Filter to rows with valid timestamps
+    df["t0"] = df["video_timestamp_mmss"].map(parse_mmss)
+    df = df[~df["t0"].isna()].copy()
+    if df.empty:
+        print("No rows with valid MM:SS timestamps; nothing to extract.")
+        return
 
-    # Keep only shots
-    if "event_type" in shots.columns:
-        shots = shots[shots["event_type"].astype(str).str.lower() == "shot"].copy()
+    # Optionally limit rows
+    if args.limit is not None:
+        df = df.iloc[:int(args.limit)].copy()
 
-    # Parse times
-    if "video_timestamp_mmss" in shots.columns:
-        shots["t_s"] = shots["video_timestamp_mmss"].map(mmss_to_seconds)
-    else:
-        shots["t_s"] = np.nan
+    # Videos registry
+    vreg = load_videos_registry()
+    if not vreg:
+        print("WARNING: data/videos.csv empty or missing; path clamping by duration may be limited.")
 
-    # Join for video paths
-    required_shot_cols = {"video_file"}
-    required_vids_cols = {"source_video_id", "source_video_path"}
-    if not required_shot_cols.issubset(shots.columns):
-        missing = required_shot_cols - set(shots.columns)
-        raise ValueError(f"shots.csv missing columns: {missing}")
-    if not required_vids_cols.issubset(vids.columns):
-        missing = required_vids_cols - set(vids.columns)
-        raise ValueError(f"videos.csv missing columns: {missing}")
-
-    df = shots.merge(
-        vids[["source_video_id", "source_video_path"]],
-        left_on="video_file", right_on="source_video_id", how="left"
-    )
-    df["source_video_path"] = df["source_video_path"].map(clean_path)
-
-    # Report unmapped
-    unmapped = df["source_video_path"].isna() | (df["source_video_path"].astype(str).str.strip() == "")
-    if unmapped.any():
-        n = int(unmapped.sum())
-        print(f"Warning: {n} shots have no matching source_video_path in data/videos.csv")
-
-    # Identify optional columns for filename tags
-    poss_col = "possession_id" if "possession_id" in df.columns else None
-    game_col = "game_id" if "game_id" in df.columns else None
-    period_col = "period" if "period" in df.columns else None
-    player_col = "player_number" if "player_number" in df.columns else None
-    outcome_col = "shot_result" if "shot_result" in df.columns else ("outcome" if "outcome" in df.columns else None)
-
-    # Optionally limit
-    if args.limit and args.limit > 0:
-        df = df.head(args.limit).copy()
-
+    # Prepare manifest accumulation
     manifest_rows = []
+    written = 0
+    skipped_existing = 0
+    failed = 0
 
-    # Group by video to minimize open/close
-    for vid_path_str, group in df.groupby("source_video_path", dropna=False):
-        if pd.isna(vid_path_str) or str(vid_path_str).strip() == "":
-            continue
-        vid_path = Path(vid_path_str)
+    # If forcing, clear old manifest (frames remain but will be overwritten)
+    if args.force and MANIFEST_CSV.exists():
+        MANIFEST_CSV.unlink(missing_ok=True)
 
-        print(f"Opening: {repr(str(vid_path))}")
+    # If not forcing, load existing manifest to know what “already exists”
+    existing = pd.DataFrame()
+    if MANIFEST_CSV.exists() and not args.force:
         try:
-            cap, fps = open_video(vid_path)
-        except Exception as e:
-            print(f"ERROR opening {vid_path}: {e}")
+            existing = pd.read_csv(MANIFEST_CSV, dtype=str)
+        except Exception:
+            existing = pd.DataFrame()
+    have = set()
+    if not existing.empty:
+        for _, r in existing.iterrows():
+            k = (str(r.get("game_id","")), str(r.get("possession_id","")), str(r.get("video_file","")), str(r.get("context","")))
+            have.add(k)
+
+    # Per-row extraction
+    for _, row in df.iterrows():
+        gid = str(row["game_id"])
+        pid = str(row["possession_id"])
+        vfile = str(row["video_file"]).strip()
+        t0 = float(row["t0"])
+
+        reg = vreg.get(vfile, {})
+        vpath = reg.get("path")
+        dur_s = reg.get("duration_s", None)
+
+        if not vpath or not Path(vpath).exists():
+            print(f"ERROR: video path not found for {vfile} → {vpath}")
+            failed += 1
             continue
 
+        # Compute tm/t0/tp times (clamped)
+        ctx = float(args.context_s)
+        t_tm = clamp_time(t0 - ctx, dur_s)
+        t_t0 = clamp_time(t0, dur_s)
+        t_tp = clamp_time(t0 + ctx, dur_s)
+
+        # output filenames (flat; safe)
+        prefix = build_file_prefix(row)
+        if not prefix:
+            # minimal fallback (still safe)
+            prefix = f"{slugify(gid)}-{slugify(pid)}-{slugify(vfile)}"
+
+        targets = {
+            "tm": out_dir / f"{prefix}_tm.jpg",
+            "t0": out_dir / f"{prefix}_t0.jpg",
+            "tp": out_dir / f"{prefix}_tp.jpg",
+        }
+
+        # skip if all exist and only_missing
+        already = all(p.exists() for p in targets.values())
+        if args.only_missing and already:
+            skipped_existing += 1
+            # also append to manifest from existing (ensures continuity)
+            for ctx_name, pth in targets.items():
+                manifest_rows.append({
+                    "game_id": gid,
+                    "possession_id": pid,
+                    "video_file": vfile,
+                    "context": ctx_name,
+                    "t_s": {"tm": t_tm, "t0": t_t0, "tp": t_tp}[ctx_name],
+                    "frame_path": str(pth),
+                })
+            continue
+
+        # Open the video (prefer FFMPEG)
+        cap = try_open_video(vpath)
+        if cap is None:
+            print(f"ERROR opening {vpath}: could not open with available backends")
+            failed += 1
+            continue
+
+        # Extract frames
         try:
-            for i, row in group.iterrows():
-                t0 = row.get("t_s", np.nan)
-                if np.isnan(t0):
+            triplet = [("tm", t_tm), ("t0", t_t0), ("tp", t_tp)]
+            for name, t_s in triplet:
+                img = get_frame_at_second(cap, t_s)
+                if img is None:
+                    print(f"  - {vfile}: failed to read frame at {t_s:.2f}s ({name})")
                     continue
-
-                # Build filename base
-                tags = []
-                if game_col:   tags.append(str(row.get(game_col, "")))
-                if poss_col:   tags.append(str(row.get(poss_col, "")))
-                if period_col: tags.append(f"Q{str(row.get(period_col, ''))}")
-                if player_col: tags.append(f"#{str(row.get(player_col, ''))}")
-                if outcome_col:tags.append(str(row.get(outcome_col, "")))
-                base = "_".join([x for x in tags if x]) or f"row{i}"
-
-                # t0
-                frame = grab_frame_at_time(cap, fps, t0)
-                if frame is not None:
-                    out_path = out_dir / f"{base}_t0.jpg"
-                    cv2.imwrite(str(out_path), frame)
+                # Ensure overwrite if --force set; otherwise cv2.imwrite will overwrite anyway
+                ok = cv2.imwrite(str(targets[name]), img)
+                if ok:
+                    written += 1
                     manifest_rows.append({
-                        "row_idx": i,
-                        "video": str(vid_path),
-                        "t_s": float(t0),
-                        "context": "t0",
-                        "frame_path": str(out_path),
-                        "possession_id": str(row.get("possession_id", "")),
-                        "video_file": str(row.get("video_file", "")),
+                        "game_id": gid,
+                        "possession_id": pid,
+                        "video_file": vfile,
+                        "context": name,
+                        "t_s": t_s,
+                        "frame_path": str(targets[name]),
                     })
-
-                # context frames (clamp tm to 0.0 if negative)
-                ctx = float(args.context_s)
-                if ctx > 0:
-                    for label, t in [("tm", t0 - ctx), ("tp", t0 + ctx)]:
-                        t_eff = max(0.0, float(t))
-                        clipped = (t_eff != t)
-                        f2 = grab_frame_at_time(cap, fps, t_eff)
-                        if f2 is not None:
-                            out_path = out_dir / f"{base}_{label}.jpg"
-                            cv2.imwrite(str(out_path), f2)
-                            row_dict = {
-                                "row_idx": i,
-                                "video": str(vid_path),
-                                "t_s": float(t_eff),
-                                "context": label,
-                                "frame_path": str(out_path),
-                                "possession_id": str(row.get("possession_id", "")),
-                                "video_file": str(row.get("video_file", "")),
-                            }
-                            if label == "tm":
-                                row_dict["clipped_to_zero"] = str(bool(clipped))
-                            manifest_rows.append(row_dict)
+                else:
+                    print(f"  - {vfile}: cv2.imwrite failed for {targets[name]}")
         finally:
             cap.release()
 
-    # Write manifest
-    manifest = pd.DataFrame(manifest_rows)
-    if not manifest.empty:
-        out_csv = out_dir / "frames_manifest.csv"
-        manifest.to_csv(out_csv, index=False)
-        print(f"✓ Wrote {len(manifest)} frames to {out_dir} and manifest {out_csv}")
-    else:
-        print("No frames extracted (check timestamps and mapping).")
+    # Write manifest (append to existing unless --force)
+    FRAMES_DIR.mkdir(parents=True, exist_ok=True)
+    out_df = pd.DataFrame(manifest_rows)
+    if not out_df.empty:
+        if MANIFEST_CSV.exists() and not args.force:
+            # append unique rows
+            old = pd.read_csv(MANIFEST_CSV, dtype=str)
+            merged = pd.concat([old, out_df], ignore_index=True)
+            # Drop perfect duplicates
+            merged = merged.drop_duplicates(
+                subset=["game_id", "possession_id", "video_file", "context", "frame_path"],
+                keep="last",
+            )
+            merged.to_csv(MANIFEST_CSV, index=False)
+        else:
+            out_df.to_csv(MANIFEST_CSV, index=False)
+
+    print(f"\n✓ Extraction complete. Wrote {written} frames.")
+    if skipped_existing:
+        print(f"  (Skipped {skipped_existing} rows that already had frames; use --force to overwrite.)")
+    if failed:
+        print(f"  (Encountered {failed} video open/path issues — see errors above.)")
+    print(f"→ Manifest: {MANIFEST_CSV.resolve()}")
 
 if __name__ == "__main__":
     main()
