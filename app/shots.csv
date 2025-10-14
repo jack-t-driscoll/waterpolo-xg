@@ -1,11 +1,11 @@
 possession_id,game_id,our_team_name,opponent_team_name,our_team_level,opponent_team_level,period,time_remaining,man_state,event_type,turnover_type,turnover_player_number,drawn_by_player_number,shooter_x,shooter_y,defender_count,goalie_present,goalie_distance_m,goalie_lateral,possession_passes,attack_type,shot_type,shot_result,shooter_handedness,player_number,video_file,video_timestamp_mmss
-1_P0001,1,west_sub,evanston,IL Club,IL Club,1,06:50,6v6,shot,,,,0.65,0.2,1,true,1,right,1,counter,standard,goal,right,7,IMG_6154.MOV,00:18
-1_P0002,1,west_sub,evanston,IL Club,IL Club,1,06:17,6v6,shot,,,,0.5,0.2,1,true,1,center,0,perimeter,standard,goal,right,11,IMG_6155.MOV,00:39
-1_P0003,1,west_sub,evanston,IL Club,IL Club,1,05:51,6v6,shot,,,,0.7,0.4,2,true,1.5,right,1,counter,standard,post/bar,right,7,IMG_6156.MOV,00:26
+1_P0001,1,west_sub,evanston,IL Club,IL Club,1,06:50,6v6,shot,,,,3.7007,3.4998,1,true,1,right,1,counter,standard,goal,right,7,IMG_6154.MOV,00:18
+1_P0002,1,west_sub,evanston,IL Club,IL Club,1,06:17,6v6,shot,,,,2.4488,7.3640,1,true,1,center,0,perimeter,standard,goal,right,11,IMG_6155.MOV,00:39
+1_P0003,1,west_sub,evanston,IL Club,IL Club,1,05:51,6v6,shot,,,,3.9570,5.9338,2,true,1.5,right,1,counter,standard,post/bar,right,7,IMG_6156.MOV,00:26
 1_P0004,1,west_sub,evanston,IL Club,IL Club,1,05:03,6v6,turnover,steal/interception,7,,,,,,,,1,,,,,,IMG_6157.MOV,00:48
 1_P0005,1,west_sub,evanston,IL Club,IL Club,1,04:25,6v6,turnover,steal/interception,4,,,,,,,,1,,,,,,IMG_6159.MOV,00:03
-1_P0006,1,west_sub,evanston,IL Club,IL Club,1,03:33,6v6,shot,,,,0.7,0.2,1,true,1,right,9,perimeter,standard,goal,right,4,IMG_6162.MOV,00:31
-1_P0007,1,west_sub,evanston,IL Club,IL Club,1,02:55,6v6,shot,,,,0.7,0.2666666667,1,true,0.5,right,6,perimeter,standard,blocked (GK),right,4,IMG_6164.MOV,00:17
+1_P0006,1,west_sub,evanston,IL Club,IL Club,1,03:33,6v6,shot,,,,3.8437,2.5482,1,true,1,right,9,perimeter,standard,goal,right,4,IMG_6162.MOV,00:31
+1_P0007,1,west_sub,evanston,IL Club,IL Club,1,02:55,6v6,shot,,,,4.0352,3.7012,1,true,0.5,right,6,perimeter,standard,blocked (GK),right,4,IMG_6164.MOV,00:17
 1_P0008,1,west_sub,evanston,IL Club,IL Club,1,02:44,6v6,shot,,,,0.75,0.4,1,true,0.5,right,2,perimeter,lob,post/bar,right,4,IMG_6165.MOV,00:11
 1_P0009,1,west_sub,evanston,IL Club,IL Club,1,02:27,6v6,shot,,,,0.4,0.4666666667,1,true,1,center,3,perimeter,standard,missed,right,5,IMG_6166.MOV,00:16
 1_P0010,1,west_sub,evanston,IL Club,IL Club,1,02:01,6v6,turnover,bad pass / out of bounds,4,,,,,,,,1,,,,,,IMG_6167.MOV,00:21

@@ -3,7 +3,7 @@
 Coach View — Two-track layout (Shots | Non-shot events), schema-flex, shots-first
 - Parent tabs: "Shots", "Non-shot events"
 - Shots: Overview, Shooters, By team, By angle, By distance, By shot type, By attack type, By pressure,
-         By handedness, By period, Downloads, Heatmaps (if available)
+         By handedness, By period, Downloads, Heatmap (if available)
 - Non-shot: Possession summary, Turnovers (summary), Turnovers by team & player, Turnovers by context,
            Ejections drawn, 5m drawn
 - Geometry: prefers meters (x_m, y_m); else converts normalized (shooter_x, shooter_y)→meters (20x15)
@@ -235,7 +235,7 @@ if pressure_col == "defender_count":
 if period_col_shots:
     df_shots[period_col_shots] = _to_int_series(df_shots[period_col_shots]).astype("Int64")
 
-# ---- Normalized dataset for heatmaps (shots-only) ----
+# ---- Normalized dataset for Heatmap (shots-only) ----
 df_norm = None
 if NORMALIZED_APP_CSV.exists():
     try:
@@ -275,7 +275,7 @@ with parent_shots:
     # Subtabs
     base_tabs = ["Overview", "Shooters", "By team", "By angle", "By distance",
                  "By shot type", "By attack type", "By pressure", "By handedness", "By period", "Downloads"]
-    tabs = base_tabs + (["Heatmaps (new)"] if df_norm is not None else [])
+    tabs = base_tabs + (["Heatmap"] if df_norm is not None else [])
     (tab_overview, tab_shooters, tab_team, tab_angle, tab_distance,
      tab_shot_type, tab_attack_type, tab_pressure, tab_handed, tab_period, tab_downloads, *maybe_heatmap) = st.tabs(tabs)
 
@@ -451,11 +451,11 @@ with parent_shots:
         jl_bytes = jump_df.to_csv(index=False).encode("utf-8")
         st.download_button("Download VLC jump list (CSV)", data=jl_bytes, file_name="jump_list_vlc.csv", mime="text/csv", key="dl_jump_csv")
 
-    # Heatmaps (new)
+    # Heatmap
     if df_norm is not None and len(maybe_heatmap) == 1:
         (tab_heatmaps,) = maybe_heatmap
         with tab_heatmaps:
-            st.subheader("Heatmaps (distance × angle) — shots only")
+            st.subheader("Heatmap (distance × angle) — shots only")
             try:
                 shots = df_norm.copy()
                 heat = build_heatmap_df(shots)

@@ -1,8 +1,8 @@
 {
   "model": "logreg_final_C0.3",
-  "roc_auc_holdout": 0.6564102564102564,
-  "logloss_holdout": 0.6849478134234818,
-  "brier_holdout": 0.24630262233162492,
-  "ece_holdout": 0.19127811032591163,
+  "roc_auc_holdout": 0.6692307692307692,
+  "logloss_holdout": 0.7507955776859642,
+  "brier_holdout": 0.2579241149468037,
+  "ece_holdout": 0.23749043168426007,
   "n_rows": 203
 }

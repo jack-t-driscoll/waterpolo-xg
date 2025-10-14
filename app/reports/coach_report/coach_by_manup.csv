@@ -1,0 +1,3 @@
+is_man_up,n,goals,xg_sum,xg_ps,goal_rate,xg_minus_goals,low_data
+False,183,91,88.41342430961159,0.483,0.497,-2.587,False
+True,20,10,8.740310019783132,0.437,0.5,-1.26,False

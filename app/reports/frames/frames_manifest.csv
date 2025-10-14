@@ -778,3 +778,4 @@ game_id,possession_id,video_file,context,t_s,frame_path
 15,15_P0002,IMG_0135.MOV,tp,15.0,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\15-15-p0002-qnan-n10-skip_tp.jpg
 ,2_P0024,IMG_6150.MOV,tm,,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_P0024_tm.jpg
 ,2_P0024,IMG_6150.MOV,t0,,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_P0024_t0.jpg
+,2_P0024,IMG_6150.MOV,tp,,C:\Users\sdris\Documents\git\waterpolo-xg\app\reports\frames\2_P0024_tp.jpg

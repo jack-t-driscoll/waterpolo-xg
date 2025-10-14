@@ -1,171 +1,202 @@
 # tools/coach_report.py
-# Coach-facing summaries from calibrated by-shot/by-game outputs.
-# - Merges features to recover labels & context
-# - Derives is_goal from features['shot_result'] == 'goal'
-# - Adds low_data flags for small counts
-# - Shooters grouped by our_team_name + player_number (adds shooter_label)
-# - Angle bins are SIGNED (left negative, right positive), recomputed unconditionally
+# Purpose: Produce coach-facing summaries from features + model outputs.
+# Robust to: by_shot having xg/xg_cal/xg_raw; by_game being pre-aggregated or per-shot.
+# Outputs: CSVs into --out_dir (shooters, overview, angle_distance, heatmap-friendly tables)
 
+from __future__ import annotations
 import argparse
 from pathlib import Path
 import pandas as pd
 import numpy as np
 
+def ensure_dir(p: Path) -> Path:
+    p.mkdir(parents=True, exist_ok=True)
+    return p
 
-def to_num(x):
-    return pd.to_numeric(x, errors="coerce")
+def read_csv_safe(p: Path) -> pd.DataFrame:
+    if not p.exists():
+        raise SystemExit(f"Missing required file: {p}")
+    return pd.read_csv(p, dtype=str)
 
+def to_float(s: pd.Series) -> pd.Series:
+    return pd.to_numeric(s, errors="coerce")
 
-def add_low_data_flag(df, count_col="n", threshold=10):
-    df = df.copy()
-    if count_col in df.columns:
-        df["low_data"] = df[count_col] < threshold
+def pick_xg_column(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Ensure there is a numeric 'xg' column:
+      - Prefer existing 'xg'
+      - else use 'xg_cal'
+      - else use 'xg_raw'
+    Raises if none found.
+    """
+    for cand in ["xg", "xg_cal", "xg_raw"]:
+        if cand in df.columns:
+            df["xg"] = to_float(df[cand])
+            return df
+    raise SystemExit(f"'by_shot' must contain one of ['xg','xg_cal','xg_raw']; columns={list(df.columns)}")
+
+def coerce_boolish(s: pd.Series) -> pd.Series:
+    if s.dtype == bool:
+        return s.astype(int)
+    m = {True:1, False:0, "true":1, "false":0, "True":1, "False":0, 1:1, 0:0}
+    return s.map(m).fillna(0).astype(int)
+
+def maybe_aggregate_by_game(by_game: pd.DataFrame, by_shot: pd.DataFrame) -> pd.DataFrame:
+    """
+    If by_game already has 'game_id','xg_sum','shots' we accept it.
+    Otherwise, compute a per-game aggregate from by_shot.
+    """
+    cols = set(by_game.columns)
+    if {"game_id", "xg_sum", "shots"}.issubset(cols):
+        # Ensure numeric types
+        by_game["xg_sum"] = to_float(by_game["xg_sum"])
+        by_game["shots"] = pd.to_numeric(by_game["shots"], errors="coerce").fillna(0).astype(int)
+        return by_game[["game_id","xg_sum","shots"]]
+
+    # Build from by_shot instead
+    if "game_id" not in by_shot.columns:
+        raise SystemExit("Cannot aggregate by_game: 'by_shot' missing 'game_id'")
+    agg = by_shot.groupby("game_id", dropna=False).agg(
+        shots=("possession_id", "count"),
+        xg_sum=("xg", "sum"),
+    ).reset_index()
+    return agg
+
+def enrich_features(df: pd.DataFrame) -> pd.DataFrame:
+    # Ensure numeric geometry present for summaries
+    for c in ["distance_m","angle_deg","shooter_x","shooter_y","defender_count","goalie_distance_m","possession_passes"]:
+        if c in df.columns:
+            df[c] = to_float(df[c])
+    # Normalize shot_result labels a bit
+    if "shot_result" in df.columns:
+        df["shot_result"] = df["shot_result"].astype(str).str.strip().str.lower()
+        df["is_goal"] = (df["shot_result"] == "goal").astype(int)
     else:
-        if "shots" in df.columns and len(df) == 1:
-            df["low_data"] = df["shots"] < threshold
-        else:
-            df["low_data"] = False
+        df["is_goal"] = np.nan
+    # Useful bins
+    if "distance_m" in df.columns:
+        df["distance_bin_model"] = pd.cut(df["distance_m"],
+                                          bins=[-1,2,4,6,8,10,50],
+                                          labels=["0-2","2-4","4-6","6-8","8-10","10+"],
+                                          include_lowest=True)
+    if "angle_deg" in df.columns:
+        df["angle_bin"] = pd.cut(df["angle_deg"],
+                                 bins=[-181,-60,-30,-10,10,30,60,181],
+                                 labels=["<-60","-60..-30","-30..-10","-10..10","10..30","30..60",">60"],
+                                 include_lowest=True)
     return df
 
+def make_shooter_summary(df: pd.DataFrame, by_shot: pd.DataFrame) -> pd.DataFrame:
+    # Join xg back to features on possession_id
+    if "possession_id" not in df.columns or "possession_id" not in by_shot.columns:
+        raise SystemExit("Both features and by_shot must have 'possession_id'.")
+    M = df.merge(by_shot[["possession_id","xg","game_id"]], on="possession_id", how="left")
+    # Shooter identity (prefer team-aware if present)
+    shooter_key = None
+    for cand in ["shooter_name_team","shooter_name","player_number"]:
+        if cand in M.columns:
+            shooter_key = cand
+            break
+    if shooter_key is None:
+        # Fall back so we still produce something
+        shooter_key = "player_number"
+        M[shooter_key] = df.get("player_number", "Unknown")
 
-def recompute_bins(df):
-    """Recompute distance_bin and SIGNED angle_bin (overwrite any existing)."""
-    out = df.copy()
+    g = M.groupby([shooter_key], dropna=False).agg(
+        shots=("possession_id","count"),
+        goals=("is_goal","sum"),
+        xg_sum=("xg","sum"),
+        dist_med=("distance_m","median"),
+        ang_med=("angle_deg","median"),
+    ).reset_index()
+    g["sh_pct"] = (g["goals"] / g["shots"]).round(3)
+    g["xg_per_shot"] = (g["xg_sum"] / g["shots"]).round(3)
+    # Order
+    g = g.sort_values(["shots","xg_per_shot"], ascending=[False,False])
+    return g.rename(columns={shooter_key:"shooter"})
 
-    # Distance bins: [0-5, 5-8, 8-10, 10+]
-    if "distance_m" in out.columns:
-        out["distance_m"] = to_num(out["distance_m"])
-        out["distance_bin"] = pd.cut(
-            out["distance_m"],
-            bins=[0, 5, 8, 10, 30],
-            labels=["0-5", "5-8", "8-10", "10+"],
-            right=False,
-        )
-    else:
-        out["distance_bin"] = pd.NA
+def make_overview(by_game: pd.DataFrame) -> pd.DataFrame:
+    bg = by_game.copy()
+    bg["xg_per_shot"] = (bg["xg_sum"] / bg["shots"]).replace([np.inf, -np.inf], np.nan).round(3)
+    return bg.sort_values("game_id")
 
-    # SIGNED angle bins: [-90,-45), [-45,-30), [-30,-15), [-15,15), [15,30), [30,45), [45,90]
-    if "angle_deg" in out.columns:
-        ang = to_num(out["angle_deg"])  # keep sign
-        bins = [-90, -45, -30, -15, 15, 30, 45, 90]
-        labels = ["-90:-45", "-45:-30", "-30:-15", "-15:+15", "+15:+30", "+30:+45", "+45:+90"]
-        out["angle_bin"] = pd.cut(
-            ang, bins=bins, labels=labels, right=False, include_lowest=True
-        )
-    else:
-        out["angle_bin"] = pd.NA
+def make_angle_distance(df: pd.DataFrame, by_shot: pd.DataFrame, min_bin_size: int) -> pd.DataFrame:
+    M = df.merge(by_shot[["possession_id","xg","game_id"]], on="possession_id", how="left")
+    # Choose signed/unsigned angle groupings; stick with signed bins if available
+    angle_col = "angle_bin" if "angle_bin" in M.columns else None
+    if angle_col is None:
+        # fallback rough binning from numeric angle if present
+        if "angle_deg" in M.columns:
+            M["angle_bin"] = pd.cut(M["angle_deg"], bins=[-181,-60,-30,-10,10,30,60,181],
+                                    labels=["<-60","-60..-30","-30..-10","-10..10","10..30","30..60",">60"],
+                                    include_lowest=True)
+            angle_col = "angle_bin"
 
-    return out
+    dist_col = "distance_bin_model" if "distance_bin_model" in M.columns else None
+    if dist_col is None and "distance_m" in M.columns:
+        M["distance_bin_model"] = pd.cut(M["distance_m"],
+                                         bins=[-1,2,4,6,8,10,50],
+                                         labels=["0-2","2-4","4-6","6-8","8-10","10+"],
+                                         include_lowest=True)
+        dist_col = "distance_bin_model"
 
+    keys = []
+    if angle_col: keys.append(angle_col)
+    if dist_col: keys.append(dist_col)
+    if not keys:
+        # Nothing to aggregate on; return empty
+        return pd.DataFrame(columns=["bin_key","shots","goals","xg_sum","goal_rate","xg_per_shot"])
+
+    g = M.groupby(keys, dropna=False).agg(
+        shots=("possession_id","count"),
+        goals=("is_goal","sum"),
+        xg_sum=("xg","sum"),
+    ).reset_index()
+    g["goal_rate"] = (g["goals"] / g["shots"]).round(3)
+    g["xg_per_shot"] = (g["xg_sum"] / g["shots"]).round(3)
+
+    # Filter small bins for stability
+    g = g[g["shots"] >= int(min_bin_size)].copy()
+
+    # Human-friendly key
+    g["bin_key"] = g.apply(lambda r: "|".join(str(r[c]) for c in keys), axis=1)
+    cols = ["bin_key","shots","goals","xg_sum","goal_rate","xg_per_shot"] + keys
+    return g[cols].sort_values(["shots","xg_per_shot"], ascending=[False, False])
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--features", required=True)    # app/features_shots.csv
-    ap.add_argument("--by_shot", required=True)     # app/reports/xg_by_shot_all_calibrated_logreg_final.csv
-    ap.add_argument("--by_game", required=True)     # app/reports/xg_by_game_all_calibrated_logreg_final.csv
-    ap.add_argument("--out_dir", required=True)     # app/reports/coach
-    ap.add_argument("--min_bin_size", type=int, default=10)
+    ap = argparse.ArgumentParser(
+        description="Coach report generator (schema-aware: xg/xg_cal/xg_raw; auto-aggregates by_game if needed)"
+    )
+    ap.add_argument("--features", required=True, help="features_shots.csv")
+    ap.add_argument("--by_shot", required=True, help="xg_by_shot_*.csv (per-shot predictions; column xg/xg_cal/xg_raw)")
+    ap.add_argument("--by_game", required=True, help="xg_by_game_*.csv (pre-agg or per-shot; tool will adapt)")
+    ap.add_argument("--out_dir", required=True, help="Output directory for coach CSVs")
+    ap.add_argument("--min_bin_size", type=int, default=5, help="Minimum bin size for angle-distance table")
     args = ap.parse_args()
 
-    feats = pd.read_csv(args.features, dtype=str)
-    by_shot = pd.read_csv(args.by_shot, dtype=str)
-    by_game = pd.read_csv(args.by_game, dtype=str)
+    out_dir = ensure_dir(Path(args.out_dir))
 
-    out_dir = Path(args.out_dir)
-    out_dir.mkdir(parents=True, exist_ok=True)
+    # Load
+    features = read_csv_safe(Path(args.features))
+    by_shot  = read_csv_safe(Path(args.by_shot))
+    by_game  = read_csv_safe(Path(args.by_game))
 
-    # Predictions
-    if "xg" not in by_shot.columns:
-        raise ValueError(f"by_shot missing 'xg'. Columns: {list(by_shot.columns)}")
-    by_shot["xg"] = to_num(by_shot["xg"])
+    # Normalize schemas
+    by_shot = pick_xg_column(by_shot)
+    by_game = maybe_aggregate_by_game(by_game, by_shot)
+    features = enrich_features(features)
 
-    # Labels from features (shot_result == 'goal')
-    if "shot_result" not in feats.columns:
-        raise ValueError("features_shots.csv missing 'shot_result' column needed to derive goals.")
-    feats["is_goal"] = (feats["shot_result"].astype(str).str.lower() == "goal").astype(int)
+    # Build outputs
+    shooters = make_shooter_summary(features, by_shot)
+    overview = make_overview(by_game)
+    angdist  = make_angle_distance(features, by_shot, min_bin_size=args.min_bin_size)
 
-    # Context to carry
-    need = [
-        "possession_id","game_id","shot_result",
-        "distance_m","angle_deg",  # numeric sources for bins
-        "is_man_up","defender_count_bin","attack_type",
-        "opponent_team_level","our_team_level",
-        "our_team_name","opponent_team_name",
-        "player_number","shooter_handedness","event_type"
-    ]
-    for c in need:
-        if c not in feats.columns:
-            feats[c] = pd.NA
+    # Write
+    shooters.to_csv(out_dir / "shooters.csv", index=False)
+    overview.to_csv(out_dir / "overview.csv", index=False)
+    angdist.to_csv(out_dir / "angle_distance.csv", index=False)
 
-    # Merge predictions with labels & context
-    df = by_shot.merge(feats[need + ["is_goal"]], on="possession_id", how="left")
-    df = recompute_bins(df)  # <<< overwrite bins with signed-angle version
-    df["is_goal"] = to_num(df["is_goal"]).fillna(0).astype(int)
-
-    # ---------- Overall ----------
-    overall = pd.DataFrame([{
-        "shots": int(df.shape[0]),
-        "goals": int(df["is_goal"].sum()),
-        "xg_sum": float(df["xg"].sum()),
-        "xg_per_shot": float(df["xg"].mean()),
-        "goal_rate": float(df["is_goal"].mean()),
-    }])
-    overall = add_low_data_flag(overall, count_col="shots", threshold=args.min_bin_size)
-    overall.to_csv(out_dir / "coach_overall.csv", index=False)
-
-    # ---------- By game ----------
-    bg = by_game.copy()
-    for c in ["shots","xg_sum","goals","xg_diff"]:
-        if c in bg.columns:
-            bg[c] = to_num(bg[c])
-    bg["xg_per_shot"] = (bg["xg_sum"] / bg["shots"]).round(3)
-    bg["goal_rate"] = (bg["goals"] / bg["shots"]).round(3)
-    bg = add_low_data_flag(bg, "shots", args.min_bin_size)
-    bg.to_csv(out_dir / "coach_by_game.csv", index=False)
-
-    # ---------- Helper ----------
-    def summarize(key):
-        g = df.groupby(key, dropna=False).agg(
-            n=("is_goal","size"),
-            goals=("is_goal","sum"),
-            xg_sum=("xg","sum"),
-        ).reset_index()
-        g["xg_ps"] = (g["xg_sum"] / g["n"]).round(3)
-        g["goal_rate"] = (g["goals"] / g["n"]).round(3)
-        g["xg_minus_goals"] = (g["xg_sum"] - g["goals"]).round(3)
-        g = add_low_data_flag(g, "n", args.min_bin_size)
-        g.sort_values("n", ascending=False, inplace=True)
-        return g
-
-    # ---------- Context tables ----------
-    summarize("distance_bin").to_csv(out_dir / "coach_by_distance.csv", index=False)
-    summarize("angle_bin").to_csv(out_dir / "coach_by_angle.csv", index=False)
-    summarize("is_man_up").to_csv(out_dir / "coach_by_manup.csv", index=False)
-    summarize("attack_type").to_csv(out_dir / "coach_by_attack_type.csv", index=False)
-    summarize("defender_count_bin").to_csv(out_dir / "coach_by_defenders.csv", index=False)
-    summarize("opponent_team_level").to_csv(out_dir / "coach_by_opponent_level.csv", index=False)
-
-    # ---------- Shooters: group by team + player number ----------
-    if "player_number" in df.columns:
-        shooters = df.copy()
-        shooters["player_number"] = shooters["player_number"].fillna("").astype(str).str.strip()
-        shooters["our_team_name"] = shooters["our_team_name"].fillna("").astype(str).str.strip()
-        shooters = shooters[shooters["player_number"] != ""]
-        grp = shooters.groupby(["our_team_name","player_number"], dropna=False).agg(
-            n=("is_goal","size"),
-            goals=("is_goal","sum"),
-            xg_sum=("xg","sum"),
-        ).reset_index()
-        grp["xg_ps"] = (grp["xg_sum"] / grp["n"]).round(3)
-        grp["goal_rate"] = (grp["goals"] / grp["n"]).round(3)
-        grp["xg_minus_goals"] = (grp["xg_sum"] - grp["goals"]).round(3)
-        grp = add_low_data_flag(grp, "n", args.min_bin_size)
-        grp["shooter_label"] = grp["our_team_name"].fillna("Team") + " #" + grp["player_number"].fillna("?")
-        grp = grp.sort_values(["our_team_name","n"], ascending=[True, False])
-        grp.to_csv(out_dir / "coach_shooters.csv", index=False)
-
-    print(f"✓ Wrote coach summaries (signed angles, team-aware shooters) → {out_dir.resolve()}")
-
+    print(f"✓ Wrote coach summaries → {out_dir.resolve()}")
 
 if __name__ == "__main__":
     main()
