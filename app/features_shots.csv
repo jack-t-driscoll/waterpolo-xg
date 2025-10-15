@@ -2,7 +2,7 @@ possession_id,game_id,period,time_remaining,man_state,is_man_up,empty_net,shoote
 1_P0001,1,1,06:50,6v6,False,False,3.7007,3.4998,5.093503757729055,46.598185769256816,1,1.0,right,counter,standard,right,7,1,goal,IMG_6154.MOV,00:18,4-6,4-6|MU0,4-6|1
 1_P0002,1,1,06:17,6v6,False,False,2.4488,7.364,7.760484356017993,18.39385784192125,1,1.0,center,perimeter,standard,right,11,0,goal,IMG_6155.MOV,00:39,6-8,6-8|MU0,6-8|1
 1_P0003,1,1,05:51,6v6,False,False,3.957,5.9338,7.1321687753445655,33.69764297295745,2,1.5,right,counter,standard,right,7,1,post/bar,IMG_6156.MOV,00:26,6-8,6-8|MU0,6-8|2
-1_P0006,1,1,03:33,6v6,False,False,3.8437,2.5482,4.611654034074976,56.457414293125915,1,1.0,right,perimeter,standard,right,4,9,goal,IMG_6162.MOV,00:31,4-6,4-6|MU0,4-6|1
+1_P0006,1,1,03:33,6v6,False,False,3.8437,2.5482,4.611654034074976,56.45741429312592,1,1.0,right,perimeter,standard,right,4,9,goal,IMG_6162.MOV,00:31,4-6,4-6|MU0,4-6|1
 1_P0007,1,1,02:55,6v6,False,False,4.0352,3.7012,5.475556636543905,47.47206894080216,1,0.5,right,perimeter,standard,right,4,6,blocked (GK),IMG_6164.MOV,00:17,4-6,4-6|MU0,4-6|1
 1_P0008,1,1,02:44,6v6,False,False,0.75,0.4,7.81,39.81,1,0.5,right,perimeter,lob,right,4,2,post/bar,IMG_6165.MOV,00:11,6-8,6-8|MU0,6-8|1
 1_P0009,1,1,02:27,6v6,False,False,0.4,0.4666666667,7.28,-15.95,1,1.0,center,perimeter,standard,right,5,3,missed,IMG_6166.MOV,00:16,6-8,6-8|MU0,6-8|1
